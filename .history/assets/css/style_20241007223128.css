@@ -1,0 +1,7 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#main {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,9 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#main .nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
