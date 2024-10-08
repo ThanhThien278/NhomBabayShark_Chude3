@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+}
+.btn {
+  cursor: pointer;
+}
+#main {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main .nav {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+#main .user {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+.icon {
+  padding: 10px;
+  font-size: 25px;
+}
+.login {
+  line-height: 20px;
+  background-color: aqua;
+}
