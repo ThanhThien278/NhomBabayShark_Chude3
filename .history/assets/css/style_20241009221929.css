@@ -12,7 +12,7 @@ body {
   background-size: 1536px 775px;
   background-repeat: no-repeat; */
   background-position: center;
-
+filter: blur(25%);
 }
 
 .btn {
@@ -50,6 +50,6 @@ body {
   display: inline-block;
   padding: 10px;
   background-color: rgb(230, 54, 48);
-  transform: scale(80%);
-  border-radius: 30px;
+  transform: scale(75%);
+  border-radius: 10%;
 }

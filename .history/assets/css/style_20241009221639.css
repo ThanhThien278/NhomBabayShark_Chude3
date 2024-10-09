@@ -12,7 +12,7 @@ body {
   background-size: 1536px 775px;
   background-repeat: no-repeat; */
   background-position: center;
-
+filter: blur(25%);
 }
 
 .btn {
@@ -32,24 +32,23 @@ body {
   border-radius: 10px;
   backdrop-filter: blur(3px);
   box-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14;
-
 }
 #main .nav a {
   text-decoration: none;
   color: #fff;
 }
 #main .user {
-
+  display: flex;
 }
 .icon {
   font-size: 25px;
-  padding: 10px 5px;
+  padding: 10px;
   color:#fff;
 }
 .login {
   display: inline-block;
   padding: 10px;
   background-color: rgb(230, 54, 48);
-  transform: scale(80%);
-  border-radius: 30px;
+  transform: scale(75%);
+  border-radius: 10%;
 }
