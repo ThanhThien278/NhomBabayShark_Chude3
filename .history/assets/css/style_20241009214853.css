@@ -12,7 +12,7 @@ body {
   background-size: 1536px 775px;
   background-repeat: no-repeat; */
   background-position: center;
-filter: blur(25%);
+  opacity:0.25 ;
 }
 
 .btn {
@@ -26,8 +26,8 @@ filter: blur(25%);
 #main .nav {
   display: flex;
   list-style-type: none;
-  gap: 25px;
-  padding: 10px  ;
+  gap: 20px;
+  padding: 10px;
   border: 3px solid #ccc;
   border-radius: 10px;
   backdrop-filter: blur(3px);

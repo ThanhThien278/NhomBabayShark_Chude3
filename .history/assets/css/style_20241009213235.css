@@ -2,17 +2,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  padding-top: 5px;
 }
-
+.show-background {
+  background-image: url('DALL·E 2024-10-09 21.25.32 - A background image for a shipping company website's 'About Us' section. The background has a blue tone that suits the shipping and logistics industry,.webp');
+  background-size: 1535px 775px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 20px;
-  background-image: url('https://cdn-media.sforum.vn/storage/app/media/Van%20Pham/7/hinh-nen-desktop-35.jpg');
-  background-size: 1536px 775px;
-  background-repeat: no-repeat; */
-  background-position: center;
-filter: blur(25%);
 }
 
 .btn {
@@ -26,15 +25,15 @@ filter: blur(25%);
 #main .nav {
   display: flex;
   list-style-type: none;
-  gap: 25px;
-  padding: 10px  ;
-  border: 3px solid #ccc;
+  gap: 20px;
+  padding-top: 5px;
+  border: 3px solid #fff;
   border-radius: 10px;
   backdrop-filter: blur(3px);
 }
 #main .nav a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 #main .user {
   display: flex;
@@ -43,11 +42,10 @@ filter: blur(25%);
 .icon {
   font-size: 25px;
   padding: 10px;
-  color:#fff;
 }
 .login {
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   background-color: rgb(230, 54, 48);
   transform: scale(75%);
   border-radius: 10%;
