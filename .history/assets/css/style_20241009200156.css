@@ -20,8 +20,6 @@ body {
   list-style-type: none;
   gap: 20px;
   padding-top: 5px;
-}
-#main .nav a {
   text-decoration: none;
   color: #000;
 }
