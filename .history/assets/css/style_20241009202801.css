@@ -7,7 +7,9 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 20px;
 }
-
+.header {
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Ffpt123.net%2Fho-ca-koi-thai-binh%2Fthiet-ke-thi-cong-ho-ca-koi-tai-thai-thuy-thai-binh.html&psig=AOvVaw0Fpgg0maZl9XIeoZyo3giQ&ust=1728566864306000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPChlMWzgYkDFQAAAAAdAAAAABAE);
+}
 .btn {
   cursor: pointer;
 }

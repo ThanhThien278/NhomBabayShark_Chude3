@@ -7,7 +7,6 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 20px;
 }
-
 .btn {
   cursor: pointer;
 }
@@ -21,7 +20,7 @@ body {
   list-style-type: none;
   gap: 20px;
   padding-top: 5px;
-  border: 3px solid #fff;
+  border: 3px solid #000;
   border-radius: 10px;
   backdrop-filter: blur(3px);
 }
