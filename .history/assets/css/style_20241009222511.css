@@ -27,7 +27,7 @@ body {
   list-style-type: none;
   gap: 25px;
   margin-top: 10px;
-  padding: 10px  ;
+  padding: 20px  ;
   border: 3px solid #00FFFF;
   border-radius: 10px;
   backdrop-filter: blur(3px);
@@ -40,7 +40,6 @@ body {
 }
 #main .user {
 display: flex;
-margin-top: 15px;
 }
 .icon {
   font-size: 25px;
@@ -49,7 +48,7 @@ margin-top: 15px;
 }
 .login {
   display: inline-block;
-  padding: 10px;
+  padding: ;
   background-color: rgb(230, 54, 48);
   transform: scale(80%);
   border-radius: 30px;
