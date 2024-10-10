@@ -39,7 +39,7 @@ body {
   right: 0;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 5;
 }
 .logo {
   margin-left: calc(5%);
@@ -79,7 +79,6 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 20px rgba(0, 170, 255, 0.5), 0 0 30px rgba(0, 170, 255, 0.5);
   margin: 0 auto;
-  z-index: 10px;
 }
 
 #header .nav a {
@@ -153,7 +152,6 @@ body {
   width: 100%;
 }
 #slider .text {
-  cursor: grab;
   position: absolute;
   top: 50%;
   text-align: center;
@@ -177,6 +175,7 @@ body {
   padding-left: calc(10%);
 }
 #sale {
+  cursor: pointer;
   margin: 100px 0 0 0;
   width: calc(100%-40px);
   height: auto;
@@ -184,26 +183,9 @@ body {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
-  position: relative;
-}
-.sale-text {
-  cursor: help;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 30px;
-  color: #32302f;
-  text-align: center;
-  margin-bottom: 20px;
-  z-index: 80;
-  text-shadow: 0 0 5px rgba(255, 102, 0, 0.8), 0 0 10px rgba(255, 102, 0, 0.6),
-    0 0 15px rgba(255, 102, 0, 0.4), 0 0 20px rgba(0, 102, 255, 0.4),
-    0 0 30px rgba(0, 102, 255, 0.3), 0 0 40px rgba(0, 102, 255, 0.2);
 }
 #sale img {
-  cursor: pointer;
-  width: 40%;
+  width: 50%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
@@ -221,7 +203,7 @@ body {
 #sale img:not(:active) {
   transform: scale(0.5);
   opacity: 0.5;
-  z-index: 2px;
 }
 #end {
+  height: 100vh;
 }
