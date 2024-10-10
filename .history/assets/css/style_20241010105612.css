@@ -97,10 +97,6 @@ z-index: 5;
   line-height: 1.6em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-#slider .text:hover{
-  transform: translateY(-10px);
-  box-shadow:0 10px 20px rgba(198, 229, 125, 0.5) ;
-}
 #slider .text-name{
 padding-left: 80px;
 font-size: 30px;
@@ -108,7 +104,4 @@ font-size: 30px;
 #slider .text-content{
   max-width: 800px;
   padding-left: calc(10%);
-}
-#end{
-height: 100vh;
 }

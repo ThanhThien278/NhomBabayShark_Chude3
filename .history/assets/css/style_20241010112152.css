@@ -16,11 +16,11 @@ body {
 .icon {
   font-size: 25px;
   padding: 10px 5px;
-  color: #181717;
+  color: #fff;
 }
 .icon:hover {
-  color: #2c2929;
-  text-shadow: 0 0 5px #dbd5d5, 0 0 10px #d4d1d1;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
 }
 .icon-min {
   font-size: 20px;

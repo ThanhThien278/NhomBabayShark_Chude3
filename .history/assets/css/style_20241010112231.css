@@ -20,7 +20,7 @@ body {
 }
 .icon:hover {
   color: #2c2929;
-  text-shadow: 0 0 5px #dbd5d5, 0 0 10px #d4d1d1;
+  text-shadow: 0 0 10px #706f6f, 0 0 15px #d4d1d1;
 }
 .icon-min {
   font-size: 20px;

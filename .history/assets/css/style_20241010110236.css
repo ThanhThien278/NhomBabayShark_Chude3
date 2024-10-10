@@ -83,7 +83,7 @@ z-index: 5;
 }
 #slider{
   position: relative;
-  height: 780px;
+  height: 780vh;
   background-image: url('https://indochinapost.vn/wp-content/uploads/2020/04/van-chuyen-hang-sea-air-4.jpg');
   background-size:cover;
   background-position: center;
@@ -108,7 +108,4 @@ font-size: 30px;
 #slider .text-content{
   max-width: 800px;
   padding-left: calc(10%);
-}
-#end{
-height: 100vh;
 }
