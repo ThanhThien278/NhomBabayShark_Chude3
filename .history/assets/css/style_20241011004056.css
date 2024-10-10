@@ -200,10 +200,15 @@ body {
   padding: 10px;
 }
 #services .ser-img {
-  width: auto;
+  width: 150px;
   height: auto;
 }
-
+.ser-card:nth-child(1) .ser-img {
+  margin-left: 10px;
+}
+.ser-card:nth-child(2) .ser-img {
+  margin-right: 10px;
+}
 #sale {
   margin: 100px 0 0 0;
   width: calc(100%-40px);

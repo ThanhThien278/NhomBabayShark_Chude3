@@ -200,10 +200,20 @@ body {
   padding: 10px;
 }
 #services .ser-img {
-  width: auto;
+  width: 150px;
   height: auto;
+  margin-right: 20px;
 }
-
+.ser-card:nth-child(1) .ser-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ser-card:nth-child(2) .ser-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
 #sale {
   margin: 100px 0 0 0;
   width: calc(100%-40px);

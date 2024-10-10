@@ -192,7 +192,7 @@ body {
   border-radius: 5px;
   padding: 15px;
   margin: 10px;
-  max-width: 100%;
+  max-width: 600px;
   background-color: #f9f9f9;
 }
 #services .ser-content {
@@ -200,10 +200,15 @@ body {
   padding: 10px;
 }
 #services .ser-img {
-  width: auto;
+  width: 150px;
   height: auto;
 }
-
+.ser-card:nth-child(1) .ser-img {
+  margin-left: 10px;
+}
+.ser-card:nth-child(2) .ser-img {
+  margin-right: 10px;
+}
 #sale {
   margin: 100px 0 0 0;
   width: calc(100%-40px);
