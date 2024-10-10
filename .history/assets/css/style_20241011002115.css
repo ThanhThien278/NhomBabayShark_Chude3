@@ -176,13 +176,24 @@ body {
   max-width: 800px;
   padding-left: calc(10%);
 }
-#services {
+#services .ser-text {
+  top: 0;
+  left: 50%;
+  text-align: center;
+  padding-top: 30px;
+  color: #1a1a1a;
+  text-shadow:
+    0 0 5px #40a6ff,
+    0 0 10px #40a6ff,
+    0 0 15px #60a0ff,
+    0 0 20px #60dfff,
+    0 0 25px #52a9ff,
+    0 0 30px #52c5ff,
+    0 0 35px #178bff;
+  font-size: 2.5rem;
+  font-weight: bold;
   text-align: center;
 }
-#services .ser-text {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 20px 0;
 }
 #sale {
   margin: 100px 0 0 0;
