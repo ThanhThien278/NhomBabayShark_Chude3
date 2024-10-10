@@ -37,7 +37,6 @@ body {
   right: 0;
   top: 0;
   left: 0;
-z-index: 5;
 }
 #header .nav {
   display: flex;
@@ -78,30 +77,5 @@ z-index: 5;
 #header .login:hover{
   color: #fff;
   box-shadow: 0 0 10px #f65d5d, 0 0 20px #ef4646, 0 0 30px #ed6a6a;
-  background-color: rgba(230, 54, 48, 0.8);
-  text-shadow: 0 0 5px #ececec, 0 0 10px #ffffff;
-}
-#slider{
-  position: relative;
-  height: 780px;
-  background-image: url('https://indochinapost.vn/wp-content/uploads/2020/04/van-chuyen-hang-sea-air-4.jpg');
-  background-size:cover;
-  background-position: center;
-  width: 100%;
-}
-#slider .text{
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  color: #fff;
-  line-height: 1.6em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-#slider .text-name{
-padding-left: 80px;
-font-size: 30px;
-}
-#slider .text-content{
-  max-width: 800px;
-  padding-left: calc(10%);
+  background-color: rgba(230, 54, 48, 0.8); ;
 }

@@ -92,16 +92,14 @@ z-index: 5;
 #slider .text{
   position: absolute;
   top: 50%;
-  text-align: center;
+  text-align: left;
   color: #fff;
-  line-height: 1.6em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 #slider .text-name{
-padding-left: 80px;
+padding-left: calc(20%);
 font-size: 30px;
 }
 #slider .text-content{
   max-width: 800px;
-  padding-left: calc(10%);
+  left: 10%;
 }
