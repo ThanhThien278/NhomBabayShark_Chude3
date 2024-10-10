@@ -41,15 +41,6 @@ body {
   left: 0;
   z-index: 5;
 }
-.logo {
-  margin-left: 80px;
-}
-.logo img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
 
 #header .nav {
   display: flex;
@@ -76,13 +67,13 @@ body {
 .topsub {
   position: relative;
 }
-.subnav {
+#header .subnav {
   list-style-type: none;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 10px;
-  display: none;
+  display: ;
   top: 100%;
   left: 0;
   z-index: 10;
