@@ -399,7 +399,6 @@ body {
 }
 
 #contact {
-  padding: 0 135px;
-  display: flex;
-  align-items: center;
+  height: 350px;
+  background-color: #d4d1d1;
 }

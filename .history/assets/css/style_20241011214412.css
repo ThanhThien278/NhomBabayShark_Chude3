@@ -399,7 +399,5 @@ body {
 }
 
 #contact {
-  padding: 0 135px;
-  display: flex;
-  align-items: center;
+  height: 750px;
 }
