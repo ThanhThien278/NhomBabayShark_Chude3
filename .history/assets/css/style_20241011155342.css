@@ -369,7 +369,6 @@ body {
   color: #333;
   animation: pulse 3s infinite ease-in-out;
   transition: color 0.5s ease;
-  padding-left: 35%;
 }
 .review-container {
   overflow: hidden;
@@ -378,7 +377,7 @@ body {
 }
 
 .review-images {
-  padding-top: 100px;
+  padding-top: 50px;
   display: flex;
   animation: scroll 15s linear infinite;
 }
