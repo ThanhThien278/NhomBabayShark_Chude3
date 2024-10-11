@@ -402,17 +402,17 @@ body {
   background-color: #f4f4f9;
   padding: 50px 20px;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 .contact-text {
   max-width: 800px;
+  text-align: center;
 }
 .content-info {
   margin-top: 20px;
   font-size: 16px;
   line-height: 1.6;
-  padding-left: 50px;
 }
 .contact-text h3 {
   color: #333;
@@ -430,7 +430,7 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-.contact-info a :hover {
+.contact-info a:hover {
   color: #e67e22;
   text-decoration: underline;
 }
