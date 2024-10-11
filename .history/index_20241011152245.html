@@ -41,7 +41,7 @@
             <ul class="subnav">
               <li><a href="#tuvan"> Tư Vấn Và Chăm Sóc </a></li>
               <li><a href="#vanchuyen">Vận Chuyển </a></li>
-              <li><a href="#koiworld"> KOI WORLD</a></li>
+              <li><a href=""> KOI WORLD</a></li>
             </ul>
           </li>
           <li><a href="#sale">Ưu Đãi</a></li>
@@ -211,19 +211,24 @@
                   </p>
                   <p>
                     Ki Bekko (màu vàng và đen), kích thước tương tự cũng có mức
-                    giá khoảng 300 USD
+                    giá trong khoảng 300 USD
                   </p>
                   <p>
-                    Shiro Bekko phổ biến có giá từ khoảng 32 USD cho những con
-                    cá nhỏ 4-5 inch lên đến 258 USD cho những con dài hơn, một
-                    con 12 inch (30 cm). Mức giá trung bình của những con cỡ
-                    trung như 5-6 inch (13-15 cm) là khoảng 40-64 USD
+                    Shiro Bekko phổ biến có giá dao động từ khoảng 32 USD cho
+                    những con cá nhỏ 4-5 inch lên đến 258 USD cho những con dài
+                    hơn, như một con 12 inch (30 cm). Mức giá trung bình của
+                    những con cỡ trung như 5-6 inch (13-15 cm) là khoảng 40-64
+                    USD
                   </p>
                 </div>
               </div>
             </div>
             <div class="koi-card">
-              <img src="./assets/img/cakoi67.jpg" alt="Koi 1" class="koi-img" />
+              <img
+                src="./assets/img/cakoi6.jpg"
+                alt="Koi 1"
+                class="koi-img min"
+              />
               <div class="koi-info">
                 <h3>SHUSUI KOI</h3>
                 <p>
@@ -263,16 +268,5 @@
       </div>
       <div id="contact"></div>
     </div>
-    <script>
-      document.querySelectorAll(".nav a").forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const targetId = this.getAttribute("href");
-          document.querySelector(targetId).scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
-    </script>
   </body>
 </html>

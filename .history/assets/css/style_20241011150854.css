@@ -264,27 +264,8 @@ body {
   z-index: 2;
 }
 .koi-card img {
-  border-radius: 100px;
-  padding-top: 10px;
   width: 100%;
-  height: auto;
-}
-.koi-info {
-  padding: 10px 0;
-}
-.koi-info h3 {
-  margin: 10px 0;
-  color: #333;
-}
-.koi-info p {
-  margin: 5px 0;
-  color: #666;
-  font-size: 25px;
-}
-.price p {
-  font-weight: bold;
-  color: #e63946;
-  font-size: 20px;
+  border-radius: 10px;
 }
 
 #sale {
@@ -296,7 +277,6 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   position: relative;
-  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
 }
 .sale-text {
   cursor: help;

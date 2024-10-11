@@ -41,7 +41,7 @@
             <ul class="subnav">
               <li><a href="#tuvan"> Tư Vấn Và Chăm Sóc </a></li>
               <li><a href="#vanchuyen">Vận Chuyển </a></li>
-              <li><a href="#koiworld"> KOI WORLD</a></li>
+              <li><a href=""> KOI WORLD</a></li>
             </ul>
           </li>
           <li><a href="#sale">Ưu Đãi</a></li>
@@ -263,16 +263,5 @@
       </div>
       <div id="contact"></div>
     </div>
-    <script>
-      document.querySelectorAll(".nav a").forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const targetId = this.getAttribute("href");
-          document.querySelector(targetId).scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
-    </script>
   </body>
 </html>

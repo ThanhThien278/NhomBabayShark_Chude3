@@ -279,12 +279,10 @@ body {
 .koi-info p {
   margin: 5px 0;
   color: #666;
-  font-size: 25px;
 }
 .price p {
   font-weight: bold;
   color: #e63946;
-  font-size: 20px;
 }
 
 #sale {
@@ -296,7 +294,6 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   position: relative;
-  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
 }
 .sale-text {
   cursor: help;

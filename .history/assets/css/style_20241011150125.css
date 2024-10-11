@@ -240,51 +240,23 @@ body {
   font-size: 36px;
   color: #333;
   margin-bottom: 20px;
-  animation: pulse 3s infinite ease-in-out;
-  transition: color 0.5s ease;
+  text-shadow: 0 0 5px rgba(230, 57, 70, 0.8), 0 0 10px rgba(230, 57, 70, 0.6),
+    0 0 15px rgba(230, 57, 70, 0.4);
+  animation: glowing 2s infinite ease-in-out;
 }
-.koi-market {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.koi-card {
-  width: 30%;
-  background-color: #f9f9f9;
-  border-radius: 100px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  padding: 15px;
-  cursor: pointer;
-  text-align: left;
-}
-.koi-card:hover {
-  transform: scale(1.1);
-  z-index: 2;
-}
-.koi-card img {
-  border-radius: 100px;
-  padding-top: 10px;
-  width: 100%;
-  height: auto;
-}
-.koi-info {
-  padding: 10px 0;
-}
-.koi-info h3 {
-  margin: 10px 0;
-  color: #333;
-}
-.koi-info p {
-  margin: 5px 0;
-  color: #666;
-  font-size: 25px;
-}
-.price p {
-  font-weight: bold;
-  color: #e63946;
-  font-size: 20px;
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px rgba(230, 57, 70, 0.8), 0 0 10px rgba(230, 57, 70, 0.6),
+      0 0 15px rgba(230, 57, 70, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 99, 71, 1), 0 0 20px rgba(255, 99, 71, 0.8),
+      0 0 30px rgba(255, 99, 71, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(230, 57, 70, 0.8), 0 0 10px rgba(230, 57, 70, 0.6),
+      0 0 15px rgba(230, 57, 70, 0.4);
+  }
 }
 
 #sale {
@@ -296,7 +268,6 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   position: relative;
-  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
 }
 .sale-text {
   cursor: help;

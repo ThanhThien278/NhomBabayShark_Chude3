@@ -279,12 +279,10 @@ body {
 .koi-info p {
   margin: 5px 0;
   color: #666;
-  font-size: 25px;
 }
 .price p {
   font-weight: bold;
   color: #e63946;
-  font-size: 20px;
 }
 
 #sale {
