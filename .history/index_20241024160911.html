@@ -529,7 +529,6 @@
           });
         });
       });
-
       const buttons = document.querySelectorAll(".buy-button");
       const purchaseForm = document.getElementById("purchaseForm");
       const closeFormButton = document.getElementById("closeForm");
@@ -543,7 +542,7 @@
 
           purchaseForm.style.display = "block";
           document.getElementById("koi-type").value = koiType;
-          document.getElementById("size").value = "";
+          document.getElementById("size").value = ""; /
         });
       });
 
@@ -555,9 +554,8 @@
         event.preventDefault();
         alert("Đơn hàng đã được gửi thành công!");
         purchaseForm.style.display = "none";
-        form.reset();
+        form.reset(); // Reset form
       });
-
       const stars = document.querySelectorAll(".star");
       const ratingMessage = document.querySelector(".rating-message");
       const feedbackText = document.getElementById("feedback-text");
@@ -606,12 +604,12 @@
           return;
         }
 
+
         alert("Cảm ơn bạn đã gửi phản hồi: " + feedback);
         feedbackText.value = "";
         stars.forEach((s) => s.classList.remove("selected"));
         ratingMessage.textContent = "";
       });
-
       document.addEventListener("DOMContentLoaded", function () {
         const contactText = document.querySelector(".contact-text");
         setTimeout(() => {

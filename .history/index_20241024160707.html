@@ -520,103 +520,91 @@
       </div>
     </div>
     <script>
-      document.querySelectorAll(".nav a").forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const targetId = this.getAttribute("href");
-          document.querySelector(targetId).scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
-
-      const buttons = document.querySelectorAll(".buy-button");
-      const purchaseForm = document.getElementById("purchaseForm");
-      const closeFormButton = document.getElementById("closeForm");
-      const form = document.getElementById("form");
-
-      buttons.forEach((button) => {
-        button.addEventListener("click", (event) => {
-          const koiCard = event.currentTarget.closest(".koi-card");
-          const koiType = koiCard.querySelector("h3").textContent;
-          const priceInfo = koiCard.querySelector(".price").textContent;
-
-          purchaseForm.style.display = "block";
-          document.getElementById("koi-type").value = koiType;
-          document.getElementById("size").value = "";
-        });
-      });
-
-      closeFormButton.addEventListener("click", () => {
-        purchaseForm.style.display = "none";
-      });
-
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        alert("Đơn hàng đã được gửi thành công!");
-        purchaseForm.style.display = "none";
-        form.reset();
-      });
-
-      const stars = document.querySelectorAll(".star");
-      const ratingMessage = document.querySelector(".rating-message");
-      const feedbackText = document.getElementById("feedback-text");
-      const submitButton = document.getElementById("submit-feedback");
-
-      stars.forEach((star) => {
-        star.addEventListener("click", () => {
-          const rating = star.getAttribute("data-value");
-
-          stars.forEach((s) => s.classList.remove("selected"));
-
-          for (let i = 0; i < rating; i++) {
-            stars[i].classList.add("selected");
-          }
-
-          switch (rating) {
-            case "1":
-              ratingMessage.textContent = "Tệ";
-              break;
-            case "2":
-              ratingMessage.textContent = "Tạm ổn";
-              break;
-            case "3":
-              ratingMessage.textContent = "Bình thường";
-              break;
-            case "4":
-              ratingMessage.textContent = "Tốt";
-              break;
-            case "5":
-              ratingMessage.textContent = "Tuyệt vời";
-              break;
-          }
-        });
-      });
-
-      submitButton.addEventListener("click", () => {
-        const rating = document.querySelector(".star.selected");
-        if (!rating) {
-          alert("Vui lòng chọn đánh giá sao trước khi gửi phản hồi.");
-          return;
-        }
-
-        const feedback = feedbackText.value;
-        if (feedback.trim() === "") {
-          alert("Vui lòng nhập phản hồi của bạn.");
-          return;
-        }
-
-        alert("Cảm ơn bạn đã gửi phản hồi: " + feedback);
-        feedbackText.value = "";
-        stars.forEach((s) => s.classList.remove("selected"));
-        ratingMessage.textContent = "";
-      });
-
       document.addEventListener("DOMContentLoaded", function () {
-        const contactText = document.querySelector(".contact-text");
-        setTimeout(() => {
-          contactText.classList.add("visible");
-        }, 500);
+
+          document.querySelectorAll(".nav a").forEach((anchor) => {
+              anchor.addEventListener("click", function (e) {
+                  e.preventDefault();
+                  const targetId = this.getAttribute("href");
+                  document.querySelector(targetId).scrollIntoView({
+                      behavior: "smooth",
+                  });
+              });
+          });
+
+
+          const buttons = document.querySelectorAll(".buy-button");
+          const purchaseForm = document.getElementById("purchaseForm");
+          const closeFormButton = document.getElementById("closeForm");
+          const form = document.getElementById("form");
+
+          buttons.forEach((button) => {
+              button.addEventListener("click", (event) => {
+                  const koiCard = event.currentTarget.closest(".koi-card");
+                  const koiType = koiCard.querySelector("h3").textContent;
+                  const priceInfo = koiCard.querySelector(".price").textContent;
+
+                  purchaseForm.style.display = "block"; // Show the form
+                  document.getElementById("koi-type").value = koiType;
+                  document.getElementById("size").value = "";
+              });
+          });
+
+          closeFormButton.addEventListener("click", () => {
+              purchaseForm.style.display = "none";
+          });
+
+          form.addEventListener("submit", (event) => {
+              event.preventDefault();
+              alert("Đơn hàng đã được gửi thành công!");
+              purchaseForm.style.display = "none"; /
+              form.reset();
+          });
+
+
+          const stars = document.querySelectorAll(".star");
+          const ratingMessage = document.querySelector(".rating-message");
+          const feedbackText = document.getElementById("feedback-text");
+          const submitButton = document.getElementById("submit-feedback");
+
+          stars.forEach((star) => {
+              star.addEventListener("click", () => {
+                  const rating = star.getAttribute("data-value");
+                  stars.forEach((s) => s.classList.remove("selected")); /
+
+                  for (let i = 0; i < rating; i++) {
+                      stars[i].classList.add("selected");
+                  }
+
+                  const messages = ["Tệ", "Tạm ổn", "Bình thường", "Tốt", "Tuyệt vời"];
+                  ratingMessage.textContent = messages[rating - 1];
+              });
+          });
+
+          submitButton.addEventListener("click", () => {
+              const rating = document.querySelector(".star.selected");
+              if (!rating) {
+                  alert("Vui lòng chọn đánh giá sao trước khi gửi phản hồi.");
+                  return;
+              }
+
+              const feedback = feedbackText.value;
+              if (feedback.trim() === "") {
+                  alert("Vui lòng nhập phản hồi của bạn."); /
+                  return;
+              }
+
+              alert("Cảm ơn bạn đã gửi phản hồi: " + feedback);
+              feedbackText.value = "";
+              stars.forEach((s) => s.classList.remove("selected"));
+              ratingMessage.textContent = "";
+          });
+
+
+          const contactText = document.querySelector(".contact-text");
+          setTimeout(() => {
+              contactText.classList.add("visible"); // Make contact text visible
+          }, 500);
       });
     </script>
   </body>
