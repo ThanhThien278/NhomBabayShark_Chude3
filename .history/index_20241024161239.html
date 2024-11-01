@@ -7,12 +7,6 @@
     <link rel="icon" type="image/x-icon" href="./assets/img/logo1.jpg" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
 
@@ -105,9 +99,7 @@
                 hàng đầu thế giới trong lĩnh vực.
               </p>
             </div>
-            <button class="btn-dv" id="btn-consultation">
-              Đặt lịch tư vấn
-            </button>
+            <button class="btn-dv">Đặt lịch tư vấn</button>
           </div>
         </div>
 
@@ -130,10 +122,114 @@
               alt="ảnh vận chuyển"
               class="ser-img"
             />
-            <button class="btn-dv" id="btn-transport">
-              Đặt lịch vận chuyển
-            </button>
+            <button class="btn-dv">Đặt lịch vận chuyển</button>
           </div>
+        </div>
+        <!-- Form Đặt Lịch Tư Vấn -->
+        <div
+          id="consultation-form"
+          class="form-container"
+          style="display: none"
+        >
+          <h2>Đặt Lịch Tư Vấn</h2>
+          <form>
+            <label for="consultant-name">Họ Tên:</label>
+            <input
+              type="text"
+              id="consultant-name"
+              name="consultant-name"
+              required
+            />
+
+            <label for="consultant-email">Email:</label>
+            <input
+              type="email"
+              id="consultant-email"
+              name="consultant-email"
+              required
+            />
+
+            <label for="consultant-phone">Số Điện Thoại:</label>
+            <input
+              type="tel"
+              id="consultant-phone"
+              name="consultant-phone"
+              required
+            />
+
+            <label for="consultant-date">Ngày Hẹn:</label>
+            <input
+              type="date"
+              id="consultant-date"
+              name="consultant-date"
+              required
+            />
+
+            <label for="consultant-message">Nội Dung:</label>
+            <textarea
+              id="consultant-message"
+              name="consultant-message"
+              rows="4"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn-submit">Gửi</button>
+          </form>
+        </div>
+
+        <!-- Form Đặt Lịch Vận Chuyển -->
+        <div id="transport-form" class="form-container" style="display: none">
+          <h2>Đặt Lịch Vận Chuyển</h2>
+          <form>
+            <label for="transport-name">Họ Tên:</label>
+            <input
+              type="text"
+              id="transport-name"
+              name="transport-name"
+              required
+            />
+
+            <label for="transport-email">Email:</label>
+            <input
+              type="email"
+              id="transport-email"
+              name="transport-email"
+              required
+            />
+
+            <label for="transport-phone">Số Điện Thoại:</label>
+            <input
+              type="tel"
+              id="transport-phone"
+              name="transport-phone"
+              required
+            />
+
+            <label for="transport-date">Ngày Vận Chuyển:</label>
+            <input
+              type="date"
+              id="transport-date"
+              name="transport-date"
+              required
+            />
+
+            <label for="transport-address">Địa Chỉ Giao Hàng:</label>
+            <textarea
+              id="transport-address"
+              name="transport-address"
+              rows="4"
+              required
+            ></textarea>
+
+            <label for="transport-notes">Ghi Chú Thêm:</label>
+            <textarea
+              id="transport-notes"
+              name="transport-notes"
+              rows="4"
+            ></textarea>
+
+            <button type="submit" class="btn-submit">Gửi</button>
+          </form>
         </div>
 
         <div id="koiworld">
@@ -153,7 +249,7 @@
                   <p>lớn hơn 20cm : 90 đến 300 USD</p>
                   <p>40 cm trở lên : 1.200 đến 7.500 USD</p>
                 </div>
-                <button id=" btn-buy" class="buy-button">Mua cá</button>
+                <button class="buy-button">Mua cá</button>
               </div>
             </div>
             <div class="koi-card">
@@ -169,7 +265,7 @@
                   <p>8 đến 12 cm : 20 đến 50 USD</p>
                   <p>Lớn hơn 18 cm: 90 USD</p>
                 </div>
-                <button id=" btn-buy" class="buy-button">Mua cá</button>
+                <button class="buy-button">Mua cá</button>
               </div>
             </div>
             <div class="koi-card">
@@ -196,7 +292,7 @@
                     Showa có thể có giá dao động từ 300 đến 1.800 USD
                   </p>
                 </div>
-                <button id=" btn-buy" class="buy-button">Mua cá</button>
+                <button class="buy-button">Mua cá</button>
               </div>
             </div>
             <div class="koi-card">
@@ -219,7 +315,7 @@
                     có giá từ khoảng 90 USD cho cá kích thước nhỏ (6-10 inch)
                   </p>
                 </div>
-                <button id=" btn-buy" class="buy-button">Mua cá</button>
+                <button class="buy-button">Mua cá</button>
               </div>
             </div>
             <div class="koi-card">
@@ -248,7 +344,7 @@
                     trung như 5-6 inch (13-15 cm) là khoảng 40-64 USD
                   </p>
                 </div>
-                <button id=" btn-buy" class="buy-button">Mua cá</button>
+                <button class="buy-button">Mua cá</button>
               </div>
             </div>
             <div class="koi-card">
@@ -278,7 +374,7 @@
                     điểm cá
                   </p>
                 </div>
-                <button id=" btn-buy" class="buy-button">Mua cá</button>
+                <button class="buy-button">Mua cá</button>
               </div>
             </div>
           </div>
@@ -291,64 +387,53 @@
         <img src="./assets/img/kc.jpg" alt="" />
         <img src="./assets/img/hvhk.jpg" alt="" />
       </div>
+      <!-- Form mua cá (ẩn mặc định) -->
+      <div class="purchase-form" id="purchaseForm" style="display: none">
+        <h3>Đặt hàng cá koi</h3>
+        <form id="form">
+          <label for="name">Họ tên:</label>
+          <input type="text" id="name" required />
 
+          <label for="address">Địa điểm:</label>
+          <input type="text" id="address" required />
+
+          <label for="phone">SĐT:</label>
+          <input type="tel" id="phone" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+
+          <label for="koi-type">Loại cá:</label>
+          <input type="text" id="koi-type" required />
+
+          <label for="size">Kích thước:</label>
+          <input type="text" id="size" placeholder="Nhập kích thước" required />
+
+          <button type="submit" class="submit-button">Gửi đơn hàng</button>
+        </form>
+        <button id="closeForm">Đóng</button>
+      </div>
       <div id="review">
         <div class="rev-text">Khách hàng đã nói gì về chúng tôi</div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./assets/img/rv1.jpg" alt="Review 1" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv2.jpg" alt="Review 2" />
-            </div>
-            <
-            <div class="swiper-slide">
-              <img src="./assets/img/rv3.jpg" alt="Review 3" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv4.jpg" alt="Review 4" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv5.jpg" alt="Review 5" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv6.jpg" alt="Review 6" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv7.jpg" alt="Review 7" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv8.jpg" alt="Review 8" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv9.jpg" alt="Review 9" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv10.jpg" alt="Review 10" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv11.jpg" alt="Review 11" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv12.jpg" alt="Review 12" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv13.jpg" alt="Review 13" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv14.jpg" alt="Review 14" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/rv15.jpg" alt="Review 15" />
-            </div>
+        <div class="review-container">
+          <div class="review-images">
+            <img src="./assets/img/rv1.jpg" alt="Review 1" />
+            <img src="./assets/img/rv2.jpg" alt="Review 2" />
+            <img src="./assets/img/rv3.jpg" alt="Review 3" />
+            <img src="./assets/img/rv4.jpg" alt="Review 4" />
+            <img src="./assets/img/rv5.jpg" alt="Review 5" />
+            <img src="./assets/img/rv6.jpg" alt="Review 6" />
+            <img src="./assets/img/rv7.jpg" alt="Review 7" />
+            <img src="./assets/img/rv8.jpg" alt="Review 8" />
+            <img src="./assets/img/rv9.jpg" alt="Review 9" />
+            <img src="./assets/img/rv10.jpg" alt="Review 10" />
+            <img src="./assets/img/rv11.jpg" alt="Review 11" />
+            <img src="./assets/img/rv12.jpg" alt="Review 12" />
+            <img src="./assets/img/rv13.jpg" alt="Review 13" />
+            <img src="./assets/img/rv14.jpg" alt="Review 14" />
+            <img src="./assets/img/rv15.jpg" alt="Review 15" />
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
-      </div>
-      <div id="notification" class="notification" style="display: none">
-        Vui lòng đăng nhập
       </div>
       <div class="feedback">
         <h3>Đánh giá của bạn:</h3>
@@ -374,7 +459,6 @@
           <p id="modal-message"></p>
         </div>
       </div>
-      <div id="toast-container"></div>
 
       <div id="contact">
         <div class="contact-text">
@@ -445,6 +529,35 @@
           });
         });
       });
+
+      const buttons = document.querySelectorAll(".buy-button");
+      const purchaseForm = document.getElementById("purchaseForm");
+      const closeFormButton = document.getElementById("closeForm");
+      const form = document.getElementById("form");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", (event) => {
+          const koiCard = event.currentTarget.closest(".koi-card");
+          const koiType = koiCard.querySelector("h3").textContent;
+          const priceInfo = koiCard.querySelector(".price").textContent;
+
+          purchaseForm.style.display = "block";
+          document.getElementById("koi-type").value = koiType;
+          document.getElementById("size").value = "";
+        });
+      });
+
+      closeFormButton.addEventListener("click", () => {
+        purchaseForm.style.display = "none";
+      });
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        alert("Đơn hàng đã được gửi thành công!");
+        purchaseForm.style.display = "none";
+        form.reset();
+      });
+
       const stars = document.querySelectorAll(".star");
       const ratingMessage = document.querySelector(".rating-message");
       const feedbackText = document.getElementById("feedback-text");
@@ -453,10 +566,13 @@
       stars.forEach((star) => {
         star.addEventListener("click", () => {
           const rating = star.getAttribute("data-value");
+
           stars.forEach((s) => s.classList.remove("selected"));
+
           for (let i = 0; i < rating; i++) {
             stars[i].classList.add("selected");
           }
+
           switch (rating) {
             case "1":
               ratingMessage.textContent = "Tệ";
@@ -478,98 +594,30 @@
       });
 
       submitButton.addEventListener("click", () => {
-        const selectedStars =
-          document.querySelectorAll(".star.selected").length;
-        const feedback = feedbackText.value.trim();
-        if (selectedStars > 0 && feedback) {
-          showToast("Phản hồi của bạn đã được gửi thành công!");
-          feedbackText.value = "";
-          stars.forEach((s) => s.classList.remove("selected"));
-          ratingMessage.textContent = "";
-        } else {
-          showToast("Vui lòng chọn đánh giá và nhập phản hồi.");
+        const rating = document.querySelector(".star.selected");
+        if (!rating) {
+          alert("Vui lòng chọn đánh giá sao trước khi gửi phản hồi.");
+          return;
         }
+
+        const feedback = feedbackText.value;
+        if (feedback.trim() === "") {
+          alert("Vui lòng nhập phản hồi của bạn.");
+          return;
+        }
+
+        alert("Cảm ơn bạn đã gửi phản hồi: " + feedback);
+        feedbackText.value = "";
+        stars.forEach((s) => s.classList.remove("selected"));
+        ratingMessage.textContent = "";
       });
 
-      function showToast(message) {
-        const toast = document.createElement("div");
-        toast.className = "toast";
-        const icon = document.createElement("span");
-        icon.className = "toast-icon";
-        icon.textContent = "✓";
-        const text = document.createElement("span");
-        text.textContent = message;
-        const closeButton = document.createElement("span");
-        closeButton.className = "toast-close";
-        closeButton.textContent = "✕";
-
-        closeButton.addEventListener("click", () => {
-          toast.classList.remove("show");
-          setTimeout(() => toast.remove(), 300);
-        });
-
-        toast.appendChild(icon);
-        toast.appendChild(text);
-        toast.appendChild(closeButton);
-        document.getElementById("toast-container").appendChild(toast);
-
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactText = document.querySelector(".contact-text");
         setTimeout(() => {
-          toast.classList.add("show");
-        }, 100);
-
-        setTimeout(() => {
-          toast.classList.remove("show");
-          setTimeout(() => toast.remove(), 300);
-        }, 3000);
-      }
-
-      var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+          contactText.classList.add("visible");
+        }, 500);
       });
-
-      async function fetchItems() {
-        const response = await fetch("http://localhost:5000/items");
-        const items = await response.json();
-        console.log(items); // Xử lý hiển thị dữ liệu ở đây
-      }
-
-      // Gọi hàm
-      fetchItems();
-      document
-        .getElementById("btn-transport")
-        .addEventListener("click", function () {
-          showNotification();
-        });
-      document
-        .getElementById("buy-button")
-        .addEventListener("click", function () {
-          showNotification();
-        });
-      document
-        .getElementById("btn-consultation")
-        .addEventListener("click", function () {
-          showNotification();
-        });
-
-      function showNotification() {
-        const notification = document.getElementById("notification");
-        notification.style.display = "block";
-
-        setTimeout(() => {
-          notification.style.display = "none";
-          window.location.href = "login.html";
-        }, 3500);
-      }
     </script>
   </body>
 </html>
