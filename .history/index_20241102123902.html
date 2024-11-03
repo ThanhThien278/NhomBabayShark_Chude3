@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/img/koi.jpg" type="image/jpg" />
     <link rel="icon" type="image/x-icon" href="./assets/img/logo1.jpg" />
-   <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=notifications"
     />
-    <link rel="stylesheet" href="./assets/css/user.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
       href="./assets/img/themify-icons/themify-icons.css"
     />
+    <a href="login.html" class="show-login"></a>
 
     <link
       rel="stylesheet"
@@ -27,7 +33,7 @@
     />
     <title>KoiTranS</title>
   </head>
-  <div?>
+  <body>
     <div id="main">
       <div id="header">
         <div class="logo btn">
@@ -63,7 +69,7 @@
           </li>
         </ul>
         <div class="user btn">
-          <i class="fa-solid fa-circle-user icon"></i>
+          <a href="login.html" class="login">Đăng Nhập</a>
           <i class="ti-shopping-cart icon"></i>
           <i class="fa-regular fa-bell icon"></i>
         </div>
@@ -129,136 +135,6 @@
             </button>
           </div>
         </div>
-        <!-- Modal Đặt Lịch Tư Vấn -->
-        <div id="consultation-modal" class="modal">
-          <div class="form-container">
-            <span id="close-consultation" style="cursor: pointer; float: right"
-              >&times;</span
-            >
-            <h2>Đặt Lịch Tư Vấn</h2>
-            <form>
-              <label for="consultant-name">Họ Tên:</label>
-              <input
-                type="text"
-                id="consultant-name"
-                name="consultant-name"
-                required
-              />
-
-              <label for="consultant-email">Email:</label>
-              <input
-                type="email"
-                id="consultant-email"
-                name="consultant-email"
-                required
-              />
-
-              <label for="consultant-phone">Số Điện Thoại:</label>
-              <input
-                type="tel"
-                id="consultant-phone"
-                name="consultant-phone"
-                required
-              />
-
-              <label for="consultant-date">Ngày Hẹn:</label>
-              <input
-                type="date"
-                id="consultant-date"
-                name="consultant-date"
-                required
-              />
-
-              <label for="consultant-message">Nội Dung:</label>
-              <textarea
-                id="consultant-message"
-                name="consultant-message"
-                rows="4"
-                required
-              ></textarea>
-
-              <button type="submit" class="btn-submit">Gửi</button>
-              <button
-                type="button"
-                id="close-consultation-btn"
-                class="btn-submit"
-                style="margin-top: 10px"
-              >
-                Đóng
-              </button>
-              <!-- Nút Đóng -->
-            </form>
-          </div>
-        </div>
-
-        <!-- Modal Đặt Lịch Vận Chuyển -->
-        <div id="transport-modal" class="modal">
-          <div class="form-container">
-            <span id="close-transport" style="cursor: pointer; float: right"
-              >&times;</span
-            >
-            <h2>Đặt Lịch Vận Chuyển</h2>
-            <form>
-              <label for="transport-name">Họ Tên:</label>
-              <input
-                type="text"
-                id="transport-name"
-                name="transport-name"
-                required
-              />
-
-              <label for="transport-email">Email:</label>
-              <input
-                type="email"
-                id="transport-email"
-                name="transport-email"
-                required
-              />
-
-              <label for="transport-phone">Số Điện Thoại:</label>
-              <input
-                type="tel"
-                id="transport-phone"
-                name="transport-phone"
-                required
-              />
-
-              <label for="transport-date">Ngày Vận Chuyển:</label>
-              <input
-                type="date"
-                id="transport-date"
-                name="transport-date"
-                required
-              />
-
-              <label for="transport-address">Địa Chỉ Giao Hàng:</label>
-              <textarea
-                id="transport-address"
-                name="transport-address"
-                rows="4"
-                required
-              ></textarea>
-
-              <label for="transport-notes">Ghi Chú Thêm:</label>
-              <textarea
-                id="transport-notes"
-                name="transport-notes"
-                rows="4"
-              ></textarea>
-
-              <button type="submit" class="btn-submit">Gửi</button>
-              <button
-                type="button"
-                id="close-transport-btn"
-                class="btn-submit"
-                style="margin-top: 10px"
-              >
-                Đóng
-              </button>
-              <!-- Nút Đóng -->
-            </form>
-          </div>
-        </div>
 
         <div id="koiworld">
           <h2 class="koi-heading">KOI WORLD</h2>
@@ -277,7 +153,7 @@
                   <p>lớn hơn 20cm : 90 đến 300 USD</p>
                   <p>40 cm trở lên : 1.200 đến 7.500 USD</p>
                 </div>
-                <button class="buy-button">Mua cá</button>
+                <button id=" btn-buy" class="buy-button">Mua cá</button>
               </div>
             </div>
             <div class="koi-card">
@@ -293,7 +169,7 @@
                   <p>8 đến 12 cm : 20 đến 50 USD</p>
                   <p>Lớn hơn 18 cm: 90 USD</p>
                 </div>
-                <button class="buy-button">Mua cá</button>
+                <button id=" btn-buy" class="buy-button">Mua cá</button>
               </div>
             </div>
             <div class="koi-card">
@@ -320,7 +196,7 @@
                     Showa có thể có giá dao động từ 300 đến 1.800 USD
                   </p>
                 </div>
-                <button class="buy-button">Mua cá</button>
+                <button id=" btn-buy" class="buy-button">Mua cá</button>
               </div>
             </div>
             <div class="koi-card">
@@ -343,7 +219,7 @@
                     có giá từ khoảng 90 USD cho cá kích thước nhỏ (6-10 inch)
                   </p>
                 </div>
-                <button class="buy-button">Mua cá</button>
+                <button id=" btn-buy" class="buy-button">Mua cá</button>
               </div>
             </div>
             <div class="koi-card">
@@ -372,7 +248,7 @@
                     trung như 5-6 inch (13-15 cm) là khoảng 40-64 USD
                   </p>
                 </div>
-                <button class="buy-button">Mua cá</button>
+                <button id=" btn-buy" class="buy-button">Mua cá</button>
               </div>
             </div>
             <div class="koi-card">
@@ -402,7 +278,7 @@
                     điểm cá
                   </p>
                 </div>
-                <button class="buy-button">Mua cá</button>
+                <button id=" btn-buy" class="buy-button">Mua cá</button>
               </div>
             </div>
           </div>
@@ -415,32 +291,7 @@
         <img src="./assets/img/kc.jpg" alt="" />
         <img src="./assets/img/hvhk.jpg" alt="" />
       </div>
-      <!-- Form mua cá (ẩn mặc định) -->
-      <div class="purchase-form" id="purchaseForm" style="display: none">
-        <h3>Đặt hàng cá koi</h3>
-        <form id="form">
-          <label for="name">Họ tên:</label>
-          <input type="text" id="name" required />
 
-          <label for="address">Địa điểm:</label>
-          <input type="text" id="address" required />
-
-          <label for="phone">SĐT:</label>
-          <input type="tel" id="phone" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" required />
-
-          <label for="koi-type">Loại cá:</label>
-          <input type="text" id="koi-type" required />
-
-          <label for="size">Kích thước:</label>
-          <input type="text" id="size" placeholder="Nhập kích thước" required />
-
-          <button type="submit" class="submit-button">Gửi đơn hàng</button>
-        </form>
-        <button id="closeForm">Đóng</button>
-      </div>
       <div id="review">
         <div class="rev-text">Khách hàng đã nói gì về chúng tôi</div>
         <div class="swiper-container">
@@ -451,6 +302,7 @@
             <div class="swiper-slide">
               <img src="./assets/img/rv2.jpg" alt="Review 2" />
             </div>
+            <
             <div class="swiper-slide">
               <img src="./assets/img/rv3.jpg" alt="Review 3" />
             </div>
@@ -494,33 +346,35 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
-    </div>
-  </div>
-  <div class="feedback">
-    <h3>Đánh giá của bạn:</h3>
-    <div class="stars">
-      <span class="star" data-value="1">★</span>
-      <span class="star" data-value="2">★</span>
-      <span class="star" data-value="3">★</span>
-      <span class="star" data-value="4">★</span>
-      <span class="star" data-value="5">★</span>
-    </div>
-    <p class="rating-message"></p>
-    <textarea
-      id="feedback-text"
-      placeholder="Nhập phản hồi của bạn ở đây..."
-      rows="4"
-    ></textarea>
-    <button id="submit-feedback">Gửi Phản Hồi</button>
-  </div>
-  <!-- Modal -->
-  <div id="feedback-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="close-modal">&times;</span>
-      <p id="modal-message"></p>
-    </div>
-  </div>
-  <div id="toast-container"></div>
+      </div>
+      <div id="notification" class="notification" style="display: none">
+        Vui lòng đăng nhập
+      </div>
+      <div class="feedback">
+        <h3>Đánh giá của bạn:</h3>
+        <div class="stars">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <p class="rating-message"></p>
+        <textarea
+          id="feedback-text"
+          placeholder="Nhập phản hồi của bạn ở đây..."
+          rows="4"
+        ></textarea>
+        <button id="submit-feedback">Gửi Phản Hồi</button>
+      </div>
+      <!-- Modal -->
+      <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="close-modal">&times;</span>
+          <p id="modal-message"></p>
+        </div>
+      </div>
+      <div id="toast-container"></div>
 
       <div id="contact">
         <div class="contact-text">
@@ -581,45 +435,17 @@
         </div>
       </div>
     </div>
-<script>
-  document.querySelectorAll(".nav a").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const targetId = this.getAttribute("href");
-    document.querySelector(targetId).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-});
-
-const buttons = document.querySelectorAll(".buy-button");
-const purchaseForm = document.getElementById("purchaseForm");
-const closeFormButton = document.getElementById("closeForm");
-const form = document.getElementById("form");
-
-buttons.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    const koiCard = event.currentTarget.closest(".koi-card");
-    const koiType = koiCard.querySelector("h3").textContent;
-    const priceInfo = koiCard.querySelector(".price").textContent;
-
-    purchaseForm.style.display = "block";
-    document.getElementById("koi-type").value = koiType;
-    document.getElementById("size").value = "";
-  });
-});
-
-closeFormButton.addEventListener("click", () => {
-  purchaseForm.style.display = "none";
-});
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  alert("Đơn hàng đã được gửi thành công!");
-  purchaseForm.style.display = "none";
-  form.reset();
-});
-const stars = document.querySelectorAll(".star");
+    <script>
+      document.querySelectorAll(".nav a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          document.querySelector(targetId).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+      const stars = document.querySelectorAll(".star");
       const ratingMessage = document.querySelector(".rating-message");
       const feedbackText = document.getElementById("feedback-text");
       const submitButton = document.getElementById("submit-feedback");
@@ -697,73 +523,49 @@ const stars = document.querySelectorAll(".star");
         }, 3000);
       }
 
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const transportModal = document.getElementById("transport-modal");
-  const consultationModal = document.getElementById("consultation-modal");
-  const btnTransport = document.getElementById("btn-transport");
-  const btnConsultation = document.getElementById("btn-consultation");
-  const closeConsultation = document.getElementById("close-consultation");
-  const closeTransport = document.getElementById("close-transport");
-  const closeConsultationBtn = document.getElementById(
-    "close-consultation-btn"
-  );
-  const closeTransportBtn = document.getElementById(
-    "close-transport-btn"
-  );
+      async function fetchItems() {
+        const response = await fetch("http://localhost:5000/items");
+        const items = await response.json();
+        console.log(items); // Xử lý hiển thị dữ liệu ở đây
+      }
 
+      // Gọi hàm
+      fetchItems();
+      document
+        .getElementById("btn-transport")
+        .addEventListener("click", function () {
+          showNotification();
+        });
+      
+      document
+        .getElementById("btn-consultation")
+        .addEventListener("click", function () {
+          showNotification();
+        });
 
-  btnTransport.addEventListener("click", () => {
-    consultationModal.style.display = "none";
-    transportModal.style.display = "block";
-  });
+      function showNotification() {
+        const notification = document.getElementById("notification");
+        notification.style.display = "block";
 
-  btnConsultation.addEventListener("click", () => {
-    transportModal.style.display = "none";
-    consultationModal.style.display = "block";
-  });
-
-  closeConsultation.addEventListener("click", () => {
-    consultationModal.style.display = "none";
-  });
-
-  closeTransport.addEventListener("click", () => {
-    transportModal.style.display = "none";
-  });
-
-  closeConsultationBtn.addEventListener("click", () => {
-    consultationModal.style.display = "none";
-  });
-
-  closeTransportBtn.addEventListener("click", () => {
-    transportModal.style.display = "none";
-  });
-
-  // Đóng modal khi nhấn ra ngoài form
-  window.onclick = function (event) {
-    if (event.target === transportModal) {
-      transportModal.style.display = "none";
-    }
-    if (event.target === consultationModal) {
-      consultationModal.style.display = "none";
-    }
-  };
-});
-document.addEventListener("DOMContentLoaded", function () {
-  var swiper = new Swiper(".swiper-container", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 3000, // Thời gian cuộn
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-});
-</script>
+        setTimeout(() => {
+          notification.style.display = "none";
+          window.location.href = "login.html";
+        }, 3500);
+      }
+    </script>
   </body>
 </html>
