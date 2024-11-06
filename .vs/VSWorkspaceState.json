@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ShopKoiTranS",
+    "\\ShopKoiTranS\\Views",
+    "\\ShopKoiTranS\\Views\\Shared",
+    "\\ShopKoiTranS\\wwwroot",
+    "\\ShopKoiTranS\\wwwroot\\img"
   ],
-  "SelectedNode": "\\D:\\NhomBabayShark_Chude3",
   "PreviewInSolutionExplorer": false
 }

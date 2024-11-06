@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="~/css/Sidebar.css" />
+    <link rel="icon" href="~/img/koilogo.jpg" type="image/jpg" />
     <title>KoiTranS</title>
 </head>
 <body>
     <header id="header">
         <div class="logo btn">
-            <a href="@Url.Action("Index", "Home")>
+            <a href="@Url.Action("Index", "Home")">
                 <img src="~/img/logo.png" alt="KoiTranS Logo" />
                 <span class="logo-text">KoiTranS</span>
             </a>
@@ -43,7 +44,7 @@
 
         <ul>
             <li><a href="@Url.Action("Index", "Home")"><i class="fa-solid fa-house"></i> Trang Chủ</a></li>
-            <li><a href="@Url.Action("TranSport", "Index")"><i class="fa-solid fa-concierge-bell"></i> Dịch Vụ</a></li>
+            <li><a href="@Url.Action("Index", "Transport" )"><i class="fa-solid fa-concierge-bell"></i> Dịch Vụ</a></li>
             <li><a href="@Url.Action("KoiWorld", "Koi")"><i class="fa-solid fa-fish"></i> Koi World</a></li>
             <li><a href="@Url.Action("Pricing", "Home")"><i class="fa-solid fa-tag"></i> Bảng Giá</a></li>
             <li><a href="@Url.Action("Discounts", "Home")"><i class="fa-solid fa-percent"></i> Ưu Đãi</a></li>
@@ -51,6 +52,7 @@
             <li><a href="@Url.Action("News", "Home")"><i class="fa-solid fa-newspaper"></i> Tin Tức</a></li>
             <li><a href="@Url.Action("FAQ", "Home")"><i class="fa-solid fa-question-circle"></i> Câu Hỏi Thường Gặp</a></li>
             <li><a href="@Url.Action("Feedback", "Customer")"><i class="fa-solid fa-comments"></i> Đánh Giá & Feedback</a></li>
+            <li><a href="@Url.Action("Cart", "Customer")"><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a></li>
             <li><a href="@Url.Action("Profile", "Customer")"><i class="fa-solid fa-user"></i> Hồ Sơ Khách Hàng</a></li>
         </ul>
     </div>
