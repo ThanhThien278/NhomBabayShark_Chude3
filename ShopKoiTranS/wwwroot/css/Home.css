@@ -1,0 +1,304 @@
+﻿#slider {
+    position: relative;
+    height: 780px;
+    background-image: url("https://indochinapost.vn/wp-content/uploads/2020/04/van-chuyen-hang-sea-air-4.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+    #slider .text {
+        cursor: grab;
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        color: #fff;
+        line-height: 1.6em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+        #slider .text:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(198, 229, 125, 0.5);
+        }
+
+    #slider .text-name {
+        padding-left: 60px;
+        font-size: 30px;
+    }
+
+    #slider .text-content {
+        max-width: 800px;
+        padding-left: calc(10%);
+    }
+
+#services {
+    text-align: center;
+}
+
+    #services .ser-text {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 30px 0;
+        color: #333;
+        position: relative;
+        text-align: center;
+        animation: pulse 2s infinite ease-in-out;
+        transition: color 0.5s ease;
+    }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #333;
+        text-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    }
+
+    50% {
+        transform: scale(1.1);
+        color: #007aff;
+        text-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
+    }
+
+    100% {
+        transform: scale(1);
+        color: #333;
+        text-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    }
+}
+
+.btn-dv {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.ser-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #383535;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: calc(100% - 20px);
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ser-content {
+    flex: 1;
+    padding: 10px;
+    position: relative;
+}
+
+.ser-img {
+    margin-right: 20px;
+    width: auto;
+    height: auto;
+    max-width: 150px;
+}
+
+.ser-card:nth-child(2) img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.ser-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ser-card p {
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+#koiworld {
+    text-align: center;
+    margin-top: 50px;
+}
+
+    #koiworld .koi-heading {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+        animation: pulse 3s infinite ease-in-out;
+        transition: color 0.5s ease;
+    }
+
+.koi-market {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.koi-card {
+    position: relative;
+    width: calc(33.333% - 16px);
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+    .koi-card:hover {
+        transform: scale(1.05);
+    }
+
+.koi-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.koi-info {
+    padding: 16px;
+    background: white;
+}
+
+.price {
+    margin: 8px 0;
+}
+
+.buy-button {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .buy-button:hover {
+        background-color: #0056b3;
+    }
+
+#sale {
+    margin: 100px 0 0 0;
+    width: calc(100%-40px);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+}
+
+.sale-text {
+    cursor: help;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #32302f;
+    text-align: center;
+    z-index: 80;
+    margin: 30px 0;
+    color: #333;
+    animation: pulse 3s infinite ease-in-out;
+    transition: color 0.5s ease;
+}
+
+#sale img {
+    cursor: pointer;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 255, 0.7);
+    transition: all ease-in-out 0.5s;
+}
+
+    #sale img:active {
+        width: auto;
+        height: auto;
+        max-width: none;
+        z-index: 10;
+        position: relative;
+        transform: translateY(-10px);
+    }
+
+    #sale img:not(:active) {
+        transform: scale(0.5);
+        opacity: 0.5;
+        z-index: 2;
+    }
+
+#review {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    height: auto;
+}
+
+.rev-text {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    z-index: 80;
+    margin: 30px 0;
+    padding-left: 35%;
+    animation: pulse 3s infinite ease-in-out;
+    transition: transform 0.5s ease;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .swiper-slide img {
+        padding-top: 80px;
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #333;
+}
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        color: #000;
+        transform: scale(1.1);
+        transition: transform 0.2s;
+    }
