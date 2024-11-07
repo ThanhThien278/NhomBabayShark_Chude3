@@ -1,0 +1,115 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.product-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+    padding-left:300px
+}
+
+.product-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .product-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.product-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.overlay .size {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.overlay .add-to-cart,
+.overlay .view-details {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #FF5722;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+    .overlay .add-to-cart:hover,
+    .overlay .view-details:hover {
+        background-color: #FF784E;
+    }
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF5722;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.product-item .high-price {
+    border: 2px solid #FF5722;
+    box-shadow: 0 6px 15px rgba(255, 87, 34, 0.3);
+}
+
+    .product-item .high-price .price {
+        color: #E91E63;
+        font-size: 20px;
+    }
+
+@media (max-width: 768px) {
+    .product-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-row {
+        grid-template-columns: 1fr;
+    }
+}
