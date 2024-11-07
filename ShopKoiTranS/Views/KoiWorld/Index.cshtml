@@ -1,5 +1,265 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    Layout = null;
 }
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koi World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="~/css/koiworld.css">
+</head>
+
+<body>
+    @Html.Partial("_SideBar")
+
+
+    <div class="product-row">
+        <!-- Sản phẩm 1: Tancho -->
+        <div class="product-item">
+            <img src="~/img/TANCHO SANKEnew.png" alt="Tancho">
+            <div class="overlay">
+                <h4>Tancho</h4>
+                <p class="size">Kích thước: 45cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 15,000,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 2: Tancho Matsue Tosai -->
+        <div class="product-item">
+            <img src="~/img/Tancho_Matsue_Tosai.png" alt="Tancho Matsue Tosai">
+            <div class="overlay">
+                <h4>Tancho Matsue Tosai</h4>
+                <p class="size">Kích thước: 10-15cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 3,500,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 3: Shusui -->
+        <div class="product-item">
+            <img src="~/img/Shusui_2.png" alt="Shusui">
+            <div class="overlay">
+                <h4>Shusui</h4>
+                <p class="size">Kích thước: 25cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 1,800,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 4: Karashi -->
+       <div class="product-item">
+    <img src="~/img/Karashi.png" alt="Karashi">
+    <div class="overlay">
+        <h4>Karashi</h4>
+        <p class="size">Kích thước: 40cm</p>
+        <a href="#" class="add-to-cart">
+            <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+        </a>
+        <a href="#" class="view-details">
+            <i class="fas fa-eye"></i> Xem chi tiết
+        </a>
+    </div>
+    <p class="price">Giá: 2,500,000 VND</p>
+</div>
+
+        <!-- Sản phẩm 5: Budo Goromo -->
+        <div class="product-item">
+            <img src="~/img/budo_goromoV.png" alt="Budo Goromo">
+            <div class="overlay">
+                <h4>Budo Goromo</h4>
+                <p class="size">Kích thước: 40cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 4,000,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 6: Kujaku -->
+        <div class="product-item">
+            <img src="~/img/kujaku1.png" alt="Kujaku">
+            <div class="overlay">
+                <h4>Kujaku</h4>
+                <p class="size">Kích thước: 35cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 3,500,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 7: Goromo -->
+        <div class="product-item">
+            <img src="~/img/Goromo1.png" alt="Goromo">
+            <div class="overlay">
+                <h4>Goromo</h4>
+                <p class="size">Kích thước: 40cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 4,500,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 8: Kohaku -->
+        <div class="product-item">
+            <img src="~/img/Kohaku.png" alt="Kohaku">
+            <div class="overlay">
+                <h4>Kohaku</h4>
+                <p class="size">Kích thước: 43cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 12,000,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 9: Asagi -->
+        <div class="product-item">
+            <img src="~/img/Asagi_2.png" alt="Asagi">
+            <div class="overlay">
+                <h4>Asagi</h4>
+                <p class="size">Kích thước: 25cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 2,500,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 10: Shiro-Utsuri -->
+        <div class="product-item">
+            <img src="~/img/Shiro_Utsuri.png" alt="Shiro-Utsuri">
+            <div class="overlay">
+                <h4>Shiro-Utsuri</h4>
+                <p class="size">Kích thước: 33-35cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 4,500,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 11: Shiro Ogata Body Trắng -->
+        <div class="product-item">
+            <img src="~/img/Shiro_Ogata.png" alt="Shiro Ogata Body Trắng">
+            <div class="overlay">
+                <h4>Shiro Ogata Body Trắng</h4>
+                <p class="size">Kích thước: 40-45cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 7,000,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 12: Ginrin Showa -->
+        <div class="product-item">
+            <img src="~/img/girinshowa.png" alt="Ginrin Showa">
+            <div class="overlay">
+                <h4>Ginrin Showa</h4>
+                <p class="size">Kích thước: 50cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 15,000,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 13: Yamabuki -->
+        <div class="product-item">
+            <img src="~/img/yamabuki1.png" alt="Yamabuki">
+            <div class="overlay">
+                <h4>Yamabuki</h4>
+                <p class="size">Kích thước: 50cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 10,000,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 14: Cá koi Doitsu -->
+        <div class="product-item">
+            <img src="~/img/Doitsu.png" alt="Cá koi Doitsu">
+            <div class="overlay">
+                <h4>Cá koi Doitsu</h4>
+                <p class="size">Kích thước: 40cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 1,600,000 VND</p>
+        </div>
+
+        <!-- Sản phẩm 15: Cá Koi Yamato Nishiki -->
+        <div class="product-item">
+            <img src="~/img/yamatonishiki.png" alt="Cá Koi Yamato Nishiki">
+            <div class="overlay">
+                <h4>Cá Koi Yamato Nishiki</h4>
+                <p class="size">Kích thước: 45cm</p>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                </a>
+                <a href="#" class="view-details">
+                    <i class="fas fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+            <p class="price">Giá: 2,500,000 VND</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

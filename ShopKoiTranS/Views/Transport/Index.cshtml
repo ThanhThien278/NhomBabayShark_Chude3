@@ -2,125 +2,70 @@
     Layout = null;
 }
 
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="~/css/Services.css">
-    <script>
-        function toggleForm() {
-            var serviceSelect = document.getElementById("service-select").value;
-            var shippingForm = document.getElementById("shipping-form");
-            var consultationForm = document.getElementById("consultation-form");
-
-            if (serviceSelect === "shipping") {
-                shippingForm.style.display = "block";
-                consultationForm.style.display = "none";
-            } else if (serviceSelect === "consultation") {
-                shippingForm.style.display = "none";
-                consultationForm.style.display = "block";
-            }
-        }
-    </script>
+    <title>Đặt Đơn Vận Chuyển</title>
 </head>
 <body>
     @Html.Partial("_SideBar")
 
     <!-- Main Content -->
     <div class="main-content">
-        <!-- Form Đặt Đơn Vận Chuyển & Tư Vấn Chăm Sóc Khách Hàng -->
-        <form method="post" action="/Order/CreateOrder" class="form-container">
-            <!-- Chọn dịch vụ -->
+        <form method="post" action="/Transport/CreateShippingOrder" class="form-container">
+            <h3>Đặt Đơn Vận Chuyển</h3>
             <div class="form-group">
-                <label for="service-select">Chọn Dịch Vụ</label>
-                <select id="service-select" class="form-control" onchange="toggleForm()">
-                    <option value="shipping">Đặt Đơn Vận Chuyển</option>
-                    <option value="consultation">Tư Vấn Chăm Sóc Khách Hàng</option>
+                <label for="customer-name">Họ và Tên</label>
+                <input type="text" class="form-control" id="customer-name" name="customer-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customer-phone">Số Điện Thoại</label>
+                <input type="tel" class="form-control" id="customer-phone" name="customer-phone" pattern="(\+84|0)[3|5|7|8|9][0-9]{8}" required placeholder="Nhập số điện thoại">
+            </div>
+
+            <div class="form-group">
+                <label for="LoaiCa">Loại Cá</label>
+                <input type="text" class="form-control" id="LoaiCa" name="LoaiCa" required>
+            </div>
+
+            <div class="form-group">
+                <label for="TenCa">Tên Cá</label>
+                <input type="text" class="form-control" id="TenCa" name="TenCa" required>
+            </div>
+
+            <div class="form-group">
+                <label for="CanNang">Cân Nặng (kg)</label>
+                <input type="number" class="form-control" id="CanNang" name="CanNang" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="GiaVanChuyen">Giá Vận Chuyển (VND)</label>
+                <input type="number" class="form-control" id="GiaVanChuyen" name="GiaVanChuyen" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="DiaDiemXuatPhat">Địa Điểm Xuất Phát</label>
+                <input type="text" class="form-control" id="DiaDiemXuatPhat" name="DiaDiemXuatPhat" required>
+            </div>
+
+            <div class="form-group">
+                <label for="DiaDiemDen">Địa Điểm Đến</label>
+                <input type="text" class="form-control" id="DiaDiemDen" name="DiaDiemDen" required>
+            </div>
+
+            <div class="form-group">
+                <label for="PhuongThucVanChuyen">Phương Thức Vận Chuyển</label>
+                <select class="form-control" id="PhuongThucVanChuyen" name="PhuongThucVanChuyen" required>
+                    <option value="Air">Vận Chuyển Hàng Không</option>
+                    <option value="Sea">Vận Chuyển Hàng Hải</option>
+                    <option value="Land">Vận Chuyển Đường Bộ</option>
                 </select>
             </div>
-
-            <!-- Đặt Đơn Vận Chuyển -->
-            <div id="shipping-form" style="display: block;">
-                <h3>Đặt Đơn Vận Chuyển</h3>
-                <div class="form-group">
-                    <label for="customer-name">Họ và Tên</label>
-                    <input type="text" class="form-control" id="customer-name" name="customer-name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="customer-phone">Số Điện Thoại</label>
-                    <input type="tel" class="form-control" id="customer-phone" name="customer-phone" pattern="(\+84|0)[3|5|7|8|9][0-9]{8}" required placeholder="Nhập số điện thoại">
-                </div>
-
-                <div class="form-group">
-                    <label for="LoaiCa">Loại Cá</label>
-                    <input type="text" class="form-control" id="LoaiCa" name="LoaiCa" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="TenCa">Tên Cá</label>
-                    <input type="text" class="form-control" id="TenCa" name="TenCa" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="CanNang">Cân Nặng (kg)</label>
-                    <input type="number" class="form-control" id="CanNang" name="CanNang" step="0.01" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="GiaVanChuyen">Giá Vận Chuyển (VND)</label>
-                    <input type="number" class="form-control" id="GiaVanChuyen" name="GiaVanChuyen" step="0.01" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="DiaDiemXuatPhat">Địa Điểm Xuất Phát</label>
-                    <input type="text" class="form-control" id="DiaDiemXuatPhat" name="DiaDiemXuatPhat" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="DiaDiemDen">Địa Điểm Đến</label>
-                    <input type="text" class="form-control" id="DiaDiemDen" name="DiaDiemDen" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="PhuongThucVanChuyen">Phương Thức Vận Chuyển</label>
-                    <select class="form-control" id="PhuongThucVanChuyen" name="PhuongThucVanChuyen" required>
-                        <option value="Air">Vận Chuyển Hàng Không</option>
-                        <option value="Sea">Vận Chuyển Hàng Hải</option>
-                        <option value="Land">Vận Chuyển Đường Bộ</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Xác Nhận</button>
-            </div>
-
-            <!-- Tư Vấn Chăm Sóc Khách Hàng -->
-            <div id="consultation-form" style="display: none;">
-                <h3>Tư Vấn Chăm Sóc Khách Hàng</h3>
-                <div class="form-group">
-                    <label for="customer-name">Họ và Tên</label>
-                    <input type="text" class="form-control" id="customer-name" name="customer-name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="customer-phone">Số Điện Thoại</label>
-                    <input type="tel" class="form-control" id="customer-phone" name="customer-phone" pattern="(\+84|0)[3|5|7|8|9][0-9]{8}" required placeholder="Nhập số điện thoại">
-                </div>
-                <div class="form-group">
-                    <label for="consultation-date">Ngày Tư Vấn</label>
-                    <input type="date" class="form-control" id="consultation-date" name="consultation-date" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="note">Ghi Chú</label>
-                    <textarea class="form-control" id="note" name="note" rows="4" required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Đặt Lịch Tư Vấn</button>
-            </div>
-
-            
+            <button type="submit" class="btn btn-primary">Xác Nhận</button>
         </form>
     </div>
 </body>

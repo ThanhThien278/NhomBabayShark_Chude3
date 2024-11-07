@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\Sidebar.css"
     },
     {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\css\\koiworld.css",
+      "PackagePath": "staticwebassets\\css\\koiworld.css"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\css\\layout.css",
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
@@ -25,12 +29,168 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\ASAGI.png",
+      "PackagePath": "staticwebassets\\img\\ASAGI.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\ASAGI_1.png",
+      "PackagePath": "staticwebassets\\img\\ASAGI_1.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Asagi_2.png",
+      "PackagePath": "staticwebassets\\img\\Asagi_2.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Doitsu.png",
+      "PackagePath": "staticwebassets\\img\\Doitsu.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Ginrin_showa.png",
+      "PackagePath": "staticwebassets\\img\\Ginrin_showa.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Goromo.png",
+      "PackagePath": "staticwebassets\\img\\Goromo.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Goromo1.png",
+      "PackagePath": "staticwebassets\\img\\Goromo1.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Hikarimoyo.png",
+      "PackagePath": "staticwebassets\\img\\Hikarimoyo.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Hikarimuji_Mono.png",
+      "PackagePath": "staticwebassets\\img\\Hikarimuji_Mono.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Hikariutsuri.png",
+      "PackagePath": "staticwebassets\\img\\Hikariutsuri.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\KARASU.png",
+      "PackagePath": "staticwebassets\\img\\KARASU.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\KOHAKU_JOMBO.png",
+      "PackagePath": "staticwebassets\\img\\KOHAKU_JOMBO.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\KOHAKU_JOMBO_2.png",
+      "PackagePath": "staticwebassets\\img\\KOHAKU_JOMBO_2.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\KOHAKU_JOMBO_3.png",
+      "PackagePath": "staticwebassets\\img\\KOHAKU_JOMBO_3.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\KOHAKU_JOMBO_4.png",
+      "PackagePath": "staticwebassets\\img\\KOHAKU_JOMBO_4.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Kanoko.png",
+      "PackagePath": "staticwebassets\\img\\Kanoko.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Karashi.png",
+      "PackagePath": "staticwebassets\\img\\Karashi.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Kin_Ginrin.png",
+      "PackagePath": "staticwebassets\\img\\Kin_Ginrin.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Kohaku.png",
+      "PackagePath": "staticwebassets\\img\\Kohaku.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Kujaku.png",
+      "PackagePath": "staticwebassets\\img\\Kujaku.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Onkoi_Showa.png",
+      "PackagePath": "staticwebassets\\img\\Onkoi_Showa.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Onkoi_Showa_2.png",
+      "PackagePath": "staticwebassets\\img\\Onkoi_Showa_2.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Onkoi_Showa_3.png.png",
+      "PackagePath": "staticwebassets\\img\\Onkoi_Showa_3.png.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\SHUSUI.png",
+      "PackagePath": "staticwebassets\\img\\SHUSUI.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Screenshot 2024-10-24 162010.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot 2024-10-24 162010.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Shiro_Ogata.png",
+      "PackagePath": "staticwebassets\\img\\Shiro_Ogata.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Shiro_Utsuri.png",
+      "PackagePath": "staticwebassets\\img\\Shiro_Utsuri.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Showa.png",
+      "PackagePath": "staticwebassets\\img\\Showa.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Shusui_2.png",
+      "PackagePath": "staticwebassets\\img\\Shusui_2.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\TANCHO SANKE_2.png",
+      "PackagePath": "staticwebassets\\img\\TANCHO SANKE_2.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\TANCHO SANKEnew.png",
+      "PackagePath": "staticwebassets\\img\\TANCHO SANKEnew.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\TANCHO_SHOWA .png",
+      "PackagePath": "staticwebassets\\img\\TANCHO_SHOWA .png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Tancho.png",
+      "PackagePath": "staticwebassets\\img\\Tancho.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Tancho_Matsue_Tosai.png",
+      "PackagePath": "staticwebassets\\img\\Tancho_Matsue_Tosai.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Utsuri.png",
+      "PackagePath": "staticwebassets\\img\\Utsuri.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Yamabuki.png",
+      "PackagePath": "staticwebassets\\img\\Yamabuki.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\Yamato_Nishiki.png",
+      "PackagePath": "staticwebassets\\img\\Yamato_Nishiki.png"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\bac.jpg",
       "PackagePath": "staticwebassets\\img\\bac.jpg"
     },
     {
       "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\bachv.jpg",
       "PackagePath": "staticwebassets\\img\\bachv.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\budo_goromo.png",
+      "PackagePath": "staticwebassets\\img\\budo_goromo.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\budo_goromoV.png",
+      "PackagePath": "staticwebassets\\img\\budo_goromoV.png"
     },
     {
       "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\cakoi1.jpg",
@@ -8613,6 +8773,10 @@
       "PackagePath": "staticwebassets\\img\\fontawesome-free-6.6.0-web\\webfonts\\fa-v4compatibility.woff2"
     },
     {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\girinshowa.png",
+      "PackagePath": "staticwebassets\\img\\girinshowa.png"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\hvhk.jpg",
       "PackagePath": "staticwebassets\\img\\hvhk.jpg"
     },
@@ -8635,6 +8799,10 @@
     {
       "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\koilogo.jpg",
       "PackagePath": "staticwebassets\\img\\koilogo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\kujaku1.png",
+      "PackagePath": "staticwebassets\\img\\kujaku1.png"
     },
     {
       "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\logo.png",
@@ -10159,6 +10327,14 @@
     {
       "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\vang.jpg",
       "PackagePath": "staticwebassets\\img\\vang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\yamabuki1.png",
+      "PackagePath": "staticwebassets\\img\\yamabuki1.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\img\\yamatonishiki.png",
+      "PackagePath": "staticwebassets\\img\\yamatonishiki.png"
     },
     {
       "Id": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\js\\services.js",
