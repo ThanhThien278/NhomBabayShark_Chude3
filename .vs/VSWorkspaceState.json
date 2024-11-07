@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\ShopKoiTranS",
-    "\\ShopKoiTranS\\Views",
-    "\\ShopKoiTranS\\Views\\Shared",
     "\\ShopKoiTranS\\wwwroot",
-    "\\ShopKoiTranS\\wwwroot\\img"
+    "\\ShopKoiTranS\\wwwroot\\css"
   ],
+  "SelectedNode": "\\ShopKoiTranS\\wwwroot\\css\\koiworld.css",
   "PreviewInSolutionExplorer": false
 }
