@@ -1,0 +1,65 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ Vận Chuyển Và Chăm Sóc Cá Koi</title>
+    <link rel="stylesheet" href="~/css/serviceshome.css">
+</head>
+<body>
+    @Html.Partial("_SideBar")
+    <div class="main-container">
+    <header>
+        <h1>Chào Mừng Đến Với Dịch Vụ  Của KoiTranS</h1>
+    </header>
+
+    <section class="service-introduction">
+        <h2>Vận Chuyển Cá Koi</h2>
+        <div class="service-card">
+            <img src="~/img/vanchuyen.jpg" alt="Vận Chuyển Cá Koi">
+            <div class="service-info">
+                <p>
+                    Chúng tôi cung cấp dịch vụ vận chuyển cá Koi an toàn với quy trình chuyên nghiệp. Cá Koi sẽ được đóng gói trong túi ni lông bơm oxy và nước, sau đó được đặt trong thùng chuyên dụng có hệ thống thông khí và kiểm soát nhiệt độ, bảo vệ cá trong suốt hành trình.
+                    Quá trình vận chuyển được theo dõi chặt chẽ để đảm bảo chất lượng nước, nồng độ oxy và nhiệt độ luôn ở mức phù hợp. Cá sẽ được nhịn đói 2 ngày trước khi vận chuyển để đảm bảo sức khỏe.
+                    Chúng tôi cam kết mang đến dịch vụ vận chuyển nhanh chóng và an toàn cho cá Koi của bạn.
+                </p>
+                <a  class="btn-service" onclick="window.location.href='@Url.Action("Index", "Transport")'">Tìm Hiểu Thêm</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-consultation">
+        <h3>Tư Vấn Và Chăm Sóc</h3>
+        <div class="service-card">
+            <img src="~/img/tuvan.jpg" alt="Tư Vấn Và Chăm Sóc Cá Koi">
+            <div class="service-info">
+                <p>
+                    Chúng tôi cung cấp dịch vụ tư vấn toàn diện về cách thiết kế và xây dựng hồ cá Koi, lựa chọn và chăm sóc cá Koi đúng cách. Các chuyên gia của chúng tôi sẽ hỗ trợ bạn từ việc lựa chọn cá Koi, cung cấp thức ăn, thuốc và thiết bị hồ Koi,
+                    đến việc bảo dưỡng hồ cá và các phụ kiện từ các thương hiệu uy tín nhất trên thế giới.
+                    Hãy để chúng tôi đồng hành cùng bạn trong việc tạo ra không gian sống lý tưởng cho cá Koi của bạn.
+                </p>
+                <a  class="btn-service " onclick="window.location.href='@Url.Action("Index", "Advise")'">Tìm Hiểu Thêm</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="koiworld">
+        <h2>Koi World - Dịch Vụ Cá Koi</h2>
+        <div class="service-card">
+            <img src="~/img/koilogo.jpg" alt="Koi World">
+            <div class="service-info">
+                <p>
+                    Tại Koi World, chúng tôi cung cấp những giống cá Koi chất lượng cao, đảm bảo rằng mỗi con cá đều khỏe mạnh và được chăm sóc kỹ lưỡng. Dịch vụ của chúng tôi bao gồm các giống cá đa dạng với nhiều màu sắc và kích thước, phù hợp với mọi nhu cầu của khách hàng.
+                    Hãy đến với chúng tôi để tìm được người bạn đồng hành hoàn hảo cho hồ cá của bạn.
+                </p>
+                <a  class="btn-service" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Khám Phá Koi World</a>
+            </div>
+        </div>
+    </section>
+
+    </div>
+</body>
+</html>

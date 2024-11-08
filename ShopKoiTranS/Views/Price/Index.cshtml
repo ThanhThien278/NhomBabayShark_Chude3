@@ -1,0 +1,150 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/price.css">
+    <title>Bảng Giá</title>
+</head>
+<body>
+    @Html.Partial("_SideBar")
+            <main class="container">
+                <header>
+                    <h1>Bảng Giá Dịch Vụ Vận Chuyển Cá Koi</h1>
+                </header>
+                <section class="description">
+                    <p>
+                        Tại hệ thống vận chuyển cá Koi, chúng tôi cung cấp các dịch vụ chuyên nghiệp và đảm bảo an toàn tối đa cho cá Koi của bạn. Cá Koi sẽ được vận chuyển trong môi trường tối ưu và dưới sự kiểm soát nhiệt độ, nồng độ oxy thích hợp trong suốt hành trình.
+                    </p>
+                </section>
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Phương tiện</th>
+                            <th>Cân nặng (kg)</th>
+                            <th>0 - 50 km</th>
+                            <th>51 - 100 km</th>
+                            <th>101 - 200 km</th>
+                            <th>Trên 200 km</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Xe tải nhỏ</td>
+                            <td>1 - 5</td>
+                            <td>200.000</td>
+                            <td>300.000</td>
+                            <td>500.000</td>
+                            <td>800.000</td>
+                        </tr>
+                        <tr>
+                            <td>6 - 10</td>
+                            <td>250.000</td>
+                            <td>350.000</td>
+                            <td>600.000</td>
+                            <td>900.000</td>
+                        </tr>
+                        <tr>
+                            <td>11 - 20</td>
+                            <td>300.000</td>
+                            <td>400.000</td>
+                            <td>700.000</td>
+                            <td>1.000.000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Xe tải lớn</td>
+                            <td>1 - 5</td>
+                            <td>300.000</td>
+                            <td>400.000</td>
+                            <td>700.000</td>
+                            <td>1.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>6 - 10</td>
+                            <td>350.000</td>
+                            <td>450.000</td>
+                            <td>800.000</td>
+                            <td>1.200.000</td>
+                        </tr>
+                        <tr>
+                            <td>11 - 20</td>
+                            <td>400.000</td>
+                            <td>500.000</td>
+                            <td>900.000</td>
+                            <td>1.500.000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Xe chuyên dụng</td>
+                            <td>1 - 5</td>
+                            <td>500.000</td>
+                            <td>700.000</td>
+                            <td>1.000.000</td>
+                            <td>1.500.000</td>
+                        </tr>
+                        <tr>
+                            <td>6 - 10</td>
+                            <td>600.000</td>
+                            <td>800.000</td>
+                            <td>1.200.000</td>
+                            <td>1.800.000</td>
+                        </tr>
+                        <tr>
+                            <td>11 - 20</td>
+                            <td>700.000</td>
+                            <td>900.000</td>
+                            <td>1.500.000</td>
+                            <td>2.000.000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Máy bay</td>
+                            <td>1 - 5</td>
+                            <td>1.000.000</td>
+                            <td>1.500.000</td>
+                            <td>2.000.000</td>
+                            <td>3.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>6 - 10</td>
+                            <td>1.200.000</td>
+                            <td>1.700.000</td>
+                            <td>2.200.000</td>
+                            <td>3.500.000</td>
+                        </tr>
+                        <tr>
+                            <td>11 - 20</td>
+                            <td>1.500.000</td>
+                            <td>2.000.000</td>
+                            <td>2.500.000</td>
+                            <td>4.000.000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Tàu</td>
+                            <td>1 - 5</td>
+                            <td>800.000</td>
+                            <td>1.200.000</td>
+                            <td>1.600.000</td>
+                            <td>2.500.000</td>
+                        </tr>
+                        <tr>
+                            <td>6 - 10</td>
+                            <td>1.000.000</td>
+                            <td>1.400.000</td>
+                            <td>1.800.000</td>
+                            <td>3.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>11 - 20</td>
+                            <td>1.200.000</td>
+                            <td>1.600.000</td>
+                            <td>2.000.000</td>
+                            <td>3.500.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </body>
+    </html>

@@ -21,18 +21,19 @@
             <li class="topsub">
                 <a>Dịch Vụ <i class="fa-solid fa-caret-down icon-min"></i></a>
                 <ul class="subnav">
-                    <li><a href="@Url.Action("TranSport", "Index")">Tư Vấn và Chăm Sóc</a></li>
-                    <li><a href="@Url.Action("TranSport", "Index")">Vận Chuyển</a></li>
-                    <li><a href="@Url.Action("KoiWorld", "Koi")">KOI WORLD</a></li>
+                    <li><a href="@Url.Action("Index", "Advise" )">Tư Vấn và Chăm Sóc</a></li>
+                    <li><a href="@Url.Action("Index", "Transport" )">Vận Chuyển</a></li>
+                    <li><a href="@Url.Action("Index", "KoiWorld")">KOI WORLD</a></li>
                 </ul>
             </li>
-            <li><a href="@Url.Action("Discounts", "Home")">Ưu Đãi</a></li>
-            <li><a href="@Url.Action("Blog", "Home")" ">Đánh Giá <i class="fa-solid fa-comments icon-min"></i></a></li>
+            <li><a href="@Url.Action("Sales", "Index")">Ưu Đãi</a></li>
+         
+            <li><a href="@Url.Action("Index", "Feedback")">Đánh Giá <i class="fa-solid fa-comments icon-min"></i></a></li>
             <li><a href="@Url.Action("Feedback", "Customer")">Liên Hệ <i class="fa-solid fa-phone icon-min"></i></a></li>
         </ul>
         <div class="user btn">
             <a href="~/Account/Login" class="login">Đăng Nhập</a>
-            <i class="fa-solid fa-cart-shopping icon"></i>
+            <i class="fa-solid fa-cart-shopping icon" onclick="window.location.href='@Url.Action("Index", "Cart")'"></i>
             <i class="fa-regular fa-bell icon"></i>
         </div>
     </header>
@@ -44,22 +45,18 @@
 
         <ul>
             <li><a href="@Url.Action("Index", "Home")"><i class="fa-solid fa-house"></i> Trang Chủ</a></li>
+            <li><a href="@Url.Action("Index", "Services")"><i class="fa-solid fa-cogs"></i> Dịch Vụ</a></li>
             <li><a href="@Url.Action("Index", "Transport" )"><i class="fa-solid fa-clipboard-check"></i> Đặt Đơn Vận Chuyển</a></li>
             <li><a href="@Url.Action("Index", "Advise" )"><i class="fa-solid fa-calendar-check"></i> Đặt Lịch Tư Vấn</a></li>
             <li><a href="@Url.Action("Index", "KoiWorld")"><i class="fa-solid fa-fish"></i> Koi World</a></li>
-            <li><a href="@Url.Action("Pricing", "Home")"><i class="fa-solid fa-tag"></i> Bảng Giá</a></li>
-            <li><a href="@Url.Action("Discounts", "Home")"><i class="fa-solid fa-percent"></i> Ưu Đãi</a></li>
-            <li><a href="@Url.Action("Feedback", "Customer")"><i class="fa-solid fa-comments"></i> Đánh Giá & Feedback</a></li>
-            <li><a href="@Url.Action("Cart", "Customer")"><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a></li>
+            <li><a href="@Url.Action("Index", "Price")"><i class="fa-solid fa-tag"></i> Bảng Giá</a></li>
+            <li><a href="@Url.Action("Index", "Sales")"><i class="fa-solid fa-percent"></i> Ưu Đãi</a></li>
+            <li><a href="@Url.Action("Index", "Feedback")"><i class="fa-solid fa-comments"></i> Đánh Giá & Feedback</a></li>
+            <li><a href="@Url.Action("Index", "Cart")"><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a></li>
             <li><a href="@Url.Action("Profile", "Customer")"><i class="fa-solid fa-user"></i> Hồ Sơ Khách Hàng</a></li>
         </ul>
     </div>
 
-    <script >
-                document.querySelector('.sidebar').addEventListener('click', function () {
-            document.querySelector('.main-content').classList.toggle('hidden');
-        });
-
-    </script>
+    
 </body>
 </html>
