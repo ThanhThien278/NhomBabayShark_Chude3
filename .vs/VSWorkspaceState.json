@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ShopKoiTranS",
+    "\\ShopKoiTranS\\wwwroot",
+    "\\ShopKoiTranS\\wwwroot\\css"
   ],
-  "SelectedNode": "\\ShopKoiTranS.sln",
+  "SelectedNode": "\\ShopKoiTranS\\wwwroot\\css\\Services.css",
   "PreviewInSolutionExplorer": false
 }
