@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\",
+  "WorkspaceRootPath": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|c:\\users\\asus\\source\\repos\\shopkoitrans\\shopkoitrans\\wwwroot\\css\\services.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\wwwroot\\css\\services.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\wwwroot\\css\\services.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|c:\\users\\asus\\source\\repos\\shopkoitrans\\shopkoitrans\\views\\transport\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\views\\transport\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\views\\transport\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|c:\\users\\asus\\source\\repos\\shopkoitrans\\shopkoitrans\\wwwroot\\css\\sidebar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\wwwroot\\css\\sidebar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\wwwroot\\css\\sidebar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|c:\\users\\asus\\source\\repos\\shopkoitrans\\shopkoitrans\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|c:\\users\\asus\\source\\repos\\shopkoitrans\\shopkoitrans\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|c:\\users\\asus\\source\\repos\\shopkoitrans\\shopkoitrans\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -34,69 +34,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\Views\\Transport\\Index.cshtml",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Transport\\Index.cshtml",
               "RelativeDocumentMoniker": "ShopKoiTranS\\Views\\Transport\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\Views\\Transport\\Index.cshtml",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Transport\\Index.cshtml",
               "RelativeToolTip": "ShopKoiTranS\\Views\\Transport\\Index.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAF8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T11:42:29.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T11:42:29.121Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "layout.css",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\css\\layout.css",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\layout.css",
               "RelativeDocumentMoniker": "ShopKoiTranS\\wwwroot\\css\\layout.css",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\css\\layout.css",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\layout.css",
               "RelativeToolTip": "ShopKoiTranS\\wwwroot\\css\\layout.css",
               "ViewState": "AgIAAJwAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-06T11:37:57.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T11:37:57.368Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ShopKoiTranS\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ShopKoiTranS\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAcwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T11:35:03.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T11:35:03.015Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "_SideBar.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
               "RelativeDocumentMoniker": "ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
               "RelativeToolTip": "ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T11:33:58.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T11:33:58.528Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Services.css",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\css\\Services.css",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Services.css",
               "RelativeDocumentMoniker": "ShopKoiTranS\\wwwroot\\css\\Services.css",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\css\\Services.css",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Services.css",
               "RelativeToolTip": "ShopKoiTranS\\wwwroot\\css\\Services.css",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-11-06T10:44:51.648Z",
               "EditorCaption": ""
@@ -105,14 +109,13 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Sidebar.css",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\css\\Sidebar.css",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Sidebar.css",
               "RelativeDocumentMoniker": "ShopKoiTranS\\wwwroot\\css\\Sidebar.css",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\wwwroot\\css\\Sidebar.css",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Sidebar.css",
               "RelativeToolTip": "ShopKoiTranS\\wwwroot\\css\\Sidebar.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-06T10:41:14.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T10:41:14.075Z"
             }
           ]
         }
