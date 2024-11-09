@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\NhomBabayShark_Chude3\\",
+  "WorkspaceRootPath": "C:\\Users\\pc\\source\\repos\\NhomBabayShark_Chude3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\nhombabayshark_chude3\\shopkoitrans\\wwwroot\\css\\cart.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|c:\\users\\pc\\source\\repos\\nhombabayshark_chude3\\shopkoitrans\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|c:\\users\\pc\\source\\repos\\nhombabayshark_chude3\\shopkoitrans\\wwwroot\\css\\cart.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\wwwroot\\css\\cart.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\nhombabayshark_chude3\\shopkoitrans\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|c:\\users\\pc\\source\\repos\\nhombabayshark_chude3\\shopkoitrans\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\nhombabayshark_chude3\\shopkoitrans\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,11 +30,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Cart\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "ShopKoiTranS\\Views\\Cart\\Index.cshtml",
-              "ToolTip": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Cart\\Index.cshtml",
               "RelativeToolTip": "ShopKoiTranS\\Views\\Cart\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -42,11 +42,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "cart.css",
-              "DocumentMoniker": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\cart.css",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\cart.css",
               "RelativeDocumentMoniker": "ShopKoiTranS\\wwwroot\\css\\cart.css",
-              "ToolTip": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\cart.css",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\cart.css",
               "RelativeToolTip": "ShopKoiTranS\\wwwroot\\css\\cart.css",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -55,15 +55,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "_SideBar.cshtml",
-              "DocumentMoniker": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
               "RelativeDocumentMoniker": "ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
-              "ToolTip": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
               "RelativeToolTip": "ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABgAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T07:16:51.16Z"
+              "WhenOpened": "2024-11-08T07:16:51.16Z",
+              "EditorCaption": ""
             }
           ]
         }
