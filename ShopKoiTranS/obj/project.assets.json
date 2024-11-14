@@ -4168,11 +4168,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\ShopKoiTranS.csproj",
+      "projectUniqueName": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
       "projectName": "ShopKoiTranS",
-      "projectPath": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\ShopKoiTranS.csproj",
+      "projectPath": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\obj\\",
+      "outputPath": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

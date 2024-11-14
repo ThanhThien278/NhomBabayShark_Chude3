@@ -1,91 +1,121 @@
-﻿
-.container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start; 
-    height: 100vh;
-    padding: 20px;
-    width: 400px; 
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.main-content {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 100%; 
+.container {
+    display: flex;
 }
 
 h2 {
-    font-size: 24px;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.btn-create {
-    display: inline-block;
-    background-color: #16a085;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    margin-bottom: 20px;
-    transition: background-color 0.3s;
-    width: 150px;
     text-align: center;
+    font-size: 35px;
 }
 
-    .btn-create:hover {
-        background-color: #1abc9c;
+.main-content {
+    margin-left: 300px;
+    padding: 40px;
+    width: calc(100% - 320px);
+}
+
+    .main-content h2 {
+        font-size: 1.8em;
+        color: #333;
+        margin-bottom: 20px;
     }
 
-.sales-table {
+.table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     margin-top: 20px;
+    background-color: #f1f3f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-    .sales-table th, .sales-table td {
+    .table th, .table td {
         padding: 15px;
         text-align: left;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .table th {
+        background-color: #6c757d;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .table td {
+        background-color: #f8f9fa;
         border-bottom: 1px solid #ddd;
     }
 
-    .sales-table th {
-        background-color: #f2f2f2;
+    .table tr:nth-child(even) td {
+        background-color: #e9ecef;
     }
 
-    .sales-table td img.sale-image {
-        width: 50px;
-        height: 50px;
+    .table tr:hover td {
+        background-color: #d6d8db;
+    }
+
+    .table img {
+        width: 150px;
+        height: 100px;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 8px;
     }
 
-.btn-edit, .btn-delete {
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: white;
+/* Button styles */
+.btn {
+    padding: 8px 15px;
+    border-radius: 4px;
     text-decoration: none;
-    font-size: 14px;
-    margin-right: 10px;
+    font-size: 0.9em;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin: 5px;
+    cursor: pointer;
 }
 
+/* Add Button */
+.btn-add {
+    background-color: #28a745;
+}
+
+    .btn-add:hover {
+        background-color: #218838;
+        transform: scale(1.05);
+    }
+
+/* Edit Button */
 .btn-edit {
-    background-color: #f39c12;
+    background-color: #17a2b8;
 }
 
     .btn-edit:hover {
-        background-color: #e67e22;
+        background-color: #138496;
+        transform: scale(1.05);
     }
 
+/* Delete Button */
 .btn-delete {
-    background-color: #e74c3c;
+    background-color: #dc3545;
 }
 
     .btn-delete:hover {
-        background-color: #c0392b;
+        background-color: #bd2130;
+        transform: scale(1.05);
     }
+
+.table td .btn {
+    padding: 8px 10px;
+    margin: 0 5px;
+    font-size: 0.85em;
+}
