@@ -26,10 +26,10 @@
                     <li><a href="@Url.Action("Index", "KoiWorld")">KOI WORLD</a></li>
                 </ul>
             </li>
-            <li><a href="@Url.Action("Index", "Sales")">Ưu Đãi</a></li>
-         
+            <li><a href="@Url.Action("Sales", "Index")">Ưu Đãi</a></li>
+
             <li><a href="@Url.Action("Index", "Feedback")">Đánh Giá <i class="fa-solid fa-comments icon-min"></i></a></li>
-            <li><a href="@Url.Action("Feedback", "Customer")">Liên Hệ <i class="fa-solid fa-phone icon-min"></i></a></li>
+
         </ul>
         <div class="user btn">
             <a href="~/Account/Login" class="login">Đăng Nhập</a>
@@ -39,16 +39,21 @@
     </header>
     <!-- Sidebar -->
     <div class="sidebar">
-  
-       
-        
+
+
+
 
         <ul>
             <li><a href="@Url.Action("Index", "Home")"><i class="fa-solid fa-house"></i> Trang Chủ</a></li>
             <li><a href="@Url.Action("Index", "Services")"><i class="fa-solid fa-cogs"></i> Dịch Vụ</a></li>
             <li><a href="@Url.Action("Index", "Transport" )"><i class="fa-solid fa-clipboard-check"></i> Đặt Đơn Vận Chuyển</a></li>
             <li><a href="@Url.Action("Index", "Advise" )"><i class="fa-solid fa-calendar-check"></i> Đặt Lịch Tư Vấn</a></li>
-            <li><a href="@Url.Action("Index", "KoiWorld")"><i class="fa-solid fa-fish"></i> Koi World</a></li>
+            <li class="mintopsub">
+                <a href="@Url.Action("Index", "KoiWorld")"><i class="fa-solid fa-fish"></i> Koi World</a>
+                <ul class="minsubnav">
+                    <vc:categori-koi></vc:categori-koi>
+                </ul>
+            </li>
             <li><a href="@Url.Action("Index", "Price")"><i class="fa-solid fa-tag"></i> Bảng Giá</a></li>
             <li><a href="@Url.Action("Index", "Sales")"><i class="fa-solid fa-percent"></i> Ưu Đãi</a></li>
             <li><a href="@Url.Action("Index", "Feedback")"><i class="fa-solid fa-comments"></i> Đánh Giá & Feedback</a></li>
@@ -57,6 +62,6 @@
         </ul>
     </div>
 
-    
+
 </body>
 </html>
