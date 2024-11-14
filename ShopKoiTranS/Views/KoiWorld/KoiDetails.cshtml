@@ -1,6 +1,43 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-Nam mo dc div
+﻿@model ShopKoiTranS.Models.KoiWorldModel
 @{
+    Layout = null;
 }
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Cá Koi - @Model.KoiId</title>
+    <link rel="stylesheet" href="~/css/Detaiil.css">
+</head>
+<body>
+    @Html.Partial("_SideBar")
+
+    <div class="main-content">
+        <div class="back-button-container">
+            <a href="javascript:history.back()" class="back-button">Quay Lại</a>
+        </div>
+
+        <div class="fish-detail-container">
+            <div class="fish-image">
+                <img src="@Url.Content("~/img/" + Model.Image)" alt="@Model.KoiName" />
+            </div>
+            <div class="fish-info">
+                <h2>@Model.KoiName</h2>
+                <p><strong>Chiều dài:</strong> @Model.Size kg</p>
+                <p><strong>Giá:</strong> @Model.Price VNĐ</p>
+                <p><strong>Mô tả:</strong></p>
+                <p>@Model.Description</p>
+
+                <!-- "Mua Ngay" form for adding item to cart -->
+                <form asp-action="Add" asp-controller="Cart" method="post">
+                    <input type="hidden" name="id" value="@Model.KoiId" />
+                    <input type="hidden" name="quantity" value="1" />
+                    <button type="submit" class="buy-button">Mua Ngay</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
