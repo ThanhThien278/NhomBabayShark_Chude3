@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\New folder\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
+    "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
   },
   "projects": {
-    "D:\\New folder\\ShopKoiTranS\\ShopKoiTranS.csproj": {
+    "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\ShopKoiTranS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\New folder\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\ShopKoiTranS.csproj",
         "projectName": "ShopKoiTranS",
-        "projectPath": "D:\\New folder\\ShopKoiTranS\\ShopKoiTranS.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\New folder\\ShopKoiTranS\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\source\\repos\\ShopKoiTranS\\ShopKoiTranS\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +45,40 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Google.Apis": {
+              "target": "Package",
+              "version": "[1.68.0, )"
+            },
+            "Google.Apis.Core": {
+              "target": "Package",
+              "version": "[1.68.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

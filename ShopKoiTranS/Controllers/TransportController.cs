@@ -65,8 +65,8 @@ public class TransportController : Controller
             price += priceTable.First().PriceOver200;
         }
 
-
-        price *= soLuongCa;
+       
+        price *= soLuongCa; 
 
         return price;
     }
@@ -85,10 +85,10 @@ public class TransportController : Controller
     {
         if (ModelState.IsValid)
         {
-
+ 
             decimal totalPrice = CalculateTransportPrice(phuongThucVanChuyen, phuongTienVanChuyen, canNang, khoangCach, soLuongCa);
 
-
+           
             TransportModel newOrder = new TransportModel
             {
                 CustomerName = customerName,
@@ -101,7 +101,7 @@ public class TransportController : Controller
                 PhuongThucVanChuyen = phuongThucVanChuyen,
                 PhuongTienVanChuyen = phuongTienVanChuyen,
                 Distance = khoangCach,
-                TransportPrice = totalPrice,
+                TransportPrice = totalPrice,  
                 CreatedAt = DateTime.Now
             };
 

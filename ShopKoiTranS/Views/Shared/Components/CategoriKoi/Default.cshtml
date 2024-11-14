@@ -1,0 +1,12 @@
+﻿@model IEnumerable<CategoriKoisModel>
+
+<ul class="koi-list">
+    @foreach (var item in Model)
+    {
+            <li>
+            <a href="@Url.Action("Index", "KoiWorld", new { CategoryId = item.CategoryId })">
+                @item.CategoryName
+                </a>
+            </li>
+    }
+</ul>

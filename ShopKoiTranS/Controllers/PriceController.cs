@@ -16,7 +16,7 @@ namespace ShopKoiTranS.Controllers
 
         public IActionResult Index()
         {
-
+            
             var prices = _context.Price.ToList();
             foreach (var price in prices)
             {

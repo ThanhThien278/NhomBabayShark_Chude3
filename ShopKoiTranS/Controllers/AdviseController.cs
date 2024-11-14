@@ -40,7 +40,7 @@ namespace ShopKoiTranS.Controllers
                 _context.LichTuVans.Add(newAdvise);
                 _context.SaveChanges();
 
-
+     
                 ViewBag.SuccessMessage = "Đặt lịch tư vấn thành công!";
                 ViewBag.AdviseDetails = newAdvise;
 

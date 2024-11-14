@@ -9,5 +9,5 @@
     public decimal Price51_100 { get; set; }
     public decimal Price101_200 { get; set; }
     public decimal PriceOver200 { get; set; }
-    public decimal PriceOver20Kg { get; set; }
+    public decimal PriceOver20Kg { get; set; } 
 }

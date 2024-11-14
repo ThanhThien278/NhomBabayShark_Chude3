@@ -91,11 +91,11 @@
     </div>
 
     <script>
-
+      
         function updateVehicleOptions() {
             const transportMethod = document.getElementById("PhuongThucVanChuyen").value;
             const vehicleSelect = document.getElementById("PhuongTienVanChuyen");
-            vehicleSelect.innerHTML = "";
+            vehicleSelect.innerHTML = ""; 
             let options = [];
 
             if (transportMethod === "Air") {
@@ -106,7 +106,7 @@
                 options = ["Xe Tải Nhỏ", "Xe Tải Lớn", "Xe Chuyên Dụng"];
             }
 
-
+            
             options.forEach(option => {
                 const opt = document.createElement("option");
                 opt.value = option;
@@ -115,7 +115,7 @@
             });
         }
 
-
+       
         updateVehicleOptions();
     </script>
 </body>

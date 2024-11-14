@@ -1,22 +1,28 @@
 using Microsoft.AspNetCore.Mvc;
 using ShopKoiTranS.Models;
+using ShopKoiTranS.Repository;
 using System.Diagnostics;
 
 namespace ShopKoiTranS.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly DataContext _dataContext;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        // Correct the constructor to properly assign _dataContext
+        public HomeController(ILogger<HomeController> logger, DataContext context)
         {
             _logger = logger;
+            _dataContext = context;  
         }
 
         public IActionResult Index()
         {
-            return View();
+            var koiWorld = _dataContext.KoiWorld.ToList();
+            return View(koiWorld);  
         }
+
 
         public IActionResult Privacy()
         {

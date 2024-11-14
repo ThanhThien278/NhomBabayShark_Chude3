@@ -33,7 +33,7 @@ namespace ShopKoiTranS.Models
         [Required]
         [Display(Name = "Số Lượng Cá")]
         [Range(1, int.MaxValue, ErrorMessage = "Số lượng cá phải lớn hơn 0.")]
-        public int SoLuongCa { get; set; }
+        public int SoLuongCa { get; set; }  
 
         [Required]
         [Display(Name = "Địa Điểm Xuất Phát")]
