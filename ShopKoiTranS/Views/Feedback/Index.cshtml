@@ -1,197 +1,155 @@
-﻿@{
+﻿@model FeedbackModel
+@{
     Layout = null;
 }
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koi World</title>
+    <title>Feedback</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="~/css/feedback.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+     
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #28a745; 
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            font-weight: bold;
+            z-index: 9999; 
+            display: none; 
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+        }
+
+        .notification.show {
+            display: block;
+            opacity: 1;
+            top: 20px;
+        }
+
+    
+        .notification.hide {
+            opacity: 0;
+            top: -50px;
+        }
+
+      
+        form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial', sans-serif;
+        }
+
+        form h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #28a745;
+            outline: none;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive cho các thiết bị di động */
+       
+    </style>
 </head>
 
 <body>
     @Html.Partial("_SideBar")
-    <div class="main-container">
-        <div id="review">
-            <div class="rev-text">Khách hàng đã nói gì về chúng tôi</div>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="~/img/rv1.jpg" alt="Review 1" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv2.jpg" alt="Review 2" />
-                    </div>
-                    <
-                    <div class="swiper-slide">
-                        <img src="~/img/rv3.jpg" alt="Review 3" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv4.jpg" alt="Review 4" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv5.jpg" alt="Review 5" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv6.jpg" alt="Review 6" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv7.jpg" alt="Review 7" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv8.jpg" alt="Review 8" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv9.jpg" alt="Review 9" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv10.jpg" alt="Review 10" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv11.jpg" alt="Review 11" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv12.jpg" alt="Review 12" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv13.jpg" alt="Review 13" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv14.jpg" alt="Review 14" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="~/img/rv15.jpg" alt="Review 15" />
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
+
+  
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div id="successMessage" class="notification">
+            @TempData["SuccessMessage"]
         </div>
-        <h1> BẠN MUỐN NÓI GÌ VỚI CHÚNG TÔI?</h1>
-        <div class="feedback">
-            <h3>Đánh giá của bạn:</h3>
-            <div class="stars">
-                <span class="star" data-value="1">★</span>
-                <span class="star" data-value="2">★</span>
-                <span class="star" data-value="3">★</span>
-                <span class="star" data-value="4">★</span>
-                <span class="star" data-value="5">★</span>
-            </div>
-            <p class="rating-message"></p>
-            <textarea id="feedback-text"
-                      placeholder="Nhập phản hồi của bạn ở đây..."
-                      rows="4"></textarea>
-            <button id="submit-feedback">Gửi Phản Hồi</button>
+    }
+
+    <form asp-action="Index" method="post">
+        <h2>Gửi Feedback</h2>
+        <div class="form-group">
+            <label for="CustomerName">Tên Khách Hàng</label>
+            <input type="text" class="form-control" id="CustomerName" name="CustomerName" required />
         </div>
 
-        <!-- Modal -->
-        <div id="feedback-modal" class="modal">
-            <div class="modal-content">
-                <span class="close" id="close-modal">&times;</span>
-                <p id="modal-message"></p>
-            </div>
+        <div class="form-group">
+            <label for="FeedbackText">Feedback</label>
+            <textarea class="form-control" id="FeedbackText" name="FeedbackText" required></textarea>
         </div>
 
-        <!-- Toast Container -->
-        <div id="toast-container"></div>
+        <div class="form-group">
+            <label for="Rating">Đánh giá (1-5)</label>
+            <input type="number" class="form-control" id="Rating" name="Rating" min="1" max="5" required />
         </div>
+
+        <button type="submit" class="btn btn-primary">Gửi Feedback</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            if ($('#successMessage').length > 0) {
+                $('#successMessage').addClass('show');
+
+                setTimeout(function () {
+                    $('#successMessage').removeClass('show').addClass('hide');
+                }, 3000); // Thời gian hiển thị 3 giây
+            }
+        });
+    </script>
 </body>
 
-
-<script >
-        var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-        const stars = document.querySelectorAll(".star");
-    const ratingMessage = document.querySelector(".rating-message");
-    const feedbackText = document.getElementById("feedback-text");
-    const submitButton = document.getElementById("submit-feedback");
-
-    stars.forEach((star) => {
-        star.addEventListener("click", () => {
-            const rating = star.getAttribute("data-value");
-            stars.forEach((s) => s.classList.remove("selected"));
-            for (let i = 0; i < rating; i++) {
-                stars[i].classList.add("selected");
-            }
-            switch (rating) {
-                case "1":
-                    ratingMessage.textContent = "Tệ";
-                    break;
-                case "2":
-                    ratingMessage.textContent = "Tạm ổn";
-                    break;
-                case "3":
-                    ratingMessage.textContent = "Bình thường";
-                    break;
-                case "4":
-                    ratingMessage.textContent = "Tốt";
-                    break;
-                case "5":
-                    ratingMessage.textContent = "Tuyệt vời";
-                    break;
-            }
-        });
-    });
-
-    submitButton.addEventListener("click", () => {
-        const selectedStars =
-            document.querySelectorAll(".star.selected").length;
-        const feedback = feedbackText.value.trim();
-        if (selectedStars > 0 && feedback) {
-            showToast("Phản hồi của bạn đã được gửi thành công!");
-            feedbackText.value = "";
-            stars.forEach((s) => s.classList.remove("selected"));
-            ratingMessage.textContent = "";
-        } else {
-            showToast("Vui lòng chọn đánh giá và nhập phản hồi.");
-        }
-    });
-
-    function showToast(message) {
-        const toast = document.createElement("div");
-        toast.className = "toast";
-        const icon = document.createElement("span");
-        icon.className = "toast-icon";
-        icon.textContent = "✓";
-        const text = document.createElement("span");
-        text.textContent = message;
-        const closeButton = document.createElement("span");
-        closeButton.className = "toast-close";
-        closeButton.textContent = "✕";
-
-        closeButton.addEventListener("click", () => {
-            toast.classList.remove("show");
-            setTimeout(() => toast.remove(), 300);
-        });
-
-        toast.appendChild(icon);
-        toast.appendChild(text);
-        toast.appendChild(closeButton);
-
-        document.getElementById("toast-container").appendChild(toast);
-
-        setTimeout(() => toast.classList.add("show"), 10);
-        setTimeout(() => toast.classList.remove("show"), 3000);
-    };
-
-</script>
-
 </html>
-
-
