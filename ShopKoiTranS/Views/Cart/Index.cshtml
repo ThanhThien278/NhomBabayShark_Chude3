@@ -1,4 +1,6 @@
-﻿@{
+﻿@model ShopKoiTranS.Models.ViewModel.CartItemViewModel
+
+@{
     Layout = null;
 }
 
@@ -7,88 +9,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng - Công ty Vận chuyển Cá Koi</title>
+    <title>Giỏ Hàng</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="~/css/cart.css">
+    <style>
+
+                .notification {
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background-color: #ff6b6b;
+                    color: #fff;
+                    padding: 15px;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+                    z-index: 1000;
+                }
+
+                .notification.show {
+                    opacity: 1;
+                }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal {
+            background-color: #fff;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .modal h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .modal p {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1.5rem;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .modal .close:hover {
+            color: #333;
+        }
+
+    </style>
 </head>
+
 <body>
     @Html.Partial("_SideBar")
-    <section id="cart_items">
-        <div class="container">
-            <div class="table-responsive cart_info">
-                <table class="table table-condensed">
-                    <thead>
-                        <tr class="cart_menu">
-                            <td class="image">Sản phẩm</td>
-                            <td class="description">Thông tin</td>
-                            <td class="price">Giá</td>
-                            <td class="quantity">Số lượng</td>
-                            <td class="total">Tổng cộng</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="cart_product">
-                                <a href="#"><img src="images/cart/koi-transport.png" alt="Dịch vụ vận chuyển"></a>
-                            </td>
-                            <td class="cart_description">
-                                <h4><a href="#">Dịch vụ Vận chuyển</a></h4>
-                                <p>Vận chuyển cá Koi đến địa điểm yêu cầu</p>
-                            </td>
-                            <td class="cart_price">
-                                <p>500,000 VND</p>
-                            </td>
-                            <td class="cart_quantity">
-                                <div class="cart_quantity_button">
-                                    <a class="cart_quantity_up" href="#"> + </a>
-                                    <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-                                    <a class="cart_quantity_down" href="#"> - </a>
-                                </div>
-                            </td>
-                            <td class="cart_total">
-                                <p class="cart_total_price">500,000 VND</p>
-                            </td>
-                            <td class="cart_delete">
-                                <a class="cart_quantity_delete" href="#"><i class="fa fa-times"></i></a>
-                            </td>
-                        </tr>
+    <div class="cart-container">
+        <h1>Giỏ Hàng</h1>
 
+        @if (Model.Items != null && Model.Items.Count > 0)
+        {
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Tên Sản Phẩm</th>
+
+                        <th>Giá</th>
+                        <th>Số Lượng</th>
+                        <th>Chi Tiết</th>
+                        <th>Thao Tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Items)
+                    {
                         <tr>
-                            <td class="cart_product">
-                                <a href="#"><img src="images/cart/koi-fish.png" alt="Cá Koi"></a>
+                            <td>@item.KoiName</td>
+
+                            <td>
+                                <input type="number" name="quantity" value="@item.Quantity" min="1" class="quantity-input" data-price="@item.Price" data-item-total="#item-total-@item.KoiId" />
                             </td>
-                            <td class="cart_description">
-                                <h4><a href="#">Cá Koi - Loại Kohaku</a></h4>
-                                <p>Kích thước: 20cm</p>
-                            </td>
-                            <td class="cart_price">
-                                <p>1,200,000 VND</p>
-                            </td>
-                            <td class="cart_quantity">
-                                <div class="cart_quantity_button">
-                                    <a class="cart_quantity_up" href="#"> + </a>
-                                    <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-                                    <a class="cart_quantity_down" href="#"> - </a>
-                                </div>
-                            </td>
-                            <td class="cart_total">
-                                <p class="cart_total_price">1,200,000 VND</p>
-                            </td>
-                            <td class="cart_delete">
-                                <a class="cart_quantity_delete" href="#"><i class="fa fa-times"></i></a>
+                            <td id="item-total-@item.KoiId">@((item.Quantity * item.Price).ToString("C0"))</td>
+                            <td><a href="#">Chi Tiết</a></td>
+                            <td>
+                                <form action="@Url.Action("RemoveItem", "Cart")" method="post" style="display:inline;">
+                                    /-strong/-heart:>:o:-((:-h <input type="hidden" name="productId" value="@item.KoiId" />
+                                    <button type="submit" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này?');">Xóa</button>
+                                </form>
                             </td>
                         </tr>
-                    </tbody>
-                </table>
-                <div class="cart_summary">
-                    <p>Tổng cộng: <span class="total_price">1,700,000 VND</span></p>
-                    <button class="checkout_btn">Đặt hàng ngay</button>
-                </div>
+                    }
+                </tbody>
+            </table>
+
+            <div class="cart-summary">
+                <h3>Tổng Tiền: <span id="grand-total">@Model.GrandTotal.ToString("C0")</span></h3>
+                <a href="#" class="checkout-btn">Thanh Toán</a>
             </div>
+        }
+        else
+        {
+            <h4>Giỏ Hàng Đang Trống</h4>
+        }
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="detailModal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-name"></h2>
+            <p><strong>Giá:</strong> <span id="modal-price"></span></p>
+            <p><strong>Số Lượng:</strong> <span id="modal-quantity"></span></p>
+            <p><strong>Tổng Tiền:</strong> <span id="modal-total"></span></p>
         </div>
-    </section>
+    </div>
+
+
+
+    <div id="notification" class="notification">@TempData["Notification"]</div>
+
+    <script>
+                document.querySelectorAll('.quantity-input').forEach(input => {
+                    input.addEventListener('input', function () {
+                        const price = parseFloat(this.getAttribute('data-price'));
+                        const quantity = parseInt(this.value);
+                        const itemTotalElement = document.querySelector(this.getAttribute('data-item-total'));
+
+                        const itemTotal = price * quantity;
+                        itemTotalElement.textContent = itemTotal.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+
+
+                        updateGrandTotal();
+
+
+                        showNotification("Số lượng đã được cập nhật!");
+                    });
+                });
+
+                function updateGrandTotal() {
+                    let grandTotal = 0;
+                    document.querySelectorAll('.quantity-input').forEach(input => {
+                        const price = parseFloat(input.getAttribute('data-price'));
+                        const quantity = parseInt(input.value);
+                        grandTotal += price * quantity;
+                    });
+                    document.getElementById('grand-total').textContent = grandTotal.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+                }
+
+                function showNotification(message) {
+                    const notification = document.getElementById('notification');
+                    notification.textContent = message;
+                    notification.classList.add('show');
+
+                    setTimeout(() => {
+                        notification.classList.remove('show');
+                    }, 2000);
+                }
+
+        @if (TempData["Notification"] != null)
+        {
+            <text>
+                            showNotification("@TempData["Notification"]");
+            </text>
+        }/-strong/-heart:>:o:-((:-h document.querySelectorAll('.cart-table a[href="#"]').forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+
+
+                const row = this.closest('tr');
+                const name = row.querySelector('td:first-child').textContent.trim();
+                const price = row.querySelector('input.quantity-input').getAttribute('data-price');
+                const quantity = row.querySelector('input.quantity-input').value;
+                const total = row.querySelector('td[id^="item-total-"]').textContent;
+
+                document.getElementById('modal-name').textContent = name;
+                document.getElementById('modal-price').textContent = parseFloat(price).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+                document.getElementById('modal-quantity').textContent = quantity;
+                document.getElementById('modal-total').textContent = total;
+
+
+                document.getElementById('modalOverlay').style.display = 'flex';
+            });
+        });
+        document.getElementById('modalOverlay').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeModal();
+            }
+        });
+
+        function closeModal() {
+            document.getElementById('modalOverlay').style.display = 'none';
+        }
+
+    </script>
 </body>
 </html>
-
-
