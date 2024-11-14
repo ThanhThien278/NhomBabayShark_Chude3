@@ -15,16 +15,17 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <form method="post" action="/Transport/CreateShippingOrder" class="form-container">
+        <form method="post" action="/Transport/Calculate" class="form-container">
             <h3>Đặt Đơn Vận Chuyển</h3>
+
             <div class="form-group">
                 <label for="customer-name">Họ và Tên</label>
-                <input type="text" class="form-control" id="customer-name" name="customer-name" required>
+                <input type="text" class="form-control" id="customer-name" name="CustomerName" required>
             </div>
 
             <div class="form-group">
                 <label for="customer-phone">Số Điện Thoại</label>
-                <input type="tel" class="form-control" id="customer-phone" name="customer-phone" pattern="(\+84|0)[3|5|7|8|9][0-9]{8}" required placeholder="Nhập số điện thoại">
+                <input type="tel" class="form-control" id="customer-phone" name="CustomerPhone" required>
             </div>
 
             <div class="form-group">
@@ -39,10 +40,13 @@
 
             <div class="form-group">
                 <label for="CanNang">Cân Nặng (kg)</label>
-                <input type="number" class="form-control" id="CanNang" name="CanNang" step="0.01" required>
+                <input type="number" class="form-control" id="CanNang" name="CanNang" step="0.01" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="SoLuongCa">Số Lượng Cá</label>
+                <input type="number" class="form-control" id="SoLuongCa" name="SoLuongCa" min="1" required>
             </div>
 
-           
 
             <div class="form-group">
                 <label for="DiaDiemXuatPhat">Địa Điểm Xuất Phát</label>
@@ -55,27 +59,43 @@
             </div>
 
             <div class="form-group">
+                <label for="KhoangCach">Khoảng Cách (km)</label>
+                <input type="number" class="form-control" id="KhoangCach" name="KhoangCach" step="0.01" min="1" required>
+            </div>
+
+            <div class="form-group">
                 <label for="PhuongThucVanChuyen">Phương Thức Vận Chuyển</label>
-                <select class="form-control" id="PhuongThucVanChuyen" name="PhuongThucVanChuyen" onchange="updateVehicleOptions()" required>
+                <select class="form-control" id="PhuongThucVanChuyen" name="PhuongThucVanChuyen" required onchange="updateVehicleOptions()">
                     <option value="Air">Vận Chuyển Hàng Không</option>
                     <option value="Sea">Vận Chuyển Hàng Hải</option>
                     <option value="Land">Vận Chuyển Đường Bộ</option>
                 </select>
             </div>
+
             <div class="form-group">
                 <label for="PhuongTienVanChuyen">Phương Tiện Vận Chuyển</label>
                 <select class="form-control" id="PhuongTienVanChuyen" name="PhuongTienVanChuyen" required>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Xác Nhận</button>
+
+            <button type="submit" class="btn btn-primary">Đặt Vận Chuyển</button>
         </form>
+
+        @if (ViewBag.TotalPrice != null)
+        {
+            <div class="result">
+                <h4>Giá Vận Chuyển: @ViewBag.TotalPrice VND</h4>
+                <p>Ngày Tạo: @ViewBag.CreatedAt</p>
+            </div>
+        }
     </div>
+
     <script>
+
         function updateVehicleOptions() {
             const transportMethod = document.getElementById("PhuongThucVanChuyen").value;
             const vehicleSelect = document.getElementById("PhuongTienVanChuyen");
             vehicleSelect.innerHTML = "";
-
             let options = [];
 
             if (transportMethod === "Air") {
@@ -86,6 +106,7 @@
                 options = ["Xe Tải Nhỏ", "Xe Tải Lớn", "Xe Chuyên Dụng"];
             }
 
+
             options.forEach(option => {
                 const opt = document.createElement("option");
                 opt.value = option;
@@ -94,9 +115,8 @@
             });
         }
 
-      
+
         updateVehicleOptions();
     </script>
-
 </body>
 </html>
