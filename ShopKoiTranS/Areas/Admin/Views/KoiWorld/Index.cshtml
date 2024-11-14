@@ -1,0 +1,62 @@
+﻿@{
+    Layout = null;
+}
+
+@model IEnumerable<KoiWorldModel>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Quản Trị</title>
+    <link rel="stylesheet" href="~/css/Admin/KoiWorldAdmin.css">
+</head>
+<body>
+    @Html.Partial("_SideBar")
+    <div class="container">
+        <div class="main-content">
+            <h2>Danh Sách KoiWorld</h2>
+
+            <!-- Nút Thêm Cá ở trên bảng -->
+            <div class="button-container">
+                <a asp-area="Admin" asp-action="Create" asp-controller="KoiWorld" class="btn btn-add">Thêm Cá Koi</a>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Tên Loài</th>
+                        <th scope="col">Ảnh cá koi</th>
+                        <th scope="col">Tên KoiWorld</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Mô Tả</th>
+                        <th scope="col">Giá</th>
+                        <th scope="col">Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var koiWorld in Model)
+                    {
+                        <tr>
+                            <th scope="row">@koiWorld.KoiId</th>
+                            <td>@koiWorld.CategoryKoi?.CategoryName</td>
+                            <td><img src="@Url.Content("~/img/" + koiWorld.Image)" alt="@koiWorld.KoiName" style="width: 150px; height: 300px; object-fit: cover;" /></td>
+                            <td>@koiWorld.KoiName</td>
+                            <td>@koiWorld.Size CM</td>
+                            <td>@koiWorld.Description</td>
+                            <td>@koiWorld.Price VND</td>
+                            <td>
+                                <!-- Edit and Delete buttons styled like Add button -->
+                                <a asp-area="Admin" asp-action="Edit" asp-controller="KoiWorld" asp-route-Id="@koiWorld.KoiId" class="btn btn-edit">Chỉnh Sửa</a>
+                                <a asp-area="Admin" asp-action="Delete" asp-controller="KoiWorld" asp-route-Id="@koiWorld.KoiId" class="btn btn-delete">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

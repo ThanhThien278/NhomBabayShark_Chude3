@@ -1,0 +1,20 @@
+﻿@model ShopKoiTranS.Models.SalesModel
+
+@{
+    ViewData["Title"] = "Create Sales";
+    Layout = null;
+}
+
+<link rel="stylesheet" type="text/css" href="~/css/form.css">
+@Html.Partial("_SideBar")
+<div class="container">
+    <div class="main-content">S
+        <h2>Xóa Sales</h2>
+        <form method="post">
+            <p>Bạn có chắc chắn muốn xóa Sales "<strong>@Model.Title</strong>" không?</p>
+
+            <button type="submit">Xóa</button>
+            <a href="@Url.Action("Index", "Sales")" class="btn-back">Quay lại</a>
+        </form>
+    </div>
+</div>

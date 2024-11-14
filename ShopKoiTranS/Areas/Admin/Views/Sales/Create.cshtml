@@ -1,0 +1,38 @@
+﻿@model ShopKoiTranS.Models.SalesModel
+
+@{
+    ViewData["Title"] = "Create Sales";
+    Layout = null;
+}
+
+<link rel="stylesheet" type="text/css" href="~/css/form.css">
+@Html.Partial("_SideBar")
+<div class="container">
+    <div class="main-content">
+        <h2>Tạo Mới Sales</h2>
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="Title">Tiêu Đề</label>
+                <input type="text" id="Title" name="Title" value="@Model.Title" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Condition">Điều Kiện</label>
+                <input type="text" id="Condition" name="Condition" value="@Model.Condition" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Benefits">Lợi Ích</label>
+                <textarea id="Benefits" name="Benefits" rows="4">@Model.Benefits</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="ImageUrl">Hình Ảnh</label>
+                <input type="file" id="ImageUrl" name="ImageUrl" />
+            </div>
+
+            <button type="submit">Tạo Sales</button>
+            <a href="@Url.Action("Index", "Sales")" class="btn-back">Quay lại</a>
+        </form>
+    </div>
+</div>
