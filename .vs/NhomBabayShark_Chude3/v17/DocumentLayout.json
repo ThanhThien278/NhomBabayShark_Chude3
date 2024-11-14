@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\LoginController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Controllers\\LoginController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\KoiWorldController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Controllers\\KoiWorldController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Services\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Views\\Services\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Price\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Views\\Price\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\FeedbackController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Controllers\\FeedbackController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Models\\PriceModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Models\\PriceModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\CartController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Controllers\\CartController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\AdviseController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Controllers\\AdviseController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\AccountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Controllers\\AccountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\koiworld.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\wwwroot\\css\\koiworld.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\PriceController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopKoiTranS\\Controllers\\PriceController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,110 +39,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "ShopKoiTranS\\Controllers\\LoginController.cs",
-              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "ShopKoiTranS\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T07:14:31.807Z"
+              "Title": "_SideBar.cshtml",
+              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeDocumentMoniker": "ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
+              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeToolTip": "ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T08:50:20.721Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "KoiWorldController.cs",
-              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\KoiWorldController.cs",
-              "RelativeDocumentMoniker": "ShopKoiTranS\\Controllers\\KoiWorldController.cs",
-              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\KoiWorldController.cs",
-              "RelativeToolTip": "ShopKoiTranS\\Controllers\\KoiWorldController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T07:14:30.83Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Services\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShopKoiTranS\\Views\\Services\\Index.cshtml",
+              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Services\\Index.cshtml",
+              "RelativeToolTip": "ShopKoiTranS\\Views\\Services\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAD4AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T08:49:05.139Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ShopKoiTranS\\Controllers\\HomeController.cs",
-              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ShopKoiTranS\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T07:14:30.149Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Price\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShopKoiTranS\\Views\\Price\\Index.cshtml",
+              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Price\\Index.cshtml",
+              "RelativeToolTip": "ShopKoiTranS\\Views\\Price\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAqwCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T08:26:35.241Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FeedbackController.cs",
-              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\FeedbackController.cs",
-              "RelativeDocumentMoniker": "ShopKoiTranS\\Controllers\\FeedbackController.cs",
-              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\FeedbackController.cs",
-              "RelativeToolTip": "ShopKoiTranS\\Controllers\\FeedbackController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "PriceModel.cs",
+              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Models\\PriceModel.cs",
+              "RelativeDocumentMoniker": "ShopKoiTranS\\Models\\PriceModel.cs",
+              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Models\\PriceModel.cs",
+              "RelativeToolTip": "ShopKoiTranS\\Models\\PriceModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T07:14:28.945Z"
+              "WhenOpened": "2024-11-14T08:25:36.597Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "ShopKoiTranS\\Controllers\\CartController.cs",
-              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\CartController.cs",
-              "RelativeToolTip": "ShopKoiTranS\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "PriceController.cs",
+              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\PriceController.cs",
+              "RelativeDocumentMoniker": "ShopKoiTranS\\Controllers\\PriceController.cs",
+              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\PriceController.cs",
+              "RelativeToolTip": "ShopKoiTranS\\Controllers\\PriceController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T07:14:28.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "ShopKoiTranS\\Controllers\\AccountController.cs",
-              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "ShopKoiTranS\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T07:14:25.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AdviseController.cs",
-              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\AdviseController.cs",
-              "RelativeDocumentMoniker": "ShopKoiTranS\\Controllers\\AdviseController.cs",
-              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Controllers\\AdviseController.cs",
-              "RelativeToolTip": "ShopKoiTranS\\Controllers\\AdviseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T07:14:23.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "koiworld.css",
-              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\koiworld.css",
-              "RelativeDocumentMoniker": "ShopKoiTranS\\wwwroot\\css\\koiworld.css",
-              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\koiworld.css",
-              "RelativeToolTip": "ShopKoiTranS\\wwwroot\\css\\koiworld.css",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-07T09:46:00.535Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "ShopKoiTranS\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "F:\\CNPM\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "ShopKoiTranS\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T12:57:16.81Z"
+              "WhenOpened": "2024-11-14T08:25:21.307Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ShopKoiTranS",
+    "\\ShopKoiTranS\\Views",
+    "\\ShopKoiTranS\\Views\\Shared"
   ],
-  "SelectedNode": "\\ShopKoiTranS.sln",
+  "SelectedNode": "\\ShopKoiTranS\\Views\\Shared\\_SideBar.cshtml",
   "PreviewInSolutionExplorer": false
 }
