@@ -3,9 +3,7 @@
     "",
     "\\ShopKoiTranS",
     "\\ShopKoiTranS\\Controllers",
-    "\\ShopKoiTranS\\Views",
-    "\\ShopKoiTranS\\Views\\Shared"
+    "\\ShopKoiTranS\\Views"
   ],
-  "SelectedNode": "\\ShopKoiTranS\\Controllers\\LoginController.cs",
   "PreviewInSolutionExplorer": false
 }
