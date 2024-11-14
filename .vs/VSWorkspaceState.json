@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ShopKoiTranS",
+    "\\ShopKoiTranS\\Controllers",
+    "\\ShopKoiTranS\\Views",
+    "\\ShopKoiTranS\\Views\\Shared"
   ],
+  "SelectedNode": "\\ShopKoiTranS\\Controllers\\LoginController.cs",
   "PreviewInSolutionExplorer": false
 }

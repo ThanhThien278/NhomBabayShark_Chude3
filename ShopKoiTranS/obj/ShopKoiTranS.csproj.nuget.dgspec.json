@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pc\\Source\\Repos\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
+    "C:\\Users\\pc\\Source\\Repos\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pc\\Source\\Repos\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {
+    "C:\\Users\\pc\\Source\\Repos\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc\\Source\\Repos\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Source\\Repos\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
         "projectName": "ShopKoiTranS",
-        "projectPath": "C:\\Users\\pc\\Source\\Repos\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "projectPath": "C:\\Users\\pc\\Source\\Repos\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pc\\Source\\Repos\\NhomBabayShark_Chude3\\ShopKoiTranS\\obj\\",
+        "outputPath": "C:\\Users\\pc\\Source\\Repos\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
