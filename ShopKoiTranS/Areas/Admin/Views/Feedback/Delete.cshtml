@@ -1,0 +1,36 @@
+﻿@model ShopKoiTranS.Models.Feedback
+
+@{
+    ViewData["Title"] = "Xóa Feedback";
+}
+
+<h1>Xóa Feedback</h1>
+
+<div class="alert alert-warning">
+    <p>Bạn có chắc chắn muốn xóa feedback này không?</p>
+</div>
+
+<table class="table">
+    <tr>
+        <th>Tên khách hàng:</th>
+        <td>@Model.CustomerName</td>
+    </tr>
+    <tr>
+        <th>Email:</th>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <th>Nội dung:</th>
+        <td>@Model.Content</td>
+    </tr>
+    <tr>
+        <th>Ngày gửi:</th>
+        <td>@Model.CreatedAt.ToString("dd/MM/yyyy")</td>
+    </tr>
+</table>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

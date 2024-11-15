@@ -1,1 +1,46 @@
-﻿
+﻿@model IEnumerable<ShopKoiTranS.Models.Feedback>
+
+@{
+    ViewData["Title"] = "Danh sách Feedback";
+    layout = null;
+}
+@Html.Partial("_SideBar")
+
+<h1>Danh sách Feedback</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Tên khách hàng</th>
+            <th>Email</th>
+            <th>Nội dung</th>
+            <th>Ngày gửi</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var feedback in Model)
+        {
+            <tr>
+                <td>@feedback.Id</td>
+                <td>@feedback.CustomerName</td>
+                <td>@feedback.Email</td>
+                <td>@feedback.Content</td>
+                <td>@feedback.CreatedAt.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@feedback.Id" class="btn btn-danger btn-sm">
+                        Xóa
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
