@@ -2,7 +2,7 @@
 
 namespace ShopKoiTranS.Areas.Admin.Controllers
 {
-    public class AdminController : Controller
+    public class TransportController : Controller
     {
         public IActionResult Index()
         {
