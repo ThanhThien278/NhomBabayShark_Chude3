@@ -1,0 +1,23 @@
+﻿@model ShopKoiTranS.Models.AdviseModel
+
+@{
+    ViewData["Title"] = "Xác nhận tư vấn";
+    Layout = null;
+}
+<link href="~/css/Admin/form.css" rel="stylesheet" />
+<h2 class="Name">@ViewData["Title"]</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="consultationTime">Thời gian tư vấn:</label>
+        <input type="datetime-local" id="consultationTime" name="consultationTime" class="form-control" required />
+
+        @if (ViewData.ModelState["ThoiGianTuVan"]?.Errors.Any() == true)
+        {
+            <div class="text-danger">
+                @ViewData.ModelState["ThoiGianTuVan"]?.Errors?.FirstOrDefault()?.ErrorMessage
+            </div>
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Xác nhận</button>
+</form>

@@ -1,0 +1,16 @@
+﻿@model ShopKoiTranS.Models.PriceModel
+
+@{
+    ViewData["Title"] = "Xóa bảng giá";
+    Layout = null;
+}
+@Html.Partial("_SideBar")
+<h1>@ViewData["Title"]</h1>
+<link rel="stylesheet" type="text/css" href="~/css/Admin/Delete.css">
+<p> Bạn có chắc chắn muốn xóa bảng giá với ID @Model.Id không? </p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a href="@Url.Action("Index", "Price")" class="btn btn-secondary">Hủy</a>
+</form>

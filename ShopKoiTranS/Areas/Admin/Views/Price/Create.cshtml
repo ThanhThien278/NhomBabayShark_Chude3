@@ -1,0 +1,54 @@
+﻿@model ShopKoiTranS.Models.PriceModel
+
+@{
+    ViewData["Title"] = "Thêm bảng giá";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/css/Admin/Create.css">
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="TransportMethod">Phương thức vận chuyển</label>
+        <select class="form-control" id="TransportMethod" name="TransportMethod">
+            <option value="Air">Vận Chuyển Hàng Không</option>
+            <option value="Sea">Vận Chuyển Hàng Hải</option>
+            <option value="Land">Vận Chuyển Đường Bộ</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="VehicleType">Loại phương tiện</label>
+        <input type="text" class="form-control" id="VehicleType" name="VehicleType" required />
+    </div>
+    <div class="form-group">
+        <label for="MinWeight">Cân nặng tối thiểu</label>
+        <input type="number" class="form-control" id="MinWeight" name="MinWeight" required />
+    </div>
+    <div class="form-group">
+        <label for="MaxWeight">Cân nặng tối đa</label>
+        <input type="number" class="form-control" id="MaxWeight" name="MaxWeight" required />
+    </div>
+    <div class="form-group">
+        <label for="Price0_50">Giá 0-50kg</label>
+        <input type="number" class="form-control" id="Price0_50" name="Price0_50" required />
+    </div>
+    <div class="form-group">
+        <label for="Price51_100">Giá 51-100kg</label>
+        <input type="number" class="form-control" id="Price51_100" name="Price51_100" required />
+    </div>
+    <div class="form-group">
+        <label for="Price101_200">Giá 101-200kg</label>
+        <input type="number" class="form-control" id="Price101_200" name="Price101_200" required />
+    </div>
+    <div class="form-group">
+        <label for="PriceOver200">Giá trên 200kg</label>
+        <input type="number" class="form-control" id="PriceOver200" name="PriceOver200" required />
+    </div>
+    <div class="form-group">
+        <label for="PriceOver20Kg">Giá trên 20kg</label>
+        <input type="number" class="form-control" id="PriceOver20Kg" name="PriceOver20Kg" required />
+    </div>
+    <button type="submit" class="btn btn-success">Thêm mới</button>
+    <a href="@Url.Action("Index", "Price", new { area = "Admin" })" class="btn btn-back">Quay lại</a>
+</form>

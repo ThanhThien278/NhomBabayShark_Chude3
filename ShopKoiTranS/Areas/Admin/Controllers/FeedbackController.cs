@@ -24,6 +24,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
         }
 
         // GET: Feedback/Delete/5
+        // Xóa ngay không cần xác nhận
         public async Task<IActionResult> Delete(int id)
         {
             var feedback = await _datacontext.Feedbacks.FindAsync(id);
@@ -32,22 +33,11 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            return View(feedback); // Trả về view để xác nhận xóa feedback
-        }
+            _datacontext.Feedbacks.Remove(feedback);
+            await _datacontext.SaveChangesAsync();
 
-        // POST: Feedback/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var feedback = await _datacontext.Feedbacks.FindAsync(id);
-            if (feedback != null)
-            {
-                _datacontext.Feedbacks.Remove(feedback);
-                await _datacontext.SaveChangesAsync();
-                TempData["SuccessMessage"] = "Xóa feedback thành công!";
-            }
-            return RedirectToAction(nameof(Index));
+            TempData["SuccessMessage"] = "Feedback đã được xóa thành công!";
+            return RedirectToAction(nameof(Index)); // Quay lại trang Index sau khi xóa
         }
     }
 }

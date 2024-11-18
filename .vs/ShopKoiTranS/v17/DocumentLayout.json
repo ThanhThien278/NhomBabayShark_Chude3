@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\NhomBabayShark_Chude3\\",
+  "WorkspaceRootPath": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\nhombabayshark_chude3\\shopkoitrans\\areas\\admin\\views\\sales\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\areas\\admin\\views\\sales\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\areas\\admin\\views\\sales\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\nhombabayshark_chude3\\shopkoitrans\\areas\\admin\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\areas\\admin\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\areas\\admin\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\nhombabayshark_chude3\\shopkoitrans\\areas\\admin\\views\\koiworld\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\areas\\admin\\views\\koiworld\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\areas\\admin\\views\\koiworld\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\nhombabayshark_chude3\\shopkoitrans\\wwwroot\\css\\admin\\create.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\wwwroot\\css\\admin\\create.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\wwwroot\\css\\admin\\create.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\nhombabayshark_chude3\\shopkoitrans\\wwwroot\\css\\admin\\sidebara.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\wwwroot\\css\\admin\\sidebara.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\wwwroot\\css\\admin\\sidebara.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\nhombabayshark_chude3\\shopkoitrans\\wwwroot\\css\\admin\\sales.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\wwwroot\\css\\admin\\sales.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\wwwroot\\css\\admin\\sales.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\nhombabayshark_chude3\\shopkoitrans\\areas\\admin\\views\\sales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|d:\\c#_cnpm\\thanhthien278\\thanhthien278\\nhombabayshark_chude3\\shopkoitrans\\areas\\admin\\views\\sales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7AFC3295-E5F0-4384-B742-06A9D73597ED}|ShopKoiTranS\\ShopKoiTranS.csproj|solutionrelative:shopkoitrans\\areas\\admin\\views\\sales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -38,11 +38,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -52,50 +56,47 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "SalesController.cs",
-              "DocumentMoniker": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Controllers\\SalesController.cs",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Controllers\\SalesController.cs",
               "RelativeDocumentMoniker": "ShopKoiTranS\\Areas\\Admin\\Controllers\\SalesController.cs",
-              "ToolTip": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Controllers\\SalesController.cs",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Controllers\\SalesController.cs",
               "RelativeToolTip": "ShopKoiTranS\\Areas\\Admin\\Controllers\\SalesController.cs",
               "ViewState": "AgIAAHEAAAAAAAAAAAAAwJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:24:01.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:24:01.245Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Create.css",
-              "DocumentMoniker": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Create.css",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Create.css",
               "RelativeDocumentMoniker": "ShopKoiTranS\\wwwroot\\css\\Admin\\Create.css",
-              "ToolTip": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Create.css",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Create.css",
               "RelativeToolTip": "ShopKoiTranS\\wwwroot\\css\\Admin\\Create.css",
               "ViewState": "AgIAADwAAAAAAAAAAADwv3AAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-14T15:22:01.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:22:01.927Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\KoiWorld\\Create.cshtml",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\KoiWorld\\Create.cshtml",
               "RelativeDocumentMoniker": "ShopKoiTranS\\Areas\\Admin\\Views\\KoiWorld\\Create.cshtml",
-              "ToolTip": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\KoiWorld\\Create.cshtml",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\KoiWorld\\Create.cshtml",
               "RelativeToolTip": "ShopKoiTranS\\Areas\\Admin\\Views\\KoiWorld\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T15:13:04.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:13:04.77Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Create.cshtml",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Create.cshtml",
               "RelativeDocumentMoniker": "ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Create.cshtml",
-              "ToolTip": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Create.cshtml",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Create.cshtml",
               "RelativeToolTip": "ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Create.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-14T15:12:32.505Z",
               "EditorCaption": ""
@@ -104,40 +105,37 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "sidebara.css",
-              "DocumentMoniker": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\sidebara.css",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\sidebara.css",
               "RelativeDocumentMoniker": "ShopKoiTranS\\wwwroot\\css\\Admin\\sidebara.css",
-              "ToolTip": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\sidebara.css",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\sidebara.css",
               "RelativeToolTip": "ShopKoiTranS\\wwwroot\\css\\Admin\\sidebara.css",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAAFwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-14T15:11:53.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:11:53.118Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Index.cshtml",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Index.cshtml",
               "RelativeDocumentMoniker": "ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Index.cshtml",
-              "ToolTip": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Index.cshtml",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Index.cshtml",
               "RelativeToolTip": "ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T15:07:41.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:07:41.065Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Sales.css",
-              "DocumentMoniker": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Sales.css",
+              "DocumentMoniker": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Sales.css",
               "RelativeDocumentMoniker": "ShopKoiTranS\\wwwroot\\css\\Admin\\Sales.css",
-              "ToolTip": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Sales.css",
+              "ToolTip": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Sales.css",
               "RelativeToolTip": "ShopKoiTranS\\wwwroot\\css\\Admin\\Sales.css",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-14T15:07:33.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:07:33.877Z"
             }
           ]
         }

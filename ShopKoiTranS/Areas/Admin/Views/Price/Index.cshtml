@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ShopKoiTranS.Models.PriceModel>
+
+@{
+    ViewData["Title"] = "Danh sách bảng giá";
+    Layout = null;  
+}
+<link rel="stylesheet" href="~/css/Admin/Price.css">
+@Html.Partial("_SideBar")
+<h1>@ViewData["Title"]</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<a href="@Url.Action("Create", "Price")" class="btn btn-primary">Thêm bảng giá</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Phương thức vận chuyển</th>
+            <th>Loại phương tiện</th>
+            <th>Cân nặng tối thiểu</th>
+            <th>Cân nặng tối đa</th>
+            <th>Giá 0-50kg</th>
+            <th>Giá 51-100kg</th>
+            <th>Giá 101-200kg</th>
+            <th>Giá trên 200kg</th>
+            <th>Giá trên 20kg</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var price in Model)
+        {
+            <tr>
+                <td>@price.Id</td>
+                <td>@price.TransportMethod</td>
+                <td>@price.VehicleType</td>
+                <td>@price.MinWeight</td>
+                <td>@price.MaxWeight</td>
+                <td>@price.Price0_50</td>
+                <td>@price.Price51_100</td>
+                <td>@price.Price101_200</td>
+                <td>@price.PriceOver200</td>
+                <td>@price.PriceOver20Kg</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Price", new { id = price.Id })" class="btn btn-warning btn-sm">Sửa</a>
+                    <a href="@Url.Action("Delete", "Price", new { id = price.Id })" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
