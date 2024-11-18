@@ -1,0 +1,42 @@
+﻿@model ShopKoiTranS.Models.UserModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="~/css/login.css">
+    <script src="~/js/login.js"></script>
+</head>
+<body>
+    <div class="login">
+        <div class="login__form">
+            <h2 class="login__title">Chào Mừng Quay Lại</h2>
+
+
+            <div asp-validation-summary="All" class="alert"></div>
+
+            <form asp-action="Index" asp-controller="Account" method="post">
+                <div class="login__box">
+                    <input type="text" class="login__input" asp-for="Username" required>
+                    <label class="login__label">Tên Đăng Nhập</label>
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="login__box">
+                    <input type="password" class="login__input" asp-for="Password" required>
+                    <label class="login__label">Mật Khẩu</label>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <button type="submit" class="login__button">Đăng Nhập</button>
+            </form>
+
+            <a href="@Url.Action("Register", "Account")" class="btn">Chưa có tài khoản? Đăng Ký</a>
+            <a href="@Url.Action("Index", "Home")" class="btn btn-back">Quay lại trang chủ</a>
+        </div>
+    </div>
+</body>
+</html>

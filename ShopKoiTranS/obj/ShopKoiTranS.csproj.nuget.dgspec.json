@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
+    "D:\\C#\\New folder\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
   },
   "projects": {
-    "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {
+    "D:\\C#\\New folder\\ShopKoiTranS\\ShopKoiTranS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "projectUniqueName": "D:\\C#\\New folder\\ShopKoiTranS\\ShopKoiTranS.csproj",
         "projectName": "ShopKoiTranS",
-        "projectPath": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
-        "packagesPath": "C:\\Users\\Thien\\.nuget\\packages\\",
-        "outputPath": "D:\\C#_CNPM\\ThanhThien278\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\obj\\",
+        "projectPath": "D:\\C#\\New folder\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\New folder\\ShopKoiTranS\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Thien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -97,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
