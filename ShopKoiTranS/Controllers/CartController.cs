@@ -1,11 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
-using ShopKoiTranS.Models;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using ShopKoiTranS.Models.ViewModel;
-using System.Linq;
-using System.Threading.Tasks;
+using ShopKoiTranS.Models;
 using ShopKoiTranS.Repository;
+using Microsoft.EntityFrameworkCore;
 
 public class CartController : Controller
 {
@@ -18,7 +16,6 @@ public class CartController : Controller
         _userManager = userManager;
     }
 
-    // Hiển thị giỏ hàng
     public async Task<IActionResult> Index()
     {
         var user = await _userManager.GetUserAsync(User);
@@ -28,7 +25,6 @@ public class CartController : Controller
             return RedirectToAction("Login", "Account");
         }
 
-        // Lấy giỏ hàng của người dùng từ cơ sở dữ liệu
         var cart = await _dataContext.Carts
                                      .Where(c => c.UserName == user.UserName)
                                      .Include(c => c.Items)
@@ -52,7 +48,6 @@ public class CartController : Controller
             }).ToList()
         };
 
-        // Truy vấn các Advises và Transports
         cartVM.Advises = await _dataContext.LichTuVans
                                             .Where(a => a.UserName == user.UserName)
                                             .ToListAsync();
@@ -63,7 +58,6 @@ public class CartController : Controller
         return View(cartVM);
     }
 
-    // Thêm sản phẩm vào giỏ hàng
     public async Task<IActionResult> Add(int id)
     {
         var user = await _userManager.GetUserAsync(User);
@@ -88,13 +82,13 @@ public class CartController : Controller
                 UserName = user.UserName
             };
             _dataContext.Carts.Add(cart);
-            await _dataContext.SaveChangesAsync(); // Lưu giỏ hàng mới
+            await _dataContext.SaveChangesAsync();
         }
 
         var existingItem = cart.Items.FirstOrDefault(x => x.KoiId == koi.KoiId);
         if (existingItem != null)
         {
-            existingItem.Quantity += 1; // Tăng số lượng
+            existingItem.Quantity += 1;
         }
         else
         {
@@ -113,7 +107,6 @@ public class CartController : Controller
         return RedirectToAction("Index");
     }
 
-    // Cập nhật số lượng sản phẩm trong giỏ hàng
     [HttpPost]
     public async Task<IActionResult> UpdateQuantity(int productId, int quantity)
     {
@@ -151,7 +144,6 @@ public class CartController : Controller
         return Json(new { success = false, message = "Giỏ hàng không tồn tại." });
     }
 
-    // Xóa sản phẩm khỏi giỏ hàng và từ các bảng liên kết
     public async Task<IActionResult> RemoveItem(int cartId, int koiId)
     {
         var user = await _userManager.GetUserAsync(User);
@@ -160,33 +152,23 @@ public class CartController : Controller
             return Json(new { success = false, message = "Bạn cần đăng nhập để xóa sản phẩm." });
         }
 
-        // Tìm giỏ hàng của người dùng theo CartId
         var cart = await _dataContext.Carts
-                                     .Where(c => c.CartId == cartId && c.UserName == user.UserName)
-                                     .Include(c => c.Items)
-                                     .FirstOrDefaultAsync();
+                                .Where(c => c.UserName == user.UserName)
+                                .Include(c => c.Items)
+                                .FirstOrDefaultAsync();
 
         if (cart == null)
         {
             return Json(new { success = false, message = "Giỏ hàng không tồn tại." });
         }
 
-        // Tìm sản phẩm trong giỏ hàng theo KoiId
         var itemToRemove = cart.Items.FirstOrDefault(i => i.KoiId == koiId);
         if (itemToRemove == null)
         {
             return Json(new { success = false, message = "Sản phẩm không tồn tại trong giỏ hàng." });
         }
 
-        // Xóa sản phẩm khỏi giỏ hàng (CartItems)
         _dataContext.CartItems.Remove(itemToRemove);
-
-        // Nếu giỏ hàng không còn sản phẩm nào, xóa giỏ hàng
-        if (!cart.Items.Any())
-        {
-            _dataContext.Carts.Remove(cart);
-        }
-
 
         var adviseToRemove = await _dataContext.LichTuVans
                                             .Where(a => a.UserName == user.UserName)
@@ -196,25 +178,26 @@ public class CartController : Controller
             _dataContext.LichTuVans.Remove(adviseToRemove);
         }
 
-        // Kiểm tra và xóa vận chuyển (Transport) liên quan đến sản phẩm (nếu có)
         var transportToRemove = await _dataContext.DonVanChuyens
-                                                  .Where(t => t.UserName == user.UserName)
-                                                  .FirstOrDefaultAsync();
+                                              .Where(t => t.UserName == user.UserName)
+                                              .FirstOrDefaultAsync();
         if (transportToRemove != null)
         {
             _dataContext.DonVanChuyens.Remove(transportToRemove);
         }
 
-        // Cập nhật lại tổng giỏ hàng sau khi xóa sản phẩm
         cart.TotalAmount = cart.Items.Sum(i => i.Price * i.Quantity);
 
-        // Lưu thay đổi vào database
+        if (!cart.Items.Any())
+        {
+            _dataContext.Carts.Remove(cart);
+        }
+
         await _dataContext.SaveChangesAsync();
 
         return Json(new { success = true, message = "Sản phẩm đã được xóa khỏi giỏ hàng!", newCartTotal = cart.TotalAmount });
     }
 
-    // Đặt đơn hàng
     [HttpPost]
     public async Task<IActionResult> PlaceOrder()
     {
@@ -236,7 +219,6 @@ public class CartController : Controller
             return RedirectToAction("Index");
         }
 
-        // Tạo đơn hàng mới
         OrderModel newOrder = new OrderModel
         {
             UserName = user.UserName,
