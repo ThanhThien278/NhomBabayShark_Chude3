@@ -9,187 +9,187 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ShopKoiTranS
 build_property.RootNamespace = ShopKoiTranS
-build_property.ProjectDir = D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\
+build_property.ProjectDir = D:\NhomBabayShark_Chude3\ShopKoiTranS\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS
+build_property.MSBuildProjectDirectory = D:\NhomBabayShark_Chude3\ShopKoiTranS
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Advise/Confirm.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Advise/Confirm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2aXNlXENvbmZpcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Advise/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Advise/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2aXNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Feedback/Delete.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Feedback/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmVlZGJhY2tcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Feedback/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Feedback/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmVlZGJhY2tcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/KoiWorld/Create.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/KoiWorld/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS29pV29ybGRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/KoiWorld/Delete.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/KoiWorld/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS29pV29ybGRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/KoiWorld/Edit.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/KoiWorld/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS29pV29ybGRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/KoiWorld/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/KoiWorld/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS29pV29ybGRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Price/Create.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Price/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpY2VcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Price/Delete.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Price/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpY2VcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Price/Edit.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Price/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpY2VcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Price/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Price/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpY2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Sales/Create.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Sales/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FsZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Sales/Delete.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Sales/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FsZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Sales/Edit.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Sales/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FsZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Sales/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Sales/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Shared/Error.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Shared/_SideBar.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Shared/_SideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TaWRlQmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Transport/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Transport/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVHJhbnNwb3J0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/_ViewImports.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/_ViewStart.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Account/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Account/Register.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Advise/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Advise/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2aXNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Cart/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Category/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Feedback/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Feedback/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Home/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Home/Privacy.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/KoiWorld/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/KoiWorld/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29pV29ybGRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/KoiWorld/KoiDetails.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/KoiWorld/KoiDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29pV29ybGRcS29pRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Price/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Price/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpY2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Sales/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Sales/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Services/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Services/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Shared/Components/CategoriKoi/Default.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Shared/Components/CategoriKoi/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcmlLb2lcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Shared/Error.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Shared/_SideBar.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Shared/_SideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlQmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Transport/Index.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Transport/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNwb3J0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/_ViewImports.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/_ViewStart.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Shared/_Layout.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kciwpwdfix
 
-[D:/HEHE/NhomBabayShark_Chude3/ShopKoiTranS/Views/Shared/_Layout.cshtml]
+[D:/NhomBabayShark_Chude3/ShopKoiTranS/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-l4xogcmn7k

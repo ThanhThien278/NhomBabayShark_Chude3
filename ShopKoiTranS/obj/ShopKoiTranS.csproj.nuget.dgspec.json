@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HEHE\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
+    "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
   },
   "projects": {
-    "D:\\HEHE\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {
+    "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HEHE\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "projectUniqueName": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
         "projectName": "ShopKoiTranS",
-        "projectPath": "D:\\HEHE\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "projectPath": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\HEHE\\NhomBabayShark_Chude3\\ShopKoiTranS\\obj\\",
+        "outputPath": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
