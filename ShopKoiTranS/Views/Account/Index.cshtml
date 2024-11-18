@@ -8,34 +8,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng Ký</title>
+    <title>Đăng Nhập</title>
     <link rel="stylesheet" href="~/css/login.css">
-    <script src="~/js/login.js"></script>
+
 </head>
 <body>
     <div class="login">
         <div class="login__form">
-            <h2 class="login__title">Tạo Tài Khoản</h2>
+            <h2 class="login__title">Đăng Nhập</h2>
 
-            <div asp-validation-summary="All" class="alert"></div>
+            <!-- Hiển thị lỗi tổng hợp -->
+            <div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
 
-            <form asp-action="Register" asp-controller="Account" method="post">
+            <form asp-action="Index" asp-controller="Account" method="post">
                 <div class="login__box">
-                    <input type="text" class="login__input" asp-for="Username" required>
+                    <input type="text" class="login__input" asp-for="Username" placeholder="Tên đăng nhập" required>
                     <label class="login__label">Tên Đăng Nhập</label>
                 </div>
                 <div class="login__box">
-                    <input type="email" class="login__input" asp-for="Email" required>
-                    <label class="login__label">Email</label>
-                </div>
-                <div class="login__box">
-                    <input type="password" class="login__input" asp-for="Password" required>
+                    <input type="password" class="login__input" asp-for="Password" placeholder="Mật khẩu" required>
                     <label class="login__label">Mật Khẩu</label>
                 </div>
-                <button type="submit" class="login__button">Đăng Ký</button>
+
+                <button type="submit" class="login__button">Đăng Nhập</button>
             </form>
 
-            <a href="@Url.Action("Index", "Account")" class="btn">Đã có tài khoản? Đăng Nhập</a>
+            <!-- Liên kết đến trang Đăng Ký và Quên mật khẩu -->
+            <a href="@Url.Action("Register", "Account")" class="btn">Chưa có tài khoản? Đăng Ký</a>
+            <a href="@Url.Action("ForgotPassword", "Account")" class="btn">Quên mật khẩu?</a>
             <a href="@Url.Action("Index", "Home")" class="btn btn-back">Quay lại trang chủ</a>
         </div>
     </div>
