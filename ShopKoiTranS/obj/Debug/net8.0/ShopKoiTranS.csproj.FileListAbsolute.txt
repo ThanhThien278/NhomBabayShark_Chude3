@@ -168,13 +168,7 @@ D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFramework
 D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -291,6 +285,293 @@ D:\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\refint\ShopKoiTranS.dll
 D:\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.pdb
 D:\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.genruntimeconfig.cache
 D:\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ref\ShopKoiTranS.dll
+<<<<<<< HEAD
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.csproj.AssemblyReference.cache
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.GeneratedMSBuildEditorConfig.editorconfig
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.AssemblyInfoInputs.cache
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.AssemblyInfo.cs
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.csproj.CoreCompileInputs.cache
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.MvcApplicationPartsAssemblyInfo.cache
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.RazorAssemblyInfo.cache
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.RazorAssemblyInfo.cs
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.sourcelink.json
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\refint\ShopKoiTranS.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.pdb
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\appsettings.Development.json
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\appsettings.json
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.staticwebassets.runtime.json
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.exe
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.deps.json
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.runtimeconfig.json
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.pdb
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Azure.Core.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Azure.Identity.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Google.Apis.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Google.Apis.Core.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Humanizer.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.CodeDom.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Memory.Data.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets.build.json
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets.development.json
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets\msbuild.ShopKoiTranS.Microsoft.AspNetCore.StaticWebAssets.props
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets\msbuild.build.ShopKoiTranS.props
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ShopKoiTranS.props
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ShopKoiTranS.props
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets.pack.json
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\scopedcss\bundle\ShopKoiTranS.styles.css
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\scopedcss\projectbundle\ShopKoiTranS.bundle.scp.css
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiT.37AB3458.Up2Date
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.genruntimeconfig.cache
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ref\ShopKoiTranS.dll
+D:\HEHE\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\appsettings.Development.json
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\appsettings.json
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.staticwebassets.runtime.json
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.exe
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.deps.json
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.runtimeconfig.json
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ShopKoiTranS.pdb
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Azure.Core.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Azure.Identity.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Google.Apis.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Google.Apis.Core.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Humanizer.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.CodeDom.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.csproj.AssemblyReference.cache
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.AssemblyInfoInputs.cache
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.AssemblyInfo.cs
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.csproj.CoreCompileInputs.cache
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.MvcApplicationPartsAssemblyInfo.cache
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.RazorAssemblyInfo.cache
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.RazorAssemblyInfo.cs
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.sourcelink.json
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets.build.json
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets.development.json
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets\msbuild.ShopKoiTranS.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets\msbuild.build.ShopKoiTranS.props
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ShopKoiTranS.props
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ShopKoiTranS.props
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\scopedcss\bundle\ShopKoiTranS.styles.css
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\scopedcss\projectbundle\ShopKoiTranS.bundle.scp.css
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiT.37AB3458.Up2Date
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\refint\ShopKoiTranS.dll
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.pdb
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.genruntimeconfig.cache
+D:\Ko Dùng\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ref\ShopKoiTranS.dll
+=======
 D:\C#_CNPM\ThanhThien278\ThanhThien278\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.csproj.AssemblyReference.cache
 D:\C#_CNPM\ThanhThien278\ThanhThien278\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.GeneratedMSBuildEditorConfig.editorconfig
 D:\C#_CNPM\ThanhThien278\ThanhThien278\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.AssemblyInfoInputs.cache
@@ -303,3 +584,4 @@ D:\C#_CNPM\ThanhThien278\ThanhThien278\NhomBabayShark_Chude3\ShopKoiTranS\obj\De
 D:\C#_CNPM\ThanhThien278\ThanhThien278\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.dll
 D:\C#_CNPM\ThanhThien278\ThanhThien278\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\refint\ShopKoiTranS.dll
 D:\C#_CNPM\ThanhThien278\ThanhThien278\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.pdb
+>>>>>>> 09a1662ac48ebeee21c42871c362533f1195f771

@@ -5,16 +5,32 @@
       "PackagePath": "staticwebassets\\ShopKoiTranS.bundle.scp.css"
     },
     {
+      "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Advise.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\Advise.css"
+    },
+    {
       "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Create.css",
       "PackagePath": "staticwebassets\\css\\Admin\\Create.css"
+    },
+    {
+      "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Delete.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\Delete.css"
     },
     {
       "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Edit.css",
       "PackagePath": "staticwebassets\\css\\Admin\\Edit.css"
     },
     {
+      "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\FeedBack.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\FeedBack.css"
+    },
+    {
       "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\KoiWorldAdmin.css",
       "PackagePath": "staticwebassets\\css\\Admin\\KoiWorldAdmin.css"
+    },
+    {
+      "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Price.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\Price.css"
     },
     {
       "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\Admin\\Sales.css",
@@ -63,6 +79,10 @@
     {
       "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\layout.css",
       "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
+      "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
       "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\css\\price.css",
@@ -203,6 +223,10 @@
     {
       "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\img\\SHUSUI.png",
       "PackagePath": "staticwebassets\\img\\SHUSUI.png"
+    },
+    {
+      "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\img\\Sansoku.jpg",
+      "PackagePath": "staticwebassets\\img\\Sansoku.jpg"
     },
     {
       "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\img\\Screenshot 2024-10-24 162010.png",
@@ -8941,6 +8965,10 @@
       "PackagePath": "staticwebassets\\img\\kujaku1.png"
     },
     {
+      "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\img\\login.webp",
+      "PackagePath": "staticwebassets\\img\\login.webp"
+    },
+    {
       "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
@@ -10503,6 +10531,10 @@
     {
       "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\img\\yamatonishiki.png",
       "PackagePath": "staticwebassets\\img\\yamatonishiki.png"
+    },
+    {
+      "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
       "Id": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\wwwroot\\js\\services.js",

@@ -30,5 +30,7 @@ namespace ShopKoiTranS.Models
 
         [Required]
         public string TrangThai { get; set; }
+        public string UserName { get; set; }
+        public AppUserModel User { get; set; }
     }
 }

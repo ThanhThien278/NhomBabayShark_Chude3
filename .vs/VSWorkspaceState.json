@@ -1,12 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\ShopKoiTranS",
-    "\\ShopKoiTranS\\Areas",
-    "\\ShopKoiTranS\\Areas\\Admin",
-    "\\ShopKoiTranS\\Areas\\Admin\\Views",
-    "\\ShopKoiTranS\\Areas\\Admin\\Views\\Sales"
+    ""
   ],
-  "SelectedNode": "\\ShopKoiTranS\\Areas\\Admin\\Views\\Sales\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }

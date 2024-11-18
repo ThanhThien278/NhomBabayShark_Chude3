@@ -11,13 +11,13 @@
         </div>
     </div>
 </div>
+
 <div id="services">
     <div class="ser-text">Dịch Vụ Của Chúng Tôi</div>
+
     <div id="tuvan" class="ser-card">
         <div class="ser-content">
-            <img src="~/img/tuvan.jpg"
-                 alt="ảnh tư vấn"
-                 class="ser-img" />
+            <img src="~/img/tuvan.jpg" alt="ảnh tư vấn" class="ser-img" />
             <div>
                 <h3>Tư Vấn Và Chăm Sóc</h3>
                 <p>
@@ -27,10 +27,19 @@
                     hàng đầu thế giới trong lĩnh vực.
                 </p>
             </div>
-<button class="btn-dv" id="btn-consultation" onclick="window.location.href='@Url.Action("Index", "Advise")'">
-    Đặt lịch tư vấn
-</button>
 
+            @if (User.Identity.IsAuthenticated) 
+            {
+                <button class="btn-dv" id="btn-consultation" onclick="window.location.href='@Url.Action("Index", "Advise")'">
+                    Đặt lịch tư vấn
+                </button>
+            }
+            else
+            {
+                <button class="btn-dv" id="btn-consultation" onclick="window.location.href='@Url.Action("Index", "Account")'">
+                    Vui lòng đăng nhập để đặt lịch tư vấn
+                </button>
+            }
         </div>
     </div>
 
@@ -48,12 +57,19 @@
                 chuyển, kiểm tra bọc nilon có bị rỉ không, nước vận chuyển cá koi
                 phải giống với nước trong bể nuôi nhất là pH và dH.
             </p>
-            <img src="~/img/vanchuyen.jpg"
-                 alt="ảnh vận chuyển"
-                 class="ser-img" />
-            <button class="btn-dv" id="btn-transport" onclick="window.location.href='@Url.Action("Index", "Transport")'">
-                Đặt lịch vận chuyển
-            </button>
+            <img src="~/img/vanchuyen.jpg" alt="ảnh vận chuyển" class="ser-img" />
+
+            @if (User.Identity.IsAuthenticated)  {
+                <button class="btn-dv" id="btn-transport" onclick="window.location.href='@Url.Action("Index", "Transport")'">
+                    Đặt lịch vận chuyển
+                </button>
+            }
+            else
+            {
+                <button class="btn-dv" id="btn-transport" onclick="window.location.href='@Url.Action("Index", "Account")'">
+                    Vui lòng đăng nhập để đặt lịch vận chuyển
+                </button>
+            }
         </div>
     </div>
 
@@ -74,8 +90,15 @@
                         <p>lớn hơn 20cm : 90 đến 300 USD</p>
                         <p>40 cm trở lên : 1.200 đến 7.500 USD</p>
                     </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
-
+                    
+                    @if (User.Identity.IsAuthenticated)  
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+                    else
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
                 </div>
             </div>
             <div class="koi-card">
@@ -91,7 +114,14 @@
                         <p>8 đến 12 cm : 20 đến 50 USD</p>
                         <p>Lớn hơn 18 cm: 90 USD</p>
                     </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+                    else
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
 
                 </div>
             </div>
@@ -119,7 +149,14 @@
                             Showa có thể có giá dao động từ 300 đến 1.800 USD
                         </p>
                     </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+                    else
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
 
                 </div>
             </div>
@@ -143,7 +180,14 @@
                             có giá từ khoảng 90 USD cho cá kích thước nhỏ (6-10 inch)
                         </p>
                     </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+                    else
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
 
                 </div>
             </div>
@@ -172,9 +216,15 @@
                             con 12 inch (30 cm). Mức giá trung bình của những con cỡ
                             trung như 5-6 inch (13-15 cm) là khoảng 40-64 USD
                         </p>
-                    </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
-
+                    </div> 
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+                    else
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
                 </div>
             </div>
             <div class="koi-card">
@@ -204,13 +254,20 @@
                             điểm cá
                         </p>
                     </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
-
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+                    else
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <div id="sale">
     <div class="sale-text">Bạn có gì khi đến với chúng tôi ?</div>
     <img src="~/img/bachv.jpg" alt="" />
@@ -219,58 +276,57 @@
     <img src="~/img/hvhk.jpg" alt="" />
 </div>
 
-<div id="review">
-    <div class="rev-text">Khách hàng đã nói gì về chúng tôi</div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="~/img/rv1.jpg" alt="Review 1" />
+    <div id="review">
+        <div class="rev-text">Khách hàng đã nói gì về chúng tôi</div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="~/img/rv1.jpg" alt="Review 1" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv2.jpg" alt="Review 2" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv3.jpg" alt="Review 3" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv4.jpg" alt="Review 4" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv5.jpg" alt="Review 5" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv6.jpg" alt="Review 6" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv7.jpg" alt="Review 7" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv8.jpg" alt="Review 8" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv9.jpg" alt="Review 9" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv10.jpg" alt="Review 10" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv11.jpg" alt="Review 11" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv12.jpg" alt="Review 12" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv13.jpg" alt="Review 13" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv14.jpg" alt="Review 14" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="~/img/rv15.jpg" alt="Review 15" />
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv2.jpg" alt="Review 2" />
-            </div>
-            <
-            <div class="swiper-slide">
-                <img src="~/img/rv3.jpg" alt="Review 3" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv4.jpg" alt="Review 4" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv5.jpg" alt="Review 5" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv6.jpg" alt="Review 6" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv7.jpg" alt="Review 7" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv8.jpg" alt="Review 8" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv9.jpg" alt="Review 9" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv10.jpg" alt="Review 10" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv11.jpg" alt="Review 11" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv12.jpg" alt="Review 12" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv13.jpg" alt="Review 13" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv14.jpg" alt="Review 14" />
-            </div>
-            <div class="swiper-slide">
-                <img src="~/img/rv15.jpg" alt="Review 15" />
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
     </div>
-</div>

@@ -1,14 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopKoiTranS.Models;
 using ShopKoiTranS.Repository;
+using Microsoft.AspNetCore.Identity;
 
 public class TransportController : Controller
 {
     private readonly DataContext _context;
+    private readonly UserManager<AppUserModel> _userManager;
 
-    public TransportController(DataContext context)
+    public TransportController(DataContext context, UserManager<AppUserModel> userManager)
     {
         _context = context;
+        _userManager = userManager;
     }
 
     public decimal CalculateTransportPrice(string phuongThucVanChuyen, string phuongTienVanChuyen, decimal canNang, decimal khoangCach, int soLuongCa)
@@ -20,58 +23,55 @@ public class TransportController : Controller
             .Where(p => p.TransportMethod.ToLower() == phuongThucVanChuyen && p.VehicleType.ToLower() == phuongTienVanChuyen)
             .ToList();
 
-        if (priceTable == null || !priceTable.Any())
+        if (!priceTable.Any())
         {
             throw new Exception("Không tìm thấy bảng giá cho phương thức và phương tiện vận chuyển này.");
         }
 
         decimal price = 0;
-        foreach (var priceRow in priceTable)
+        var priceRow = priceTable.First();  // Giả sử lấy giá trị của dòng đầu tiên
+
+        // Tính giá theo cân nặng
+        if (canNang >= 1 && canNang <= 5)
         {
-            // Tính giá theo cân nặng
-            if (canNang >= 1 && canNang <= 5)
-            {
-                price = priceRow.Price0_50;
-            }
-            else if (canNang >= 6 && canNang <= 10)
-            {
-                price = priceRow.Price51_100;
-            }
-            else if (canNang >= 11 && canNang <= 20)
-            {
-                price = priceRow.Price101_200;
-            }
-            else if (canNang > 20)
-            {
-                price = priceRow.PriceOver20Kg;
-            }
+            price = priceRow.Price0_50;
+        }
+        else if (canNang >= 6 && canNang <= 10)
+        {
+            price = priceRow.Price51_100;
+        }
+        else if (canNang >= 11 && canNang <= 20)
+        {
+            price = priceRow.Price101_200;
+        }
+        else if (canNang > 20)
+        {
+            price = priceRow.PriceOver20Kg;
         }
 
         // Tính giá theo khoảng cách
         if (khoangCach <= 50)
         {
-            price += priceTable.First().Price0_50;
+            price += priceRow.Price0_50;
         }
         else if (khoangCach <= 100)
         {
-            price += priceTable.First().Price51_100;
+            price += priceRow.Price51_100;
         }
         else if (khoangCach <= 200)
         {
-            price += priceTable.First().Price101_200;
+            price += priceRow.Price101_200;
         }
         else if (khoangCach > 200)
         {
-            price += priceTable.First().PriceOver200;
+            price += priceRow.PriceOver200;
         }
 
-       
-        price *= soLuongCa; 
+        // Tính tổng giá với số lượng cá
+        price *= soLuongCa;
 
         return price;
     }
-
-
 
     [HttpGet]
     public IActionResult Index()
@@ -79,46 +79,60 @@ public class TransportController : Controller
         return View();
     }
 
-
     [HttpPost]
-    public IActionResult Calculate(string customerName, string customerPhone, string loaiCa, string tenCa, decimal canNang, string diaDiemXuatPhat, string diaDiemDen, string phuongThucVanChuyen, string phuongTienVanChuyen, decimal khoangCach, int soLuongCa)
+    public async Task<IActionResult> Calculate(string customerName, string customerPhone, string loaiCa, string tenCa, decimal canNang, string diaDiemXuatPhat, string diaDiemDen, string phuongThucVanChuyen, string phuongTienVanChuyen, decimal khoangCach, int soLuongCa)
     {
         if (ModelState.IsValid)
         {
- 
-            decimal totalPrice = CalculateTransportPrice(phuongThucVanChuyen, phuongTienVanChuyen, canNang, khoangCach, soLuongCa);
-
-           
-            TransportModel newOrder = new TransportModel
+            try
             {
-                CustomerName = customerName,
-                CustomerPhone = customerPhone,
-                LoaiCa = loaiCa,
-                TenCa = tenCa,
-                CanNang = canNang,
-                DiaDiemXuatPhat = diaDiemXuatPhat,
-                DiaDiemDen = diaDiemDen,
-                PhuongThucVanChuyen = phuongThucVanChuyen,
-                PhuongTienVanChuyen = phuongTienVanChuyen,
-                Distance = khoangCach,
-                TransportPrice = totalPrice,  
-                CreatedAt = DateTime.Now
-            };
+                // Lấy tên người dùng từ session hoặc Identity
+                var currentUserName = User.Identity.Name;  // Đây là cách lấy UserName của người dùng đang đăng nhập.
 
-            _context.DonVanChuyens.Add(newOrder);
-            _context.SaveChanges();
+                if (string.IsNullOrEmpty(currentUserName))
+                {
+                    ViewBag.ErrorMessage = "Bạn cần đăng nhập để đặt đơn vận chuyển.";
+                    return View("Index");
+                }
 
+                decimal totalPrice = CalculateTransportPrice(phuongThucVanChuyen, phuongTienVanChuyen, canNang, khoangCach, soLuongCa);
 
-            ViewBag.SuccessMessage = "Đặt đơn vận chuyển thành công!";
-            ViewBag.TotalPrice = totalPrice;
-            ViewBag.CreatedAt = newOrder.CreatedAt;
-            ViewBag.OrderDetails = newOrder;
+                // Tạo mới đơn vận chuyển và liên kết với UserName
+                TransportModel newOrder = new TransportModel
+                {
+                    CustomerName = customerName,
+                    CustomerPhone = customerPhone,
+                    LoaiCa = loaiCa,
+                    TenCa = tenCa,
+                    CanNang = canNang,
+                    DiaDiemXuatPhat = diaDiemXuatPhat,
+                    DiaDiemDen = diaDiemDen,
+                    PhuongThucVanChuyen = phuongThucVanChuyen,
+                    PhuongTienVanChuyen = phuongTienVanChuyen,
+                    Distance = khoangCach,
+                    TransportPrice = totalPrice,
+                    CreatedAt = DateTime.Now,
+                    UserName = currentUserName // Lưu tên người dùng vào đơn vận chuyển
+                };
 
-            return View("Index");
+                _context.DonVanChuyens.Add(newOrder);
+                await _context.SaveChangesAsync();
+
+                ViewBag.SuccessMessage = "Đặt đơn vận chuyển thành công!";
+                ViewBag.TotalPrice = totalPrice;
+                ViewBag.CreatedAt = newOrder.CreatedAt;
+                ViewBag.OrderDetails = newOrder;
+
+                return View("Index");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+                return View("Index");
+            }
         }
 
         ViewBag.ErrorMessage = "Có lỗi xảy ra, vui lòng kiểm tra lại các thông tin.";
         return View("Index");
     }
-
 }

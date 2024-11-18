@@ -58,6 +58,7 @@ namespace ShopKoiTranS.Models
 
         public decimal TransportPrice { get; set; }
         public DateTime CreatedAt { get; set; }
-        public string UserId { get; set; }
+        public string UserName { get; set; }
+        public AppUserModel User { get; set; }
     }
 }
