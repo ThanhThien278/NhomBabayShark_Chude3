@@ -17,36 +17,20 @@
         <div class="login__form">
             <h2 class="login__title">Tạo Tài Khoản</h2>
 
-            @* Hiển thị lỗi tổng hợp *@
             <div asp-validation-summary="All" class="alert"></div>
 
             <form asp-action="Register" asp-controller="Account" method="post">
                 <div class="login__box">
-<<<<<<< HEAD
-                    <input type="text" class="login__input"  asp-for="Username" required>
-=======
                     <input type="text" class="login__input" asp-for="Username" required>
->>>>>>> 09a1662ac48ebeee21c42871c362533f1195f771
                     <label class="login__label">Tên Đăng Nhập</label>
-                    <span asp-validation-for="Username" class="text-danger"></span>
                 </div>
                 <div class="login__box">
-<<<<<<< HEAD
-                    <input type="email" class="login__input"  asp-for="Email" required>
-=======
                     <input type="email" class="login__input" asp-for="Email" required>
->>>>>>> 09a1662ac48ebeee21c42871c362533f1195f771
                     <label class="login__label">Email</label>
-                    <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
                 <div class="login__box">
-<<<<<<< HEAD
-                    <input type="password" class="login__input"  asp-for="Password" required>
-=======
                     <input type="password" class="login__input" asp-for="Password" required>
->>>>>>> 09a1662ac48ebeee21c42871c362533f1195f771
                     <label class="login__label">Mật Khẩu</label>
-                    <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
                 <button type="submit" class="login__button">Đăng Ký</button>
             </form>
@@ -56,8 +40,4 @@
         </div>
     </div>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 09a1662ac48ebeee21c42871c362533f1195f771

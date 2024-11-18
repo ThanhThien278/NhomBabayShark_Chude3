@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopKoiTranS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a2539fd2bcb099ba08048a743ff16532cfa4c82")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09a1662ac48ebeee21c42871c362533f1195f771")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopKoiTranS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopKoiTranS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
