@@ -18,7 +18,7 @@
         <div class="main-content">
             <h2>Danh Sách KoiWorld</h2>
 
-            <!-- Nút Thêm Cá ở trên bảng -->
+
             <div class="button-container">
                 <a asp-area="Admin" asp-action="Create" asp-controller="KoiWorld" class="btn btn-add">Thêm Cá Koi</a>
             </div>
@@ -48,7 +48,7 @@
                             <td>@koiWorld.Description</td>
                             <td>@koiWorld.Price VND</td>
                             <td>
-                                <!-- Edit and Delete buttons styled like Add button -->
+
                                 <a asp-area="Admin" asp-action="Edit" asp-controller="KoiWorld" asp-route-Id="@koiWorld.KoiId" class="btn btn-edit">Chỉnh Sửa</a>
                                 <a asp-area="Admin" asp-action="Delete" asp-controller="KoiWorld" asp-route-Id="@koiWorld.KoiId" class="btn btn-delete">Xóa</a>
                             </td>

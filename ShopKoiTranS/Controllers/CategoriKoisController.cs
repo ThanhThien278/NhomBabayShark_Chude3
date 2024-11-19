@@ -9,7 +9,7 @@ namespace ShopKoiTranS.Controllers
     {
         private readonly DataContext _context;
 
-        // Constructor nhận DataContext để truy vấn cơ sở dữ liệu
+
         public CategoriKoisController(DataContext context)
         {
             _context = context;

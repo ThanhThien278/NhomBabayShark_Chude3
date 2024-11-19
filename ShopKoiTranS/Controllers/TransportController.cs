@@ -29,9 +29,9 @@ public class TransportController : Controller
         }
 
         decimal price = 0;
-        var priceRow = priceTable.First();  // Giả sử lấy giá trị của dòng đầu tiên
+        var priceRow = priceTable.First(); 
 
-        // Tính giá theo cân nặng
+
         if (canNang >= 1 && canNang <= 5)
         {
             price = priceRow.Price0_50;
@@ -49,7 +49,7 @@ public class TransportController : Controller
             price = priceRow.PriceOver20Kg;
         }
 
-        // Tính giá theo khoảng cách
+
         if (khoangCach <= 50)
         {
             price += priceRow.Price0_50;
@@ -67,7 +67,7 @@ public class TransportController : Controller
             price += priceRow.PriceOver200;
         }
 
-        // Tính tổng giá với số lượng cá
+
         price *= soLuongCa;
 
         return price;
@@ -86,8 +86,7 @@ public class TransportController : Controller
         {
             try
             {
-                // Lấy tên người dùng từ session hoặc Identity
-                var currentUserName = User.Identity.Name;  // Đây là cách lấy UserName của người dùng đang đăng nhập.
+                var currentUserName = User.Identity.Name;  
 
                 if (string.IsNullOrEmpty(currentUserName))
                 {
@@ -97,7 +96,7 @@ public class TransportController : Controller
 
                 decimal totalPrice = CalculateTransportPrice(phuongThucVanChuyen, phuongTienVanChuyen, canNang, khoangCach, soLuongCa);
 
-                // Tạo mới đơn vận chuyển và liên kết với UserName
+
                 TransportModel newOrder = new TransportModel
                 {
                     CustomerName = customerName,
@@ -112,7 +111,7 @@ public class TransportController : Controller
                     Distance = khoangCach,
                     TransportPrice = totalPrice,
                     CreatedAt = DateTime.Now,
-                    UserName = currentUserName // Lưu tên người dùng vào đơn vận chuyển
+                    UserName = currentUserName 
                 };
 
                 _context.DonVanChuyens.Add(newOrder);

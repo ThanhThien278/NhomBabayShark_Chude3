@@ -1,5 +1,4 @@
-﻿/* Reset CSS */
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +10,7 @@ body {
     background-color: #f4f6f8;
 }
 
-/* Sidebar Styles */
+
 .sidebar {
     width: 350px;
     position: fixed;
@@ -56,7 +55,7 @@ form {
     flex-direction: column;
 }
 
-/* Form Group Styling */
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -93,7 +92,7 @@ textarea {
     resize: vertical;
 }
 
-/* Button Styling */
+
 button[type="submit"],
 .btn-back {
     background-color: #3498db;
@@ -122,7 +121,7 @@ button[type="submit"],
         background-color: #c0392b;
     }
 
-/* Success Alert */
+
 .alert-success {
     background-color: #2ecc71;
     color: #ffffff;

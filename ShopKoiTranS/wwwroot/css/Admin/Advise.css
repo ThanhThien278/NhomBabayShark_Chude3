@@ -24,7 +24,7 @@ h2 {
 
 .alert {
     padding: 15px;
-    background-color: #f44336; /* Màu đỏ */
+    background-color: #f44336; 
     color: white;
     border-radius: 5px;
     margin: 20px 0;
@@ -61,7 +61,7 @@ h2 {
 
 
 .btn-warning {
-    background-color: #ff9800; /* Màu cam */
+    background-color: #ff9800;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -73,5 +73,5 @@ h2 {
 
   
     .btn-warning:hover {
-        background-color: #e68900; /* Màu cam đậm hơn */
+        background-color: #e68900; 
     }

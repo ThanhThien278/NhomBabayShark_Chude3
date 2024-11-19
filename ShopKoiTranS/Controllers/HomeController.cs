@@ -16,7 +16,7 @@ namespace ShopKoiTranS.Controllers
             _dataContext = context;  
         }
 
-        // Phương thức trả về trang chủ (Index)
+
         public IActionResult Index()
         {
 
@@ -25,14 +25,14 @@ namespace ShopKoiTranS.Controllers
             if (!User.Identity.IsAuthenticated)
             {
                 TempData["Message"] = "Vui lòng đăng nhập để tiếp tục.";
-                TempData["MessageType"] = "warning"; // Loại thông báo
+                TempData["MessageType"] = "warning"; 
             }
 
             return View();
         }
 
 
-        // Phương thức trả về thông tin về Koi World
+
         public IActionResult GetKoiWorld()
         {
             var koiWorld = _dataContext.KoiWorld.ToList();

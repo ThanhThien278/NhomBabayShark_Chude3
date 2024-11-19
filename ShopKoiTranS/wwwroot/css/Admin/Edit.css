@@ -47,7 +47,7 @@ select {
     input[type="number"]:focus,
     textarea:focus,
     select:focus {
-        border-color: #16a085; /* Thay đổi màu border khi focus */
+        border-color: #16a085;
         outline: none;
     }
 

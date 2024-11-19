@@ -175,7 +175,7 @@
 <div class="container">
     <h2>Giỏ Hàng Của Bạn</h2>
 
-    <!-- Cart Table -->
+
     <table class="table cart-table">
         <thead>
             <tr>
@@ -209,7 +209,6 @@
         </tbody>
     </table>
 
-    <!-- Advise Table -->
     <h3>Danh sách Tư vấn</h3>
     <table class="table advise-table">
         <thead>
@@ -243,7 +242,7 @@
         </tbody>
     </table>
 
-    <!-- Transport Table -->
+
     <h3>Danh sách Vận chuyển</h3>
     <table class="table transport-table">
         <thead>
@@ -289,7 +288,7 @@
         </tbody>
     </table>
 
-    <!-- Grand Total and Payment -->
+
     <div class="payment-section">
         <h4>Tổng tiền:</h4>
         <div class="total-price" id="grand-total">@Model.GrandTotal</div>
@@ -300,7 +299,7 @@
 </div>
 
 <script>
-    // Remove item from cart
+
     function removeItem(itemId) {
         fetch(`/Cart/RemoveItem`, {
             method: 'POST',
@@ -320,7 +319,7 @@
             .catch(error => alert('Có lỗi xảy ra!'));
     }
 
-    // Remove advise
+
     function removeAdvise(adviseId) {
         fetch(`/Cart/RemoveAdvise`, {
             method: 'POST',
@@ -340,7 +339,7 @@
             .catch(error => alert('Có lỗi xảy ra!'));
     }
 
-    // Remove transport
+
     function removeTransport(transportId) {
         fetch(`/Cart/RemoveTransport`, {
             method: 'POST',
@@ -360,7 +359,7 @@
             .catch(error => alert('Có lỗi xảy ra!'));
     }
 
-    // Update total price when quantity changes
+
     function updateQuantity(itemId) {
         let quantity = document.querySelector(`.quantity-input[data-item-id="${itemId}"]`).value;
         fetch(`/Cart/UpdateQuantity`, {
@@ -380,10 +379,10 @@
             .catch(error => alert('Có lỗi xảy ra!'));
     }
 
-    // Update grand total price
+
     function updateGrandTotal() {
         let grandTotal = 0;
-        // Calculate item total
+
         document.querySelectorAll('.quantity-input').forEach(input => {
             const itemId = input.getAttribute('data-item-id');
             const quantity = parseInt(input.value);
@@ -391,13 +390,13 @@
             grandTotal += price * quantity;
         });
 
-        // Calculate transport total
+
         document.querySelectorAll('.transport-table tbody tr').forEach(row => {
             const transportPrice = parseFloat(row.querySelector('td:nth-child(13)').textContent.replace(/[^0-9.-]+/g, ""));
             grandTotal += transportPrice;
         });
 
-        // Update total price on page
+
         document.getElementById('grand-total').textContent = grandTotal.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
     }
 </script>

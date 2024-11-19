@@ -11,13 +11,13 @@ public class FeedbackController : Controller
         _context = context;
     }
 
-    // GET: Feedback
+
     public IActionResult Index()
     {
         return View();
     }
 
-    // POST: Feedback
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Index(FeedbackModel feedback)
@@ -28,9 +28,9 @@ public class FeedbackController : Controller
             _context.Add(feedback);
             await _context.SaveChangesAsync();
 
-            // Gửi thông báo thành công đến View
+
             TempData["SuccessMessage"] = "Cảm ơn bạn đã gửi feedback!";
-            return RedirectToAction(nameof(Index));  // Chuyển về trang Index sau khi gửi thành công
+            return RedirectToAction(nameof(Index));  
         }
 
         return View(feedback);

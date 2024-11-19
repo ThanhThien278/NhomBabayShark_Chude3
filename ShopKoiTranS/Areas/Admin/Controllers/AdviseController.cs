@@ -18,7 +18,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             _context = context;
         }
 
-        // GET: Admin/Advise
+
         public async Task<IActionResult> Index()
         {
             var advises = await _context.LichTuVans
@@ -34,7 +34,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             return View(advises);
         }
 
-        // GET: Admin/Advise/Confirm/5
+
         [HttpGet]
         public async Task<IActionResult> Confirm(int id)
         {
@@ -44,10 +44,10 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            return View(advise); // Trả về view Confirm.cshtml để xác nhận tư vấn
+            return View(advise); 
         }
 
-        // POST: Admin/Advise/Confirm/5
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Confirm(int id, DateTime? consultationTime)
@@ -61,7 +61,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             if (consultationTime == null || consultationTime <= DateTime.Now)
             {
                 ModelState.AddModelError("ThoiGianTuVan", "Thời gian tư vấn phải lớn hơn thời gian hiện tại.");
-                return View(advise); // Trả về view với thông báo lỗi
+                return View(advise); 
             }
 
             advise.TrangThai = "Đã xác nhận";

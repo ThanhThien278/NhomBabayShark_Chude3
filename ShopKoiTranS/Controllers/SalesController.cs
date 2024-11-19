@@ -20,7 +20,7 @@ namespace ShopKoiTranS.Controllers
             
             var salesModels = _context.MemberCars.ToList(); 
 
-            // Pass the data to the view
+
             return View(salesModels);
         }
     }

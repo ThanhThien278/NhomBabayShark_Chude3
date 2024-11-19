@@ -30,8 +30,8 @@ namespace ShopKoiTranS.Controllers
             {
                 try
                 {
-                    // Lấy tên người dùng từ session hoặc Identity
-                    var currentUserName = User.Identity.Name;  // Đây là cách lấy UserName của người dùng đang đăng nhập.
+
+                    var currentUserName = User.Identity.Name;  
 
                     if (string.IsNullOrEmpty(currentUserName))
                     {
@@ -39,7 +39,7 @@ namespace ShopKoiTranS.Controllers
                         return View("Index");
                     }
 
-                    // Tạo một bản ghi mới cho tư vấn
+
                     AdviseModel newAdvise = new AdviseModel
                     {
                         CustomerName = customerName,
@@ -48,10 +48,10 @@ namespace ShopKoiTranS.Controllers
                         MoTa = moTa,
                         TrangThai = "Chờ xác nhận",
                         ThoiGianTuVan = DateTime.Now,
-                        UserName = currentUserName // Lưu tên người dùng vào tư vấn
+                        UserName = currentUserName 
                     };
 
-                    // Thêm vào cơ sở dữ liệu
+
                     _context.LichTuVans.Add(newAdvise);
                     await _context.SaveChangesAsync();
 
@@ -67,7 +67,6 @@ namespace ShopKoiTranS.Controllers
                 }
             }
 
-            // Thông báo lỗi nếu có
             ViewBag.ErrorMessage = "Có lỗi xảy ra, vui lòng kiểm tra lại các thông tin.";
             return View("Index");
         }
