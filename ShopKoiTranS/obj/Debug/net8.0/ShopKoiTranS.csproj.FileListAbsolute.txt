@@ -140,3 +140,15 @@ D:\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\refint\ShopKoiTranS.dll
 D:\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.pdb
 D:\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.genruntimeconfig.cache
 D:\NhomBabayShark_Chude3\ShopKoiTranS\obj\Debug\net8.0\ref\ShopKoiTranS.dll
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.csproj.AssemblyReference.cache
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.AssemblyInfoInputs.cache
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.AssemblyInfo.cs
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.csproj.CoreCompileInputs.cache
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.MvcApplicationPartsAssemblyInfo.cache
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.RazorAssemblyInfo.cache
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.RazorAssemblyInfo.cs
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.sourcelink.json
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.dll
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\refint\ShopKoiTranS.dll
+D:\C#\New folder (9)\ShopKoiTranS\obj\Debug\net8.0\ShopKoiTranS.pdb
