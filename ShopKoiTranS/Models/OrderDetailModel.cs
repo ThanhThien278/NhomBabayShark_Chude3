@@ -13,7 +13,12 @@ namespace ShopKoiTranS.Models
         public decimal Price { get; set; }
         public int Quantity { get; set; }
 
+        public int? TransportId { get; set; }
+        public TransportModel Transport { get; set; }
+
+        public int? AdviseId { get; set; }
+        public AdviseModel Advise { get; set; }
+
         public OrderModel Order { get; set; }
     }
-
 }

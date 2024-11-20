@@ -30,7 +30,7 @@
                 <p><strong>Mô tả:</strong></p>
                 <p>@Model.Description</p>
 
-
+                <!-- "Mua Ngay" form for adding item to cart -->
                 <form asp-action="Add" asp-controller="Cart" method="post">
                     <input type="hidden" name="id" value="@Model.KoiId" />
                     <input type="hidden" name="quantity" value="1" />

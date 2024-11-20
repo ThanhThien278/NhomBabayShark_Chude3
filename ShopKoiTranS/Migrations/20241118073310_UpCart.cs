@@ -4,10 +4,10 @@
 
 namespace ShopKoiTranS.Migrations
 {
-
+    /// <inheritdoc />
     public partial class UpCart : Migration
     {
-
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<decimal>(
@@ -18,7 +18,7 @@ namespace ShopKoiTranS.Migrations
                 defaultValue: 0m);
         }
 
-
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(

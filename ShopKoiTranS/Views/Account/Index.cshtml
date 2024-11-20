@@ -17,7 +17,7 @@
         <div class="login__form">
             <h2 class="login__title">Đăng Nhập</h2>
 
-
+            <!-- Hiển thị lỗi tổng hợp -->
             <div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
 
             <form asp-action="Index" asp-controller="Account" method="post">
@@ -33,7 +33,7 @@
                 <button type="submit" class="login__button">Đăng Nhập</button>
             </form>
 
-
+            <!-- Liên kết đến trang Đăng Ký và Quên mật khẩu -->
             <a href="@Url.Action("Register", "Account")" class="btn">Chưa có tài khoản? Đăng Ký</a>
             <a href="@Url.Action("ForgotPassword", "Account")" class="btn">Quên mật khẩu?</a>
             <a href="@Url.Action("Index", "Home")" class="btn btn-back">Quay lại trang chủ</a>

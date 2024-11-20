@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Identity;
 public class TransportController : Controller
 {
     private readonly DataContext _context;
-    private readonly UserManager<AppUserModel> _userManager;
+    private readonly UserManager<AppAdminModel> _userManager;
 
-    public TransportController(DataContext context, UserManager<AppUserModel> userManager)
+    public TransportController(DataContext context, UserManager<AppAdminModel> userManager)
     {
         _context = context;
         _userManager = userManager;
@@ -29,9 +29,9 @@ public class TransportController : Controller
         }
 
         decimal price = 0;
-        var priceRow = priceTable.First(); 
+        var priceRow = priceTable.First();  // Giả sử lấy giá trị của dòng đầu tiên
 
-
+        // Tính giá theo cân nặng
         if (canNang >= 1 && canNang <= 5)
         {
             price = priceRow.Price0_50;
@@ -49,7 +49,7 @@ public class TransportController : Controller
             price = priceRow.PriceOver20Kg;
         }
 
-
+        // Tính giá theo khoảng cách
         if (khoangCach <= 50)
         {
             price += priceRow.Price0_50;
@@ -67,7 +67,7 @@ public class TransportController : Controller
             price += priceRow.PriceOver200;
         }
 
-
+        // Tính tổng giá với số lượng cá
         price *= soLuongCa;
 
         return price;
@@ -86,6 +86,7 @@ public class TransportController : Controller
         {
             try
             {
+               
                 var currentUserName = User.Identity.Name;  
 
                 if (string.IsNullOrEmpty(currentUserName))
@@ -96,7 +97,7 @@ public class TransportController : Controller
 
                 decimal totalPrice = CalculateTransportPrice(phuongThucVanChuyen, phuongTienVanChuyen, canNang, khoangCach, soLuongCa);
 
-
+                
                 TransportModel newOrder = new TransportModel
                 {
                     CustomerName = customerName,

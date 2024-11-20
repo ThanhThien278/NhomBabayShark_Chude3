@@ -175,7 +175,7 @@
 <div class="container">
     <h2>Giỏ Hàng Của Bạn</h2>
 
-
+    <!-- Cart Table -->
     <table class="table cart-table">
         <thead>
             <tr>
@@ -209,6 +209,7 @@
         </tbody>
     </table>
 
+    <!-- Advise Table -->
     <h3>Danh sách Tư vấn</h3>
     <table class="table advise-table">
         <thead>
@@ -242,7 +243,7 @@
         </tbody>
     </table>
 
-
+    <!-- Transport Table -->
     <h3>Danh sách Vận chuyển</h3>
     <table class="table transport-table">
         <thead>
@@ -288,11 +289,11 @@
         </tbody>
     </table>
 
-
+    <!-- Grand Total and Payment -->
     <div class="payment-section">
         <h4>Tổng tiền:</h4>
         <div class="total-price" id="grand-total">@Model.GrandTotal</div>
-        <form method="post" action="@Url.Action("Index", "KoiWorld")">
+        <form method="post" action="@Url.Action("Index", "CheckOut")">
             <button type="submit" class="btn btn-success">Thanh Toán</button>
         </form>
     </div>
@@ -300,26 +301,30 @@
 
 <script>
 
-    function removeItem(itemId) {
-        fetch(`/Cart/RemoveItem`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ productId: itemId })
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    document.getElementById(`cart-item-${itemId}`).remove();
-                    updateGrandTotal();
-                    alert(data.message);
-                } else {
-                    alert(data.message);
-                }
+    function removeItem(koiId) {
+        if (confirm('Bạn có chắc muốn xóa sản phẩm này?')) {
+            fetch(`/Cart/RemoveItem`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ koiId: koiId })
             })
-            .catch(error => alert('Có lỗi xảy ra!'));
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert(data.message);
+                        // Xóa dòng sản phẩm khỏi bảng
+                        document.querySelector(`#cart-item-${koiId}`).remove();
+                        updateGrandTotal();
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .catch(error => console.error('Lỗi:', error));
+        }
     }
 
 
+   
     function removeAdvise(adviseId) {
         fetch(`/Cart/RemoveAdvise`, {
             method: 'POST',
@@ -339,7 +344,7 @@
             .catch(error => alert('Có lỗi xảy ra!'));
     }
 
-
+   
     function removeTransport(transportId) {
         fetch(`/Cart/RemoveTransport`, {
             method: 'POST',
@@ -359,7 +364,7 @@
             .catch(error => alert('Có lỗi xảy ra!'));
     }
 
-
+    
     function updateQuantity(itemId) {
         let quantity = document.querySelector(`.quantity-input[data-item-id="${itemId}"]`).value;
         fetch(`/Cart/UpdateQuantity`, {
@@ -379,10 +384,10 @@
             .catch(error => alert('Có lỗi xảy ra!'));
     }
 
-
+    
     function updateGrandTotal() {
         let grandTotal = 0;
-
+     
         document.querySelectorAll('.quantity-input').forEach(input => {
             const itemId = input.getAttribute('data-item-id');
             const quantity = parseInt(input.value);
@@ -390,13 +395,13 @@
             grandTotal += price * quantity;
         });
 
-
+       
         document.querySelectorAll('.transport-table tbody tr').forEach(row => {
             const transportPrice = parseFloat(row.querySelector('td:nth-child(13)').textContent.replace(/[^0-9.-]+/g, ""));
             grandTotal += transportPrice;
         });
 
-
+       
         document.getElementById('grand-total').textContent = grandTotal.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
     }
 </script>

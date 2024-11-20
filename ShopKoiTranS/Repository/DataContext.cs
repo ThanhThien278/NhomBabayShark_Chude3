@@ -65,7 +65,7 @@ namespace ShopKoiTranS.Repository
                 .HasColumnType("decimal(18, 2)");
 
             modelBuilder.Entity<OrderModel>()
-                .Property(o => o.TotalAmount)
+                .Property(o => o.GrandTota)
                 .HasColumnType("decimal(18, 2)");
            
            

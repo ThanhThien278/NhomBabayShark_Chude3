@@ -18,16 +18,16 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             _context = context;
         }
 
-
+        // GET: Sales/Index
         public async Task<IActionResult> Index()
         {
             var salesList = await _context.MemberCars.ToListAsync();
             return View(salesList);
         }
 
-
+        // GET: Sales/Create
         
-
+        // GET: Sales/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
             var sales = await _context.MemberCars.FindAsync(id);
@@ -39,7 +39,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             return View(sales);
         }
 
-
+        // POST: Sales/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, SalesModel updatedSales, IFormFile Image)
@@ -57,7 +57,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                     return NotFound();
                 }
 
-
+                // Xử lý ảnh mới
                 if (Image != null && Image.Length > 0)
                 {
                     var filePath = Path.Combine("wwwroot/img", Image.FileName);
@@ -69,10 +69,10 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                 }
                 else
                 {
-                    updatedSales.ImageUrl = sales.ImageUrl; 
+                    updatedSales.ImageUrl = sales.ImageUrl; // Giữ nguyên ảnh cũ nếu không có ảnh mới
                 }
 
-
+                // Cập nhật thông tin sales
                 sales.Title = updatedSales.Title;
                 sales.Condition = updatedSales.Condition;
                 sales.Benefits = updatedSales.Benefits;
@@ -85,10 +85,10 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(updatedSales); 
+            return View(updatedSales); // Trả về view với lỗi nếu có
         }
 
-
+        // GET: Sales/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
             var sales = await _context.MemberCars.FindAsync(id);
@@ -100,7 +100,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             return View(sales);
         }
 
-
+        // POST: Sales/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

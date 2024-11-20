@@ -105,7 +105,7 @@
   const getTransitionDurationFromElement = element => {
     if (!element) {
       return 0;
-    } 
+    } // Get transition-duration of the element
 
 
     let {
@@ -113,11 +113,11 @@
       transitionDelay
     } = window.getComputedStyle(element);
     const floatTransitionDuration = Number.parseFloat(transitionDuration);
-    const floatTransitionDelay = Number.parseFloat(transitionDelay); 
+    const floatTransitionDelay = Number.parseFloat(transitionDelay); // Return 0 if element or transition duration is not found
 
     if (!floatTransitionDuration && !floatTransitionDelay) {
       return 0;
-    } 
+    } // If multiple durations are defined, take the first
 
 
     transitionDuration = transitionDuration.split(',')[0];
@@ -143,7 +143,7 @@
 
   const getElement = obj => {
     if (isElement(obj)) {
-
+      // it's a jQuery object or a node element
       return obj.jquery ? obj[0] : obj;
     }
 
@@ -193,7 +193,7 @@
   const findShadowRoot = element => {
     if (!document.documentElement.attachShadow) {
       return null;
-    } 
+    } // Can find the shadow root otherwise it'll return the document
 
 
     if (typeof element.getRootNode === 'function') {
@@ -203,7 +203,7 @@
 
     if (element instanceof ShadowRoot) {
       return element;
-    } 
+    } // when we don't find a shadow root
 
 
     if (!element.parentNode) {
@@ -225,7 +225,7 @@
 
 
   const reflow = element => {
-   
+    // eslint-disable-next-line no-unused-expressions
     element.offsetHeight;
   };
 
@@ -263,7 +263,7 @@
   const defineJQueryPlugin = plugin => {
     onDOMContentLoaded(() => {
       const $ = getjQuery();
-
+      /* istanbul ignore if */
 
       if ($) {
         const name = plugin.NAME;

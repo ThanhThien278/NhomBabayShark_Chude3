@@ -9,9 +9,9 @@ namespace ShopKoiTranS.Controllers
     public class AdviseController : Controller
     {
         private readonly DataContext _context;
-        private readonly UserManager<AppUserModel> _userManager;
+        private readonly UserManager<AppAdminModel> _userManager;
 
-        public AdviseController(DataContext context, UserManager<AppUserModel> userManager)
+        public AdviseController(DataContext context, UserManager<AppAdminModel> userManager)
         {
             _context = context;
             _userManager = userManager;
@@ -30,8 +30,8 @@ namespace ShopKoiTranS.Controllers
             {
                 try
                 {
-
-                    var currentUserName = User.Identity.Name;  
+                    // Lấy tên người dùng từ session hoặc Identity
+                    var currentUserName = User.Identity.Name;  // Đây là cách lấy UserName của người dùng đang đăng nhập.
 
                     if (string.IsNullOrEmpty(currentUserName))
                     {
@@ -39,7 +39,7 @@ namespace ShopKoiTranS.Controllers
                         return View("Index");
                     }
 
-
+                    // Tạo một bản ghi mới cho tư vấn
                     AdviseModel newAdvise = new AdviseModel
                     {
                         CustomerName = customerName,
@@ -48,10 +48,10 @@ namespace ShopKoiTranS.Controllers
                         MoTa = moTa,
                         TrangThai = "Chờ xác nhận",
                         ThoiGianTuVan = DateTime.Now,
-                        UserName = currentUserName 
+                        UserName = currentUserName // Lưu tên người dùng vào tư vấn
                     };
 
-
+                    // Thêm vào cơ sở dữ liệu
                     _context.LichTuVans.Add(newAdvise);
                     await _context.SaveChangesAsync();
 
@@ -67,6 +67,7 @@ namespace ShopKoiTranS.Controllers
                 }
             }
 
+            // Thông báo lỗi nếu có
             ViewBag.ErrorMessage = "Có lỗi xảy ra, vui lòng kiểm tra lại các thông tin.";
             return View("Index");
         }

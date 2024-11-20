@@ -16,15 +16,15 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             _datacontext = context;
         }
 
-
+        // GET: Feedback/Index
         public async Task<IActionResult> Index()
         {
             var feedbacks = await _datacontext.Feedbacks.OrderByDescending(s => s.Id).ToListAsync();
-            return View(feedbacks); 
+            return View(feedbacks); // Gửi danh sách feedbacks từ SalesModel tới view
         }
 
-
-
+        // GET: Feedback/Delete/5
+        // Xóa ngay không cần xác nhận
         public async Task<IActionResult> Delete(int id)
         {
             var feedback = await _datacontext.Feedbacks.FindAsync(id);
@@ -37,7 +37,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             await _datacontext.SaveChangesAsync();
 
             TempData["SuccessMessage"] = "Feedback đã được xóa thành công!";
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index)); // Quay lại trang Index sau khi xóa
         }
     }
 }

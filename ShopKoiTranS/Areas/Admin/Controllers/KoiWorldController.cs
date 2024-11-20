@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using ShopKoiTranS.Repository;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShopKoiTranS.Areas.Admin.Controllers
 {
+
     [Area("Admin")]
     public class KoiWorldController : Controller
     {
@@ -20,14 +22,14 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             _datacontext = context;
         }
 
-
+        // Tải danh mục cho dropdown
         private async Task LoadCategories()
         {
             var categories = await _datacontext.LoaiCaKoi.ToListAsync();
             ViewBag.Loaicakoi = new SelectList(categories, "CategoryId", "CategoryName");
         }
 
-
+        // GET: KoiWorld/Index
         public async Task<IActionResult> Index()
         {
             var koiWorlds = await _datacontext.KoiWorld
@@ -37,14 +39,14 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             return View(koiWorlds);
         }
 
-
+        // GET: KoiWorld/Create
         public async Task<IActionResult> Create()
         {
             await LoadCategories();
             return View();
         }
 
-
+        // POST: KoiWorld/Create
     
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -52,7 +54,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-
+                // Kiểm tra trùng tên Koi
                 var duplicateKoi = await _datacontext.KoiWorld.AnyAsync(k => k.KoiName == koiWorld.KoiName);
                 if (duplicateKoi)
                 {
@@ -61,10 +63,10 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                     return View(koiWorld);
                 }
 
-
+                // Xử lý nếu có danh mục mới
                 if (!string.IsNullOrEmpty(NewCategoryName))
                 {
-
+                    // Kiểm tra nếu danh mục đã tồn tại
                     var existingCategory = await _datacontext.LoaiCaKoi
                         .FirstOrDefaultAsync(c => c.CategoryName.Equals(NewCategoryName, StringComparison.OrdinalIgnoreCase));
 
@@ -74,12 +76,12 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                     }
                     else
                     {
-
+                        // Thêm loài cá mới vào bảng LoaiCaKoi
                         var newCategory = new CategoriKoisModel { CategoryName = NewCategoryName };
                         _datacontext.LoaiCaKoi.Add(newCategory);
                         await _datacontext.SaveChangesAsync();
 
-                        
+                        // Cập nhật thông tin loài cá mới cho KoiWorld
                         koiWorld.CategoryKoiId = newCategory.CategoryId;
                     }
                 }
@@ -90,7 +92,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                     return View(koiWorld);
                 }
 
-
+                // Xử lý tải ảnh
                 if (Image != null && Image.Length > 0)
                 {
                     var filePath = Path.Combine("wwwroot/img", Image.FileName);
@@ -101,7 +103,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                     koiWorld.Image = Image.FileName;
                 }
 
-
+                // Thêm mới cá Koi vào cơ sở dữ liệu
                 _datacontext.KoiWorld.Add(koiWorld);
                 await _datacontext.SaveChangesAsync();
 
@@ -109,13 +111,13 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-
+            // Nếu có lỗi, tải lại danh mục và trả lại view
             await LoadCategories();
             return View(koiWorld);
         }
 
 
-
+        // GET: KoiWorld/Edit/5
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
@@ -126,10 +128,10 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             }
 
             await LoadCategories();
-            return View(koi); 
+            return View(koi);  // Đảm bảo gửi đối tượng koi vào view
         }
 
-
+        // POST: KoiWorld/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, KoiWorldModel updatedKoi, string NewCategoryName, IFormFile Image)
@@ -147,7 +149,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                     return NotFound();
                 }
 
-
+                // Xử lý danh mục mới
                 if (!string.IsNullOrEmpty(NewCategoryName))
                 {
                     var newCategory = new CategoriKoisModel { CategoryName = NewCategoryName };
@@ -156,7 +158,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                     updatedKoi.CategoryKoiId = newCategory.CategoryId;
                 }
 
-
+                // Xử lý ảnh
                 if (Image != null && Image.Length > 0)
                 {
                     var filePath = Path.Combine("wwwroot/img", Image.FileName);
@@ -168,7 +170,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                 }
                 else
                 {
-                    updatedKoi.Image = koi.Image; 
+                    updatedKoi.Image = koi.Image; // Giữ nguyên ảnh cũ
                 }
 
                 koi.KoiName = updatedKoi.KoiName;
@@ -189,7 +191,8 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             return Json(new { success = false, message = "Dữ liệu không hợp lệ." });
         }
 
-
+        // POST: KoiWorld/Delete/5
+        // GET: KoiWorld/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
             var koi = await _datacontext.KoiWorld.FindAsync(id);
@@ -198,10 +201,10 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            return View(koi); 
+            return View(koi); // Trả về view để xác nhận xóa
         }
 
-
+        // POST: KoiWorld/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

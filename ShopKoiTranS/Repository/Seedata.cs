@@ -7,9 +7,9 @@ namespace ShopKoiTranS.Repository
     {
         public static void SeedingData(DataContext _context)
         {
-            _context.Database.Migrate();
+            _context.Database.Migrate(); // Apply migrations if needed
 
-
+            // Seeding categories
             if (!_context.LoaiCaKoi.Any())
             {
                 var shiro = new CategoriKoisModel

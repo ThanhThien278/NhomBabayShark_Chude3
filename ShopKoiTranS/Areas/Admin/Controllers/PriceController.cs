@@ -17,7 +17,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             _context = context;
         }
 
-
+        // GET: Price/Index
         public IActionResult Index()
         {
             var prices = _context.Price.ToList();
@@ -43,13 +43,13 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             return View(prices);
         }
 
-
+        // GET: Price/Create
         public IActionResult Create()
         {
             return View();
         }
 
-
+        // POST: Price/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(PriceModel price)
@@ -65,7 +65,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             return View(price);
         }
 
-
+        // GET: Price/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
             var price = await _context.Price.FindAsync(id);
@@ -76,7 +76,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             return View(price);
         }
 
-
+        // POST: Price/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, PriceModel price)
@@ -111,7 +111,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             return View(price);
         }
 
-
+        // GET: Price/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
             var price = await _context.Price.FindAsync(id);
@@ -123,7 +123,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             return View(price); 
         }
 
-
+        // POST: Price/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -131,12 +131,12 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             var price = await _context.Price.FindAsync(id);
             if (price != null)
             {
-                _context.Price.Remove(price);
-                await _context.SaveChangesAsync(); 
-                TempData["SuccessMessage"] = "Xóa bảng giá thành công!";
+                _context.Price.Remove(price); // Xóa dữ liệu
+                await _context.SaveChangesAsync(); // Lưu thay đổi vào cơ sở dữ liệu
+                TempData["SuccessMessage"] = "Xóa bảng giá thành công!"; // Thông báo xóa thành công
             }
 
-            return RedirectToAction(nameof(Index)); 
+            return RedirectToAction(nameof(Index)); // Quay lại danh sách
         }
 
         private bool PriceExists(int id)

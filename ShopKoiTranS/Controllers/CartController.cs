@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore;
 public class CartController : Controller
 {
     private readonly DataContext _dataContext;
-    private readonly UserManager<AppUserModel> _userManager;
+    private readonly UserManager<AppAdminModel> _userManager;
 
-    public CartController(DataContext dataContext, UserManager<AppUserModel> userManager)
+    public CartController(DataContext dataContext, UserManager<AppAdminModel> userManager)
     {
         _dataContext = dataContext;
         _userManager = userManager;
@@ -58,7 +58,7 @@ public class CartController : Controller
         return View(cartVM);
     }
 
-    public async Task<IActionResult> Add(int id)
+    public async Task<IActionResult> Add(int id,string UserName)
     {
         var user = await _userManager.GetUserAsync(User);
         if (user == null)
@@ -223,7 +223,7 @@ public class CartController : Controller
         {
             UserName = user.UserName,
             OrderDate = DateTime.Now,
-            TotalAmount = cart.Items.Sum(i => i.Price * i.Quantity),
+            GrandTota = cart.Items.Sum(i => i.Price * i.Quantity),
             Status = "Pending",
         };
 
