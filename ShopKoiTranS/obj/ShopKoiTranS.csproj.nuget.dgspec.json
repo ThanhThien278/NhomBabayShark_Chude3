@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\New folder (7)\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
+    "F:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
   },
   "projects": {
-    "D:\\C#\\New folder (7)\\ShopKoiTranS\\ShopKoiTranS.csproj": {
+    "F:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\New folder (7)\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "projectUniqueName": "F:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
         "projectName": "ShopKoiTranS",
-        "projectPath": "D:\\C#\\New folder (7)\\ShopKoiTranS\\ShopKoiTranS.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\New folder (7)\\ShopKoiTranS\\obj\\",
+        "projectPath": "F:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "F:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
