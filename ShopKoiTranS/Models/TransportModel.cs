@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopKoiTranS.Areas.Admin.Models;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace ShopKoiTranS.Models
@@ -33,7 +34,7 @@ namespace ShopKoiTranS.Models
         [Required]
         [Display(Name = "Số Lượng Cá")]
         [Range(1, int.MaxValue, ErrorMessage = "Số lượng cá phải lớn hơn 0.")]
-        public int SoLuongCa { get; set; }  
+        public int SoLuongCa { get; set; }
 
         [Required]
         [Display(Name = "Địa Điểm Xuất Phát")]
@@ -59,6 +60,6 @@ namespace ShopKoiTranS.Models
         public decimal TransportPrice { get; set; }
         public DateTime CreatedAt { get; set; }
         public string UserName { get; set; }
-        public AppAdminModel User { get; set; }
+        public AppUserModel User { get; set; }
     }
 }
