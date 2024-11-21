@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8" />
@@ -28,21 +27,24 @@
                 </ul>
             </li>
             <li><a href="@Url.Action("Sales", "Index")">Ưu Đãi</a></li>
-         
+
             <li><a href="@Url.Action("Index", "Feedback")">Đánh Giá <i class="fa-solid fa-comments icon-min"></i></a></li>
-            
+
         </ul>
         <div class="user btn">
-            <a href="~/Account/Login" class="login">Đăng Nhập</a>
+            <a href="javascript:void(0);" class="user-icon" id="user-icon">
+                <i class="fa-solid fa-circle-user icon"></i>
+                <span class="username">@User.Identity.Name</span>
+            </a>
             <i class="fa-solid fa-cart-shopping icon" onclick="window.location.href='@Url.Action("Index", "Cart")'"></i>
             <i class="fa-regular fa-bell icon"></i>
         </div>
     </header>
     <!-- Sidebar -->
     <div class="sidebar">
-        
-       
-        
+
+
+
 
         <ul>
             <li><a href="@Url.Action("Index", "Home")"><i class="fa-solid fa-house"></i> Trang Chủ</a></li>
@@ -52,7 +54,7 @@
             <li class="mintopsub">
                 <a href="@Url.Action("Index", "KoiWorld")"><i class="fa-solid fa-fish"></i> Koi World</a>
                 <ul class="minsubnav">
-                <vc:categori-koi></vc:categori-koi>
+                    <vc:categori-koi></vc:categori-koi>
                 </ul>
             </li>
 
@@ -60,10 +62,10 @@
             <li><a href="@Url.Action("Index", "Sales")"><i class="fa-solid fa-percent"></i> Ưu Đãi</a></li>
             <li><a href="@Url.Action("Index", "Feedback")"><i class="fa-solid fa-comments"></i> Đánh Giá & Feedback</a></li>
             <li><a href="@Url.Action("Index", "Cart")"><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a></li>
-            <li><a href="@Url.Action("Profile", "Customer")"><i class="fa-solid fa-user"></i> Hồ Sơ Khách Hàng</a></li>
+
         </ul>
     </div>
 
-    
+
 </body>
 </html>

@@ -11,13 +11,13 @@
         </div>
     </div>
 </div>
+
 <div id="services">
     <div class="ser-text">Dịch Vụ Của Chúng Tôi</div>
+
     <div id="tuvan" class="ser-card">
         <div class="ser-content">
-            <img src="~/img/tuvan.jpg"
-                 alt="ảnh tư vấn"
-                 class="ser-img" />
+            <img src="~/img/tuvan.jpg" alt="ảnh tư vấn" class="ser-img" />
             <div>
                 <h3>Tư Vấn Và Chăm Sóc</h3>
                 <p>
@@ -27,10 +27,19 @@
                     hàng đầu thế giới trong lĩnh vực.
                 </p>
             </div>
-<button class="btn-dv" id="btn-consultation" onclick="window.location.href='@Url.Action("Index", "Advise")'">
-    Đặt lịch tư vấn
-</button>
 
+            @if (User.Identity.IsAuthenticated)
+            {
+                <button class="btn-dv" id="btn-consultation" onclick="window.location.href='@Url.Action("Index", "Advise")'">
+                    Đặt lịch tư vấn
+                </button>
+            }
+            else
+            {
+                <button class="btn-dv" id="btn-consultation" onclick="window.location.href='@Url.Action("Index", "Account")'">
+                    Vui lòng đăng nhập để đặt lịch tư vấn
+                </button>
+            }
         </div>
     </div>
 
@@ -48,12 +57,19 @@
                 chuyển, kiểm tra bọc nilon có bị rỉ không, nước vận chuyển cá koi
                 phải giống với nước trong bể nuôi nhất là pH và dH.
             </p>
-            <img src="~/img/vanchuyen.jpg"
-                 alt="ảnh vận chuyển"
-                 class="ser-img" />
-            <button class="btn-dv" id="btn-transport" onclick="window.location.href='@Url.Action("Index", "Transport")'">
-                Đặt lịch vận chuyển
-            </button>
+            <img src="~/img/vanchuyen.jpg" alt="ảnh vận chuyển" class="ser-img" />
+            @if (User.Identity.IsAuthenticated)
+            {
+                <button class="btn-dv" id="btn-transport" onclick="window.location.href='@Url.Action("Index", "Transport")'">
+                    Đặt lịch vận chuyển
+                </button>
+            }
+            else
+            {
+                <button class="btn-dv" id="btn-transport" onclick="window.location.href='@Url.Action("Index", "Account")'">
+                    Vui lòng đăng nhập để đặt lịch vận chuyển
+                </button>
+            }
         </div>
     </div>
 
@@ -74,8 +90,18 @@
                         <p>lớn hơn 20cm : 90 đến 300 USD</p>
                         <p>40 cm trở lên : 1.200 đến 7.500 USD</p>
                     </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
 
+                    @if (User.Identity.IsAuthenticated)
+
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+
+                    else
+
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
                 </div>
             </div>
             <div class="koi-card">
@@ -91,7 +117,17 @@
                         <p>8 đến 12 cm : 20 đến 50 USD</p>
                         <p>Lớn hơn 18 cm: 90 USD</p>
                     </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    @if (User.Identity.IsAuthenticated)
+
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+
+                    else
+
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
 
                 </div>
             </div>
@@ -119,7 +155,17 @@
                             Showa có thể có giá dao động từ 300 đến 1.800 USD
                         </p>
                     </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    @if (User.Identity.IsAuthenticated)
+
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+
+                    else
+
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
 
                 </div>
             </div>
@@ -143,7 +189,17 @@
                             có giá từ khoảng 90 USD cho cá kích thước nhỏ (6-10 inch)
                         </p>
                     </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    @if (User.Identity.IsAuthenticated)
+
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+
+                    else
+
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
 
                 </div>
             </div>
@@ -173,8 +229,17 @@
                             trung như 5-6 inch (13-15 cm) là khoảng 40-64 USD
                         </p>
                     </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    @if (User.Identity.IsAuthenticated)
 
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+
+                    else
+
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
                 </div>
             </div>
             <div class="koi-card">
@@ -204,13 +269,23 @@
                             điểm cá
                         </p>
                     </div>
-                    <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    @if (User.Identity.IsAuthenticated)
 
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "KoiWorld")'">Mua cá</button>
+                    }
+
+                    else
+
+                    {
+                        <button id="btn-buy" class="buy-button" onclick="window.location.href='@Url.Action("Index", "Account")'">Vui lòng đăng nhập để mua cá</button>
+                    }
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <div id="sale">
     <div class="sale-text">Bạn có gì khi đến với chúng tôi ?</div>
     <img src="~/img/bachv.jpg" alt="" />
@@ -229,7 +304,6 @@
             <div class="swiper-slide">
                 <img src="~/img/rv2.jpg" alt="Review 2" />
             </div>
-            <
             <div class="swiper-slide">
                 <img src="~/img/rv3.jpg" alt="Review 3" />
             </div>
