@@ -8,9 +8,9 @@ using ShopKoiTranS.Repository;
 public class CheckoutController : Controller
 {
     private readonly DataContext _context;
-    private readonly UserManager<AppAdminModel> _userManager;
+    private readonly UserManager<AppUserModel> _userManager;
 
-    public CheckoutController(DataContext context, UserManager<AppAdminModel> userManager)
+    public CheckoutController(DataContext context, UserManager<AppUserModel> userManager)
     {
         _context = context;
         _userManager = userManager;
@@ -36,7 +36,7 @@ public class CheckoutController : Controller
         return View(checkoutViewModel);
     }
 
-  
+
     [HttpPost]
     public async Task<IActionResult> ProcessCheckout(CheckoutViewModel model)
     {
@@ -48,19 +48,19 @@ public class CheckoutController : Controller
                 return RedirectToAction("Login", "Account");
             }
 
-           
+
             var cartItems = _context.CartItems.Where(c => c.Cart.UserName == user.UserName).ToList();
             _context.CartItems.RemoveRange(cartItems);
             _context.SaveChanges();
 
-          
+
             return RedirectToAction("Confirmation");
         }
 
         return View("Index", model);
     }
 
-    
+
     public IActionResult Confirmation()
     {
         return View();

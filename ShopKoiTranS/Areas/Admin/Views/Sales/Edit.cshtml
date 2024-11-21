@@ -5,8 +5,8 @@
     Layout = null;
 }
 
-<link rel="stylesheet" type="text/css" href="~/css/Admin/Edit.css">
-
+<link rel="stylesheet" type="text/css" href="~/css/form.css">
+@Html.Partial("_SideBar")
 <div class="container">
     <div class="main-content">
         <h2>Sửa Sales</h2>
@@ -23,8 +23,7 @@
 
             <div class="form-group">
                 <label for="Benefits">Lợi Ích</label>
-                <textarea id="Benefits" name="Benefits" rows="4">@string.Join(Environment.NewLine, Model.Benefits)</textarea>
-
+                <textarea id="Benefits" name="Benefits" rows="4">@Model.Benefits</textarea>
             </div>
 
             <div class="form-group">

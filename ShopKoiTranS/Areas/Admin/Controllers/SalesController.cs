@@ -26,7 +26,40 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
         }
 
         // GET: Sales/Create
-        
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Sales/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(SalesModel sales, IFormFile Image)
+        {
+            if (ModelState.IsValid)
+            {
+                // Xử lý tải ảnh
+                if (Image != null && Image.Length > 0)
+                {
+                    var filePath = Path.Combine("wwwroot/img", Image.FileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await Image.CopyToAsync(stream);
+                    }
+                    sales.ImageUrl = Image.FileName;
+                }
+
+                // Thêm sản phẩm vào cơ sở dữ liệu
+                _context.MemberCars.Add(sales);
+                await _context.SaveChangesAsync();
+
+                TempData["SuccessMessage"] = "Sản phẩm đã được thêm thành công!";
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(sales);
+        }
+
         // GET: Sales/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
@@ -69,10 +102,9 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                 }
                 else
                 {
-                    updatedSales.ImageUrl = sales.ImageUrl; // Giữ nguyên ảnh cũ nếu không có ảnh mới
+                    updatedSales.ImageUrl = sales.ImageUrl; // Giữ nguyên ảnh cũ
                 }
 
-                // Cập nhật thông tin sales
                 sales.Title = updatedSales.Title;
                 sales.Condition = updatedSales.Condition;
                 sales.Benefits = updatedSales.Benefits;
@@ -85,7 +117,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(updatedSales); // Trả về view với lỗi nếu có
+            return View(updatedSales);
         }
 
         // GET: Sales/Delete/5
@@ -110,7 +142,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
             {
                 _context.MemberCars.Remove(sales);
                 await _context.SaveChangesAsync();
-                TempData["SuccessMessage"] = "Xóa sản phẩm thành công!";
+                TempData["SuccessMessage"] = "Xóa ưu đãi thành công!";
             }
             return RedirectToAction(nameof(Index));
         }

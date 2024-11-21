@@ -1,69 +1,49 @@
 ﻿@model IEnumerable<ShopKoiTranS.Models.AdviseModel>
 
 @{
-    ViewData["Title"] = "Danh sách lịch hẹn chờ xác nhận";
-    Layout = null;
+    ViewData["Title"] = "Danh Sách Tư Vấn Chờ Xác Nhận";
 }
-<link rel="stylesheet" href="~/css/Admin/Advise.css">
-@Html.Partial("_SideBar")
 
-<div class="container">
-    <h2>@ViewData["Title"]</h2>
+<h2>Danh Sách Tư Vấn Chờ Xác Nhận</h2>
 
-    @if (Model != null && Model.Any())
-    {
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>STT</th>
-                    <th>Tên khách hàng</th>
-                    <th>SDT</th>
-                    <th>Thời gian tư vấn</th>
-                    <th>Trạng thái</th>
-                    <th>Hành động</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var advise in Model)
-                {
-                    <tr>
-                        <td>@advise.AdviseId</td>
-                        <td>@advise.CustomerName</td>
-                        <td>@advise.CustomerPhone</td>
-                        <td>
-                            @if (advise.ThoiGianTuVan.HasValue)
-                            {
-                                @advise.ThoiGianTuVan.Value.ToString("dd/MM/yyyy HH:mm")
-                            }
-                            else
-                            {
-                                <span>Chưa có thời gian</span>
-                            }
-                        </td>
-                        <td>@advise.TrangThai</td>
-                        <td>
-                            @if (advise.TrangThai == "Chờ xác nhận")
-                            {
-                                <a href="@Url.Action("Confirm", "Advise", new { id = advise.AdviseId })" class="btn btn-warning">Xác nhận</a>
-                            }
-                            else
-                            {
-                                <span class="badge bg-success">Đã xác nhận</span>
-                            }
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
 
-                            @if (advise.TrangThai == "Đã xác nhận" || advise.TrangThai == "Đã hoàn thành")
-                            {
-                            }
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    }
-    else
-    {
-        <div class="alert alert-info">
-            Không có lịch hẹn nào cần xác nhận.
-        </div>
-    }
-</div>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên Khách Hàng</th>
+            <th>Số Điện Thoại</th>
+            <th>Địa Điểm</th>
+            <th>Mô Tả</th>
+            <th>Trạng Thái</th>
+            <th>Thời Gian Tư Vấn</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var advise in Model)
+        {
+            <tr>
+                <td>@advise.AdviseId</td>
+                <td>@advise.CustomerName</td>
+                <td>@advise.CustomerPhone</td>
+                <td>@advise.DiaDiem</td>
+                <td>@advise.MoTa</td>
+                <td>@advise.TrangThai</td>
+                <td>@advise.ThoiGianTuVan?.ToString("g")</td>
+                <td>
+                    <!-- Liên kết tới hành động xác nhận -->
+                    <a asp-action="Confirm" asp-route-id="@advise.AdviseId" class="btn btn-success">
+                        Xác Nhận
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

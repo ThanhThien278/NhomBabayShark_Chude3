@@ -1,10 +1,9 @@
-﻿@model ShopKoiTranS.Models.FeedbackModel
+﻿@model ShopKoiTranS.Models.Feedback
 
 @{
     ViewData["Title"] = "Xóa Feedback";
-    Layout = null;
 }
-<link rel="stylesheet" href="~/css/Admin/Delete.css">
+
 <h1>Xóa Feedback</h1>
 
 <div class="alert alert-warning">
@@ -17,12 +16,12 @@
         <td>@Model.CustomerName</td>
     </tr>
     <tr>
-        <th>Rating:</th>
-        <td>@Model.Rating</td>
+        <th>Email:</th>
+        <td>@Model.Email</td>
     </tr>
     <tr>
         <th>Nội dung:</th>
-        <td>@Model.FeedbackText</td>
+        <td>@Model.Content</td>
     </tr>
     <tr>
         <th>Ngày gửi:</th>

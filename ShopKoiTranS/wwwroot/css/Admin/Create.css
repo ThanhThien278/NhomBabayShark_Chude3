@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
-
+/* Body Background */
 body {
     background-color: #f4f6f8;
 }
@@ -24,15 +24,15 @@ body {
     overflow-y: auto;
 }
 
-
+/* Main Container */
 .container {
     display: flex;
-    margin-left: 350px; 
+    margin-left: 350px; /* To make space for the sidebar */
     padding: 20px;
     justify-content: center;
 }
 
-
+/* Main Content */
 .main-content {
     background-color: #ffffff;
     padding: 40px;
@@ -42,7 +42,7 @@ body {
     max-width: 600px;
 }
 
-
+/* Heading */
 h2 {
     font-size: 24px;
     color: #2c3e50;
@@ -50,7 +50,7 @@ h2 {
     text-align: center;
 }
 
-
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;

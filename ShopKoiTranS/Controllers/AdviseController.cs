@@ -2,19 +2,16 @@
 using ShopKoiTranS.Models;
 using ShopKoiTranS.Repository;
 using System;
-using Microsoft.AspNetCore.Identity;
 
 namespace ShopKoiTranS.Controllers
 {
     public class AdviseController : Controller
     {
         private readonly DataContext _context;
-        private readonly UserManager<AppAdminModel> _userManager;
 
-        public AdviseController(DataContext context, UserManager<AppAdminModel> userManager)
+        public AdviseController(DataContext context)
         {
             _context = context;
-            _userManager = userManager;
         }
 
         [HttpGet]
@@ -24,47 +21,30 @@ namespace ShopKoiTranS.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> SubmitAdvise(string customerName, string customerPhone, string diaDiem, string moTa)
+        public IActionResult SubmitAdvise(string customerName, string customerPhone, string diaDiem, string moTa)
         {
             if (ModelState.IsValid)
             {
-                try
+                // Tạo một bản ghi mới cho tư vấn
+                AdviseModel newAdvise = new AdviseModel
                 {
-                    // Lấy tên người dùng từ session hoặc Identity
-                    var currentUserName = User.Identity.Name;  // Đây là cách lấy UserName của người dùng đang đăng nhập.
+                    CustomerName = customerName,
+                    CustomerPhone = customerPhone,
+                    DiaDiem = diaDiem,
+                    MoTa = moTa,
+                    TrangThai = "Chờ xác nhận",
+                    ThoiGianTuVan = DateTime.Now
+                };
 
-                    if (string.IsNullOrEmpty(currentUserName))
-                    {
-                        ViewBag.ErrorMessage = "Bạn cần đăng nhập để đặt lịch tư vấn.";
-                        return View("Index");
-                    }
+                // Thêm vào cơ sở dữ liệu
+                _context.LichTuVans.Add(newAdvise);
+                _context.SaveChanges();
 
-                    // Tạo một bản ghi mới cho tư vấn
-                    AdviseModel newAdvise = new AdviseModel
-                    {
-                        CustomerName = customerName,
-                        CustomerPhone = customerPhone,
-                        DiaDiem = diaDiem,
-                        MoTa = moTa,
-                        TrangThai = "Chờ xác nhận",
-                        ThoiGianTuVan = DateTime.Now,
-                        UserName = currentUserName // Lưu tên người dùng vào tư vấn
-                    };
+     
+                ViewBag.SuccessMessage = "Đặt lịch tư vấn thành công!";
+                ViewBag.AdviseDetails = newAdvise;
 
-                    // Thêm vào cơ sở dữ liệu
-                    _context.LichTuVans.Add(newAdvise);
-                    await _context.SaveChangesAsync();
-
-                    ViewBag.SuccessMessage = "Đặt lịch tư vấn thành công!";
-                    ViewBag.AdviseDetails = newAdvise;
-
-                    return View("Index");
-                }
-                catch (Exception ex)
-                {
-                    ViewBag.ErrorMessage = "Có lỗi xảy ra: " + ex.Message;
-                    return View("Index");
-                }
+                return View("Index");
             }
 
             // Thông báo lỗi nếu có

@@ -19,49 +19,15 @@
         </div>
 
         <ul>
-            <li class="@((ViewData["ActivePage"] as string) == "Home" ? "active" : "")">
-                <a href="@Url.Action("Index", "Home")">
-                    <i class="fas fa-chart-line"></i> Thống Kê
-                </a>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Thống Kê</a></li>
+            <li><a href="#"><i class="fa-solid fa-clipboard-check"></i> Đơn Vận Chuyển</a></li>
+            <li><a href="#"><i class="fa-solid fa-calendar-check"></i> Lịch Đặt Tư Vấn</a></li>
+            <li class="mintopsub">
+                <a href="#"><i class="fa-solid fa-fish"></i> Koi World</a>
             </li>
-            <li class="@((ViewData["ActivePage"] as string) == "Transport" ? "active" : "")">
-                <a href="@Url.Action("Index", "Transport")">
-                    <i class="fa-solid fa-clipboard-check"></i> Đơn Vận Chuyển
-                </a>
-            </li>
-            <li class="@((ViewData["ActivePage"] as string) == "Advise" ? "active" : "")">
-                <a href="@Url.Action("Index", "Advise")">
-                    <i class="fa-solid fa-calendar-check"></i> Lịch Đặt Tư Vấn
-                </a>
-            </li>
-            <li class="mintopsub @((ViewData["ActivePage"] as string) == "KoiWorld" ? "active" : "")">
-                <a href="@Url.Action("Index", "KoiWorld")">
-                    <i class="fa-solid fa-fish"></i> Koi World
-                </a>
-            </li>
-            <li class="@((ViewData["ActivePage"] as string) == "Price" ? "active" : "")">
-                <a href="@Url.Action("Index", "Price")">
-                    <i class="fa-solid fa-tag"></i> Bảng Giá
-                </a>
-            </li>
-            <li class="@((ViewData["ActivePage"] as string) == "Sales" ? "active" : "")">
-                <a href="@Url.Action("Index", "Sales")">
-                    <i class="fa-solid fa-percent"></i> Ưu Đãi
-                </a>
-            </li>
-            <li class="@((ViewData["ActivePage"] as string) == "Feedback" ? "active" : "")">
-                <a href="@Url.Action("Index", "Feedback")">
-                    <i class="fa-solid fa-comments"></i> Đánh Giá & Feedback
-                </a>
-            </li>
-            <!-- Nút Đăng Xuất -->
-            <li>
-                <form method="post" action="@Url.Action("Logout", "Admin")">
-                    <button type="submit">
-                        <i class="fas fa-sign-out-alt"></i> Đăng Xuất
-                    </button>
-                </form>
-            </li>
+            <li><a href="#"><i class="fa-solid fa-tag"></i> Bảng Giá</a></li>
+            <li><a href="@Url.Action("Index", "Sales")"><i class="fa-solid fa-percent"></i> Ưu Đãi</a></li> <!-- Liên kết đến trang Sales -->
+            <li><a href="#"><i class="fa-solid fa-comments"></i> Đánh Giá & Feedback</a></li>
         </ul>
     </div>
 

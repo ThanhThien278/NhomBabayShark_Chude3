@@ -1,13 +1,12 @@
-﻿@model IEnumerable<ShopKoiTranS.Models.FeedbackModel>
+﻿@model IEnumerable<ShopKoiTranS.Models.Feedback>
 
 @{
-
-    Layout = null;
+    ViewData["Title"] = "Danh sách Feedback";
+    layout = null;
 }
 @Html.Partial("_SideBar")
-<link rel="stylesheet" href="~/css/Admin/FeedBack.css">
 
-
+<h1>Danh sách Feedback</h1>
 
 @if (TempData["SuccessMessage"] != null)
 {
@@ -15,13 +14,13 @@
         @TempData["SuccessMessage"]
     </div>
 }
-<h2>DANH SÁCH FEEDBACK CỦA KHÁCH HÀNG</h2>
+
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>ID</th>
+            <th>#</th>
             <th>Tên khách hàng</th>
-            <th>Rating</th>
+            <th>Email</th>
             <th>Nội dung</th>
             <th>Ngày gửi</th>
             <th>Hành động</th>
@@ -33,8 +32,8 @@
             <tr>
                 <td>@feedback.Id</td>
                 <td>@feedback.CustomerName</td>
-                <td>@feedback.Rating </td>
-                <td>@feedback.FeedbackText</td>
+                <td>@feedback.Email</td>
+                <td>@feedback.Content</td>
                 <td>@feedback.CreatedAt.ToString("dd/MM/yyyy")</td>
                 <td>
                     <a asp-action="Delete" asp-route-id="@feedback.Id" class="btn btn-danger btn-sm">

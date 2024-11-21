@@ -1,22 +1,30 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Reflection.Metadata.Ecma335;
 
-public class CartItemModel
+namespace ShopKoiTranS.Models
 {
-    [Key]
-    public int CartItemId { get; set; }
-    public int KoiId { get; set; }
-    public string KoiName { get; set; }
-    public string Image { get; set; }
-    public decimal Price { get; set; }
-    public int Quantity { get; set; }
-  
-    public int CartId { get; set; }
-    public CartModel Cart { get; set; }
-    public decimal TotalPrice
+    public class CartItemModel
     {
-        get
+        public int KoiId { get; set; }
+        public string KoiName { get; set; }
+        public string Image { get; set; }
+        public decimal Price { get; set; }
+        public int Quantity { get; set; }
+
+        public decimal TotalPrice
         {
-            return Price * Quantity;
+            get { return Price * Quantity; }
+        }
+        public CartItemModel() 
+        { 
+
+        }
+        public CartItemModel(int koiId, string koiName, string image, decimal price, int quantity)
+        {
+            KoiId = koiId;
+            KoiName = koiName;
+            Image = image;
+            Price = price;
+            Quantity = quantity;
         }
     }
 }

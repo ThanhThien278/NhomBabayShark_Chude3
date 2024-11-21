@@ -1,10 +1,9 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - KoiTranS</title>
+    <title>@ViewData["Title"]  KoiTranS</title>
     <link rel="icon" href="~/img/koilogo.jpg" type="image/jpg" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -15,21 +14,21 @@
 </head>
 <body>
     <div id="main">
+        <!-- Header -->
         <header id="header">
             <div class="logo btn">
-                <a href="~/Home/Index">
+                <a href="#slider">
                     <img src="~/img/logo.png" alt="KoiTranS Logo" />
                     <span class="logo-text">KoiTranS</span>
                 </a>
             </div>
-
             <ul class="nav btn">
-                <li><a href="~/Home/Index"><i class="fa-solid fa-house icon-min"></i> Trang Chủ</a></li>
+                <li><a href="#slider"><i class="fa-solid fa-house icon-min"></i> Trang Chủ</a></li>
                 <li class="topsub">
-                    <a>Dịch Vụ <i class="fa-solid fa-caret-down icon-min"></i></a>
+                    <a  >Dịch Vụ <i class="fa-solid fa-caret-down icon-min"></i></a>
                     <ul class="subnav">
                         <li><a href="#tuvan">Tư Vấn và Chăm Sóc</a></li>
-                        <li><a href="#vanchuyen">Vận Chuyển</a></li>
+                        <li><a href ="#vanchuyen">Vận Chuyển</a></li>
                         <li><a href="#koiworld">KOI WORLD</a></li>
                     </ul>
                 </li>
@@ -37,43 +36,22 @@
                 <li><a href="#review">Đánh Giá <i class="fa-solid fa-comments icon-min"></i></a></li>
                 <li><a href="#">Liên Hệ <i class="fa-solid fa-phone icon-min"></i></a></li>
             </ul>
-
             <div class="user btn">
-                @if (User.Identity.IsAuthenticated)
-                {
-                    <a href="javascript:void(0);" class="user-icon" id="user-icon">
-                        <i class="fa-solid fa-circle-user icon"></i>
-                        <span class="username">@User.Identity.Name</span>
-                    </a>
-                    <div id="user-menu" class="user-menu">
-                        <div class="user-card">
-                            <ul>
-                                
-                                <li><a href="~/Cart"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li>
-                                <li>
-                                    <form asp-action="Logout" asp-controller="Account" method="post">
-                                        @Html.AntiForgeryToken()
-                                        <button type="submit" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</button>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                }
-                else
-                {
-                    <a href="~/Account/Index" class="login">Đăng Nhập</a>
-                }
+                <a href="~/Account/Login" class="login">Đăng Nhập</a>
+                <i class="fa-solid fa-cart-shopping icon"></i>
                 <i class="fa-regular fa-bell icon"></i>
             </div>
-
         </header>
 
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        <!-- Main Content -->
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
 
-        <<footer class="border-top footer text-muted">
+        <!-- Footer -->
+        <footer class="border-top footer text-muted">
             <div id="contact">
                 <div class="contact-text">
                     <div class="content-info">
@@ -121,22 +99,10 @@
 
     </div>
 
+    <!-- Scripts -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('#user-icon').click(function (e) {
-                e.preventDefault();
-                $('#user-menu').toggle();
-            });
-
-            $(document).click(function (e) {
-                if (!$(e.target).closest('#user-icon, #user-menu').length) {
-                    $('#user-menu').hide();
-                }
-            });
-        });
-    </script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

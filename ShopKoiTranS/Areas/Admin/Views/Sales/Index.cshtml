@@ -9,19 +9,19 @@
 @Html.Partial("_SideBar")
 
 <div class="main-container">
+   
     <div class="container">
         <div class="main-content">
             <h2>Danh Sách Sales</h2>
 
             <!-- Nút tạo mới Sales -->
-          
+            <a href="@Url.Action("Create", "Sales")" class="btn btn-add">Tạo Mới Sales</a>
 
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Loại Thẻ</th>
+                        <th>Tiêu Đề</th>
                         <th>Điều Kiện</th>
-                        <th>Ưu Đãi</th>
                         <th>Hình Ảnh</th>
                         <th>Thao Tác</th>
                     </tr>
@@ -32,7 +32,6 @@
                         <tr>
                             <td>@sale.Title</td>
                             <td>@sale.Condition</td>
-                            <td>@string.Join(", ", sale.Benefits)</td>
                             <td><img src="@Url.Content("~/img/" + sale.ImageUrl)" class="sale-image" /></td>
 
                             <td>

@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore;
 public class CartController : Controller
 {
     private readonly DataContext _dataContext;
-    private readonly UserManager<AppAdminModel> _userManager;
+    private readonly UserManager<AppUserModel> _userManager;
 
-    public CartController(DataContext dataContext, UserManager<AppAdminModel> userManager)
+    public CartController(DataContext dataContext, UserManager<AppUserModel> userManager)
     {
         _dataContext = dataContext;
         _userManager = userManager;
@@ -58,7 +58,7 @@ public class CartController : Controller
         return View(cartVM);
     }
 
-    public async Task<IActionResult> Add(int id,string UserName)
+    public async Task<IActionResult> Add(int id)
     {
         var user = await _userManager.GetUserAsync(User);
         if (user == null)
@@ -82,8 +82,7 @@ public class CartController : Controller
                 UserName = user.UserName
             };
             _dataContext.Carts.Add(cart);
-            await _dataContext.SaveChangesAsync();
-        }
+            await _dataContext.SaveChangesAsync();/ -strong / -heart:>:o: -((: -h }
 
         var existingItem = cart.Items.FirstOrDefault(x => x.KoiId == koi.KoiId);
         if (existingItem != null)
@@ -170,8 +169,7 @@ public class CartController : Controller
 
         _dataContext.CartItems.Remove(itemToRemove);
 
-        var adviseToRemove = await _dataContext.LichTuVans
-                                            .Where(a => a.UserName == user.UserName)
+        var adviseToRemove = await _dataContext.LichTuVans / -strong / -heart:>:o: -((: -h.Where(a => a.UserName == user.UserName)
                                             .FirstOrDefaultAsync();
         if (adviseToRemove != null)
         {
@@ -223,7 +221,7 @@ public class CartController : Controller
         {
             UserName = user.UserName,
             OrderDate = DateTime.Now,
-            GrandTota = cart.Items.Sum(i => i.Price * i.Quantity),
+            TotalAmount = cart.Items.Sum(i => i.Price * i.Quantity),
             Status = "Pending",
         };
 

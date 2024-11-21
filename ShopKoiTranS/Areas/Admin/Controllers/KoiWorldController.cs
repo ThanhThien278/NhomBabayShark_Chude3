@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using ShopKoiTranS.Repository;
 using System.Linq;
-using Microsoft.AspNetCore.Authorization;
 
 namespace ShopKoiTranS.Areas.Admin.Controllers
 {
-
     [Area("Admin")]
     public class KoiWorldController : Controller
     {

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-left: 270px; 
+    margin-left: 270px; /* Điều chỉnh để khoảng cách không ảnh hưởng đến sidebar */
     padding: 20px;
     box-sizing: border-box;
 }
