@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\New folder (9)\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
+    "D:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
   },
   "projects": {
-    "D:\\C#\\New folder (9)\\ShopKoiTranS\\ShopKoiTranS.csproj": {
+    "D:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\New folder (9)\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "projectUniqueName": "D:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
         "projectName": "ShopKoiTranS",
-        "projectPath": "D:\\C#\\New folder (9)\\ShopKoiTranS\\ShopKoiTranS.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\New folder (9)\\ShopKoiTranS\\obj\\",
+        "projectPath": "D:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

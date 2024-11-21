@@ -1,165 +1,122 @@
 ﻿@{
-
     Layout = null;
 }
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách đơn hàng vận chuyển</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        h2 {
-            text-align: center;
-            margin-top: 20px;
-            color: #333;
-        }
-
-        .table {
-            width: 90%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-        }
-
-            .table th, .table td {
-                padding: 10px;
-                text-align: center;
-                border: 1px solid #ddd;
-            }
-
-            .table th {
-                background-color: #007BFF;
-                color: #fff;
-                text-transform: uppercase;
-                font-size: 14px;
-            }
-
-            .table tr:nth-child(even) {
-                background-color: #f2f2f2;
-            }
-
-            .table tr:hover {
-                background-color: #f1f9ff;
-                cursor: pointer;
-            }
-
-        .btn {
-            display: inline-block;
-            padding: 5px 10px;
-            font-size: 12px;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: 0.3s ease;
-        }
-
-        .btn-info {
-            background-color: #17a2b8;
-            color: #fff;
-            border: none;
-        }
-
-        .btn-success {
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-        }
-
-            .btn-info:hover, .btn-success:hover {
-                opacity: 0.8;
-            }
-
-        .alert {
-            width: 90%;
-            margin: 10px auto;
-            padding: 15px;
-            text-align: center;
-            border-radius: 4px;
-        }
-
-        .alert-warning {
-            background-color: #ff4c4c;
-            color: #fff;
-        }
-
-
-        .selected-row {
-            background-color: #d1ecf1 !important;
-            color: #004085;
-        }
-    </style>
+    <link rel="stylesheet" href="~/css/Services.css">
+    <title>Đặt Đơn Vận Chuyển</title>
 </head>
 <body>
     @Html.Partial("_SideBar")
-    <h2>Danh sách đơn hàng vận chuyển</h2>
 
-    <p class="alert alert-warning" id="noTransportsMessage" style="display: none;">
-        Không có đơn hàng nào để hiển thị!
-    </p>
+    <!-- Main Content -->
+    <div class="main-content">
+        <form method="post" action="/Transport/Calculate" class="form-container">
+            <h3>Đặt Đơn Vận Chuyển</h3>
 
-    <table class="table table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Họ và Tên</th>
-                <th>Số Điện Thoại</th>
-                <th>Loại Cá</th>
-                <th>Tên Cá</th>
-                <th>Cân Nặng (kg)</th>
-                <th>Số Lượng Cá</th>
-                <th>Địa Điểm Xuất Phát</th>
-                <th>Địa Điểm Đến</th>
-                <th>Phương Thức Vận Chuyển</th>
-                <th>Phương Tiện Vận Chuyển</th>
-                <th>Khoảng Cách (km)</th>
-                <th>Giá Vận Chuyển</th>
-                <th>Ngày Tạo</th>
-                <th>Người Phụ Trách</th>
-                <th>Hành Động</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+            <div class="form-group">
+                <label for="customer-name">Họ và Tên</label>
+                <input type="text" class="form-control" id="customer-name" name="CustomerName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customer-phone">Số Điện Thoại</label>
+                <input type="tel" class="form-control" id="customer-phone" name="CustomerPhone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="LoaiCa">Loại Cá</label>
+                <input type="text" class="form-control" id="LoaiCa" name="LoaiCa" required>
+            </div>
+
+            <div class="form-group">
+                <label for="TenCa">Tên Cá</label>
+                <input type="text" class="form-control" id="TenCa" name="TenCa" required>
+            </div>
+
+            <div class="form-group">
+                <label for="CanNang">Cân Nặng (kg)</label>
+                <input type="number" class="form-control" id="CanNang" name="CanNang" step="0.01" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="SoLuongCa">Số Lượng Cá</label>
+                <input type="number" class="form-control" id="SoLuongCa" name="SoLuongCa" min="1" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="DiaDiemXuatPhat">Địa Điểm Xuất Phát</label>
+                <input type="text" class="form-control" id="DiaDiemXuatPhat" name="DiaDiemXuatPhat" required>
+            </div>
+
+            <div class="form-group">
+                <label for="DiaDiemDen">Địa Điểm Đến</label>
+                <input type="text" class="form-control" id="DiaDiemDen" name="DiaDiemDen" required>
+            </div>
+
+            <div class="form-group">
+                <label for="KhoangCach">Khoảng Cách (km)</label>
+                <input type="number" class="form-control" id="KhoangCach" name="KhoangCach" step="0.01" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="PhuongThucVanChuyen">Phương Thức Vận Chuyển</label>
+                <select class="form-control" id="PhuongThucVanChuyen" name="PhuongThucVanChuyen" required onchange="updateVehicleOptions()">
+                    <option value="Air">Vận Chuyển Hàng Không</option>
+                    <option value="Sea">Vận Chuyển Hàng Hải</option>
+                    <option value="Land">Vận Chuyển Đường Bộ</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="PhuongTienVanChuyen">Phương Tiện Vận Chuyển</label>
+                <select class="form-control" id="PhuongTienVanChuyen" name="PhuongTienVanChuyen" required>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Đặt Vận Chuyển</button>
+        </form>
+
+        @if (ViewBag.TotalPrice != null)
+        {
+            <div class="result">
+                <h4>Giá Vận Chuyển: @ViewBag.TotalPrice VND</h4>
+                <p>Ngày Tạo: @ViewBag.CreatedAt</p>
+            </div>
+        }
+    </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+      
+        function updateVehicleOptions() {
+            const transportMethod = document.getElementById("PhuongThucVanChuyen").value;
+            const vehicleSelect = document.getElementById("PhuongTienVanChuyen");
+            vehicleSelect.innerHTML = ""; 
+            let options = [];
 
-            const rows = document.querySelectorAll(".table tbody tr");
-
-            rows.forEach(row => {
-                row.addEventListener("click", function () {
-                    rows.forEach(r => r.classList.remove("selected-row"));
-                    this.classList.add("selected-row");
-                });
-            });
-
-
-            const buttons = document.querySelectorAll(".btn");
-            buttons.forEach(btn => {
-                btn.addEventListener("mouseover", function () {
-                    this.style.transform = "scale(1.1)";
-                });
-
-                btn.addEventListener("mouseout", function () {
-                    this.style.transform = "scale(1)";
-                });
-            });
-
-
-            const noTransportsMessage = document.getElementById("noTransportsMessage");
-            if (document.querySelectorAll(".table tbody tr").length === 0) {
-                noTransportsMessage.style.display = "block";
+            if (transportMethod === "Air") {
+                options = ["Máy Bay"];
+            } else if (transportMethod === "Sea") {
+                options = ["Tàu Chở Hàng"];
+            } else if (transportMethod === "Land") {
+                options = ["Xe Tải Nhỏ", "Xe Tải Lớn", "Xe Chuyên Dụng"];
             }
-        });
+
+            
+            options.forEach(option => {
+                const opt = document.createElement("option");
+                opt.value = option;
+                opt.textContent = option;
+                vehicleSelect.appendChild(opt);
+            });
+        }
+
+       
+        updateVehicleOptions();
     </script>
 </body>
 </html>
