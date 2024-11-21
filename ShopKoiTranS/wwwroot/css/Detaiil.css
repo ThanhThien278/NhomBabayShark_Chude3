@@ -1,6 +1,4 @@
-﻿
-
-body {
+﻿body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
 }
@@ -9,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
-    margin-left:300px;
+    margin-left: 300px;
 }
 
 .fish-detail-container {
@@ -59,6 +57,7 @@ body {
         .fish-info .buy-button:hover {
             background-color: #218838;
         }
+
 .back-button {
     display: inline-block;
     padding: 8px 16px;

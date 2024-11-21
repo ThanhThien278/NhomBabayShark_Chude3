@@ -10,19 +10,33 @@ namespace ShopKoiTranS.Controllers
         private readonly DataContext _dataContext;
         private readonly ILogger<HomeController> _logger;
 
-        // Correct the constructor to properly assign _dataContext
         public HomeController(ILogger<HomeController> logger, DataContext context)
         {
             _logger = logger;
-            _dataContext = context;  
+            _dataContext = context;
         }
 
+      
         public IActionResult Index()
         {
-            var koiWorld = _dataContext.KoiWorld.ToList();
-            return View(koiWorld);  
+
+            ViewBag.IsAuthenticated = User.Identity.IsAuthenticated;
+
+            if (!User.Identity.IsAuthenticated)
+            {
+                TempData["Message"] = "Vui lòng ??ng nh?p ?? ti?p t?c.";
+                TempData["MessageType"] = "warning"; 
+            }
+
+            return View();
         }
 
+
+        public IActionResult GetKoiWorld()
+        {
+            var koiWorld = _dataContext.KoiWorld.ToList();
+            return View(koiWorld);
+        }
 
         public IActionResult Privacy()
         {
@@ -30,7 +44,7 @@ namespace ShopKoiTranS.Controllers
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Error(int statuscode)
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }

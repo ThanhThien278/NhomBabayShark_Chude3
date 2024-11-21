@@ -30,13 +30,13 @@ public class CartModel
         set { }
     }
 
-   
+
 
     public decimal GrandTotal
     {
         get
         {
-            return TotalAmount + TotalTransportPrice ;
+            return TotalAmount + TotalTransportPrice;
         }
     }
 }

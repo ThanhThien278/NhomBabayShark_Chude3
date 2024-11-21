@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
 
-namespace ShopKoiTranS.Areas.Admin.Models
+namespace ShopKoiTranS.Models
 {
     public class AppUserModel : IdentityUser
     {
-     
+
     }
 }

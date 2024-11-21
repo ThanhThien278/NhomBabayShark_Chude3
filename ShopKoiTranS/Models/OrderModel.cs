@@ -10,7 +10,7 @@ public class OrderModel
 
     public DateTime OrderDate { get; set; }
 
-    public decimal GrandTota { get; set; } 
+    public decimal GrandTota { get; set; }
     public string Status { get; set; }
 
     public string PaymentMethod { get; set; }
@@ -18,11 +18,11 @@ public class OrderModel
     public List<OrderDetailModel> OrderDetails { get; set; }
 
 
-    public int? TransportId { get; set; } 
+    public int? TransportId { get; set; }
     public TransportModel Transport { get; set; }
 
     // Tư vấn (nếu có)
-    public int? AdviseId { get; set; } 
+    public int? AdviseId { get; set; }
     public AdviseModel Advise { get; set; }
 
     public OrderModel()

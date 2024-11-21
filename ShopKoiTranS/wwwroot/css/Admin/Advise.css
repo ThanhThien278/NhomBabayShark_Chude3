@@ -1,5 +1,4 @@
-﻿
-body {
+﻿body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     margin: 0;
@@ -11,7 +10,6 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 h2 {
@@ -38,19 +36,19 @@ h2 {
     margin: 20px 0;
     border: 1px solid #ddd;
     background-color: #fff;
-    text-align: center; 
+    text-align: center;
 }
 
-  
+
     .table th, .table td {
         padding: 12px;
-        text-align: center; 
+        text-align: center;
         border-bottom: 1px solid #ddd;
     }
 
-   
+
     .table th {
-        background-color: #4CAF50; 
+        background-color: #4CAF50;
         color: white;
     }
 
@@ -71,7 +69,7 @@ h2 {
     cursor: pointer;
 }
 
-  
+
     .btn-warning:hover {
         background-color: #e68900; /* Màu cam đậm hơn */
     }

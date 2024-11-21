@@ -5,6 +5,7 @@ using ShopKoiTranS.Models;
 using ShopKoiTranS.Repository;
 using Microsoft.EntityFrameworkCore;
 
+
 public class CartController : Controller
 {
     private readonly DataContext _dataContext;
@@ -58,7 +59,7 @@ public class CartController : Controller
         return View(cartVM);
     }
 
-    public async Task<IActionResult> Add(int id)
+    public async Task<IActionResult> Add(int id, string UserName)
     {
         var user = await _userManager.GetUserAsync(User);
         if (user == null)
@@ -82,7 +83,8 @@ public class CartController : Controller
                 UserName = user.UserName
             };
             _dataContext.Carts.Add(cart);
-            await _dataContext.SaveChangesAsync();/ -strong / -heart:>:o: -((: -h }
+            await _dataContext.SaveChangesAsync();
+        }
 
         var existingItem = cart.Items.FirstOrDefault(x => x.KoiId == koi.KoiId);
         if (existingItem != null)
@@ -168,8 +170,8 @@ public class CartController : Controller
         }
 
         _dataContext.CartItems.Remove(itemToRemove);
-
-        var adviseToRemove = await _dataContext.LichTuVans / -strong / -heart:>:o: -((: -h.Where(a => a.UserName == user.UserName)
+        var adviseToRemove = await _dataContext.LichTuVans
+                                            .Where(a => a.UserName == user.UserName)
                                             .FirstOrDefaultAsync();
         if (adviseToRemove != null)
         {
@@ -221,7 +223,7 @@ public class CartController : Controller
         {
             UserName = user.UserName,
             OrderDate = DateTime.Now,
-            TotalAmount = cart.Items.Sum(i => i.Price * i.Quantity),
+            GrandTota = cart.Items.Sum(i => i.Price * i.Quantity),
             Status = "Pending",
         };
 

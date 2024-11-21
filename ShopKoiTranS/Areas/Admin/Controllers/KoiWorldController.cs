@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using ShopKoiTranS.Repository;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShopKoiTranS.Areas.Admin.Controllers
 {
+
     [Area("Admin")]
     public class KoiWorldController : Controller
     {
@@ -45,7 +47,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
         }
 
         // POST: KoiWorld/Create
-    
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(KoiWorldModel koiWorld, string NewCategoryName, IFormFile Image)
@@ -78,7 +80,6 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                         var newCategory = new CategoriKoisModel { CategoryName = NewCategoryName };
                         _datacontext.LoaiCaKoi.Add(newCategory);
                         await _datacontext.SaveChangesAsync();
-
                         // Cập nhật thông tin loài cá mới cho KoiWorld
                         koiWorld.CategoryKoiId = newCategory.CategoryId;
                     }

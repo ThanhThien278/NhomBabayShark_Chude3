@@ -33,7 +33,7 @@ namespace ShopKoiTranS.Models
         [Required]
         [Display(Name = "Số Lượng Cá")]
         [Range(1, int.MaxValue, ErrorMessage = "Số lượng cá phải lớn hơn 0.")]
-        public int SoLuongCa { get; set; }  
+        public int SoLuongCa { get; set; }
 
         [Required]
         [Display(Name = "Địa Điểm Xuất Phát")]
@@ -55,9 +55,10 @@ namespace ShopKoiTranS.Models
         [Display(Name = "Khoảng Cách (km)")]
         [Range(1, int.MaxValue, ErrorMessage = "Số lượng cá phải lớn hơn 0.")]
         public decimal Distance { get; set; }
-
+        public string TrangThai { get; set; }
         public decimal TransportPrice { get; set; }
         public DateTime CreatedAt { get; set; }
-        public string UserId { get; set; }
+        public string UserName { get; set; }
+        public AppUserModel User { get; set; }
     }
 }

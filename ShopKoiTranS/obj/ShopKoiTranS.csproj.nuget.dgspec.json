@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
+    "D:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {}
   },
   "projects": {
-    "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {
+    "D:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "projectUniqueName": "D:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
         "projectName": "ShopKoiTranS",
-        "projectPath": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
+        "projectPath": "D:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\ShopKoiTranS.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "D:\\NhomBabayShark_Chude3\\ShopKoiTranS\\obj\\",
+        "outputPath": "D:\\ThanhThien278\\NhomBabayShark_Chude3\\ShopKoiTranS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
             "Google.Apis": {
               "target": "Package",
               "version": "[1.68.0, )"
@@ -52,6 +56,14 @@
             "Google.Apis.Core": {
               "target": "Package",
               "version": "[1.68.0, )"
+            },
+            "Microsoft.AspNet.Identity.EntityFramework": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

@@ -96,11 +96,11 @@ h2 {
 
 /* Edit Button */
 .btn-edit {
-    background-color: #17a2b8; 
+    background-color: #17a2b8;
 }
 
     .btn-edit:hover {
-        background-color: #138496; 
+        background-color: #138496;
         transform: scale(1.05);
     }
 

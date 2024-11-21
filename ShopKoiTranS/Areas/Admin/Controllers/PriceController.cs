@@ -120,7 +120,7 @@ namespace ShopKoiTranS.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            return View(price); 
+            return View(price);
         }
 
         // POST: Price/Delete/5

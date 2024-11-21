@@ -20,6 +20,6 @@ namespace ShopKoiTranS.Models
         [StringLength(100, ErrorMessage = "Email không được vượt quá 100 ký tự")]
         public string Email { get; set; }
 
- 
+
     }
 }

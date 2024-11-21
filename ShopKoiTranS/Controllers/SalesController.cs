@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ShopKoiTranS.Models; 
+using ShopKoiTranS.Models;
 using ShopKoiTranS.Repository;
-using System.Linq; 
+using System.Linq;
 
 namespace ShopKoiTranS.Controllers
 {
     public class SalesController : Controller
     {
-        private readonly DataContext _context; 
+        private readonly DataContext _context;
 
 
         public SalesController(DataContext context)
@@ -17,8 +17,8 @@ namespace ShopKoiTranS.Controllers
 
         public IActionResult Index()
         {
-            
-            var salesModels = _context.MemberCars.ToList(); 
+
+            var salesModels = _context.MemberCars.ToList();
 
             // Pass the data to the view
             return View(salesModels);
